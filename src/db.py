@@ -1,16 +1,15 @@
 import logging
-import os
 import uuid
-from datetime import datetime, timezone
+from datetime import datetime
 from typing import Any, cast
 from dateutil.relativedelta import relativedelta
 
-from dotenv import load_dotenv
 from supabase import Client, create_client
 import pytz
 
-from scores import filter_by_date
-from custom_types import (
+import config.env_config as config
+from kb4.scores import filter_by_date
+from config.custom_types import (
     PasswordIQDetectionCount,
     User,
     UserScores,
@@ -28,34 +27,6 @@ from custom_types import (
     DBAssessmentResults,
 )
 
-# ===================== VARIABLES GLOBALES =====================
-
-load_dotenv()
-
-REPORT_API_URL = "https://eu.api.knowbe4.com/v1"
-REPORT_API_TOKEN = os.environ.get("REPORT_API_TOKEN")
-REPORT_API_HEADERS = {
-    "Authorization": f"Bearer {REPORT_API_TOKEN}",
-    "Content-Type": "application/json",
-    "User-Agent": "My-KnowBe4-Integration-Script",
-}
-GRAPH_API_URL = "https://eu.knowbe4.com/graphql"
-GRAPH_API_PASS = os.environ.get("PASS_API_TOKEN")
-GRAPH_API_KSAT = os.environ.get("KSAT_API_TOKEN")
-PASSWORDIQ_HEADERS = {
-    "Authorization": f"Bearer {GRAPH_API_PASS}",
-    "Content-Type": "application/json",
-    "User-Agent": "My-KnowBe4-Integration-Script",
-}
-KSAT_HEADERS = {
-    "Authorization": f"Bearer {GRAPH_API_KSAT}",
-    "Content-Type": "application/json",
-    "User-Agent": "My-KnowBe4-Integration-Script",
-}
-
-SUPABASE_URL = os.environ.get("SUPABASE_PROJECT_URL", "SUPABASE_PROJECT_URL")
-SUPABASE_KEY = os.environ.get("SUPABASE_SERVICE_KEY", "SUPABASE_SERVICE_KEY")
-
 # ========================== LOGGING ==========================
 
 logger = logging.getLogger(f"kb4_integration.{__name__}")
@@ -64,12 +35,15 @@ logger = logging.getLogger(f"kb4_integration.{__name__}")
 
 
 def initialize_supabase_client() -> Client:
-    if SUPABASE_URL == "SUPABASE_PROJECT_URL" or SUPABASE_KEY == "SUPABASE_SERVICE_KEY":
+    if (
+        config.SUPABASE_URL == "SUPABASE_PROJECT_URL"
+        or config.SUPABASE_KEY == "SUPABASE_SERVICE_KEY"
+    ):
         logger.error(
             "Las credenciales de Supabase no se han establecido correctamente."
         )
         exit(1)
-    return create_client(SUPABASE_URL, SUPABASE_KEY)
+    return create_client(config.SUPABASE_URL, config.SUPABASE_KEY)
 
 
 def read_db_data(
@@ -94,7 +68,9 @@ def read_db_data(
         raise e
 
 
-def insert_db_data(client: Client, table_name: str, data: Any, conflict: str = "id"):
+def insert_db_data(
+    client: Client, table_name: str, data: Any, conflict: str = "id"
+):
     """Inserta datos en la base de datos"""
     try:
         response = (
@@ -113,7 +89,10 @@ def insert_db_data(client: Client, table_name: str, data: Any, conflict: str = "
 def clean_db_templates(client: Client):
     try:
         delete_response = (
-            client.table("kb4_best_templates").delete().gt("position", 0).execute()
+            client.table("kb4_best_templates")
+            .delete()
+            .gt("position", 0)
+            .execute()
         )
         return delete_response
     except Exception as e:
@@ -126,7 +105,10 @@ def clean_db_templates(client: Client):
 def clean_db_vulnerable_users(client: Client):
     try:
         delete_response = (
-            client.table("kb4_vulnerable_users").delete().gt("user_id", 0).execute()
+            client.table("kb4_vulnerable_users")
+            .delete()
+            .gt("user_id", 0)
+            .execute()
         )
         return delete_response
     except Exception as e:
@@ -141,7 +123,10 @@ current_time = datetime.now(pytz.utc).replace(
 current_month = current_time.strftime("%Y-%m-%d")
 update_timestamp = datetime.now(pytz.utc).isoformat()
 
-def read_last_semester_scores(client: Client, date_column: str, table_name: str):
+
+def read_last_semester_scores(
+    client: Client, date_column: str, table_name: str
+):
     "Lee datos de la base de datos filtrados por los últimos 6 meses"
     try:
         six_months_start = current_time - relativedelta(months=6)
@@ -180,10 +165,9 @@ def fill_db_user_info(
     # Tabla monthly_risk_score
     db_monthly_risk: list[DBMonthlyRisk] = list()
 
-    
     for user in users:
         completed_optional_enrollments = filter_by_date(
-            user["electedEnrollments"],
+            user["optionalEnrollments"],
             "completedAt",
             active_window,
             datetime.now(pytz.utc),
@@ -202,15 +186,22 @@ def fill_db_user_info(
                 "current_risk": user["riskScore"],
                 "enrollments": sorted_enrollments[user["id"]],
                 "optional_enrollments": len(completed_optional_enrollments),
-                # Si son nuevas incorporaciones, no habrán abierto ningún correo de phishing
+                # Si son nuevas incorporaciones, no habrán abierto
+                # ningún correo de phishing
                 "phish_reports": report_percentages.get(user["id"], -1),
-                "phish_reports_abs": raw_metrics.get(user["id"], (-1, -1, -1))[1],
+                "phish_reports_abs": raw_metrics.get(user["id"], (-1, -1, -1))[
+                    1
+                ],
                 "phish_clicks": clicks_percentages.get(user["id"], -1),
-                "phish_clicks_abs": raw_metrics.get(user["id"], (-1, -1, -1))[0],
+                "phish_clicks_abs": raw_metrics.get(user["id"], (-1, -1, -1))[
+                    0
+                ],
                 "phish_opened": raw_metrics.get(user["id"], (-1, -1, -1))[2],
             }
         )
-        user_achievements = [a.value for a in scores[user["id"]]["achievements"]]
+        user_achievements = [
+            a.value for a in scores[user["id"]]["achievements"]
+        ]
         db_scores.append(
             {
                 "id": str(uuid.uuid4()),
@@ -256,19 +247,26 @@ def fill_db_user_info(
         n_archived = count[1] if count[1] is not None else 0
         logger.info(f"Archivados {n_archived} usuarios.")
     except Exception as e:
-        logger.error(f"Ha ocurrido un error al intentar archivar los usuarios: {e}")
+        logger.error(
+            f"Ha ocurrido un error al intentar archivar los usuarios: {e}"
+        )
 
     insert_db_data(client, "kb4_user_scores", db_scores, "user_id")
     logger.info(
         "Insertadas las puntuaciones de los usuarios a la tabla kb4_user_scores correctamente"
     )
     insert_db_data(
-        client, "kb4_user_score_history", db_score_history, "user_id, updated_at"
+        client,
+        "kb4_user_score_history",
+        db_score_history,
+        "user_id, updated_at",
     )
     logger.info(
         "Insertado el historial de puntuaciones de los usuarios de este mes en la tabla kb4_score_history correctamente"
     )
-    insert_db_data(client, "kb4_monthly_risk", db_monthly_risk, "user_id, created_at")
+    insert_db_data(
+        client, "kb4_monthly_risk", db_monthly_risk, "user_id, created_at"
+    )
     logger.info(
         "Insertadas las puntuaciones de riesgo de este mes a la tabla kb4_monthly_risk correctamente"
     )
@@ -353,7 +351,9 @@ def fill_db_vulnerable_data(
         )
     clean_db_vulnerable_users(client)
     logger.info("Se han limpiado los usuarios vulnerables correctamente")
-    insert_db_data(client, "kb4_vulnerable_users", db_vulnerable_users, "user_id")
+    insert_db_data(
+        client, "kb4_vulnerable_users", db_vulnerable_users, "user_id"
+    )
     logger.info("Insertados los usuarios vulnerables")
 
     # Tabla kb4_pwd
@@ -396,7 +396,9 @@ def fill_db_vulnerable_data(
         db_pwd_user_metrics,
         "user_id, detection_type, ocurred_at",
     )
-    logger.info("Insertadas las detecciones de contraseñas vulnerables por usuario")
+    logger.info(
+        "Insertadas las detecciones de contraseñas vulnerables por usuario"
+    )
 
     # Tabla kb4_assessment_results
     db_assessment_results: DBAssessmentResults = {
@@ -437,5 +439,8 @@ def save_score_history(
             }
         )
     insert_db_data(
-        client, "kb4_user_score_history", db_score_history, "user_id, updated_at"
+        client,
+        "kb4_user_score_history",
+        db_score_history,
+        "user_id, updated_at",
     )

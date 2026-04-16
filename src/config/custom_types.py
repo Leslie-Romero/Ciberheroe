@@ -1,15 +1,18 @@
-
-from typing import TypedDict
-from enum import Enum
+from typing import TypedDict, Literal
+from enum import StrEnum
+from datetime import datetime
 
 # Phishing Campaigns
+
 
 class SimpleUser(TypedDict):
     id: int
     email: int
 
+
 class Topic(TypedDict):
     name: str
+
 
 class EmailTemplate(TypedDict):
     id: int
@@ -18,9 +21,11 @@ class EmailTemplate(TypedDict):
     isAida: bool
     topics: list[Topic]
 
+
 class FailureDetails(TypedDict):
     date: str
     type: str
+
 
 class CampaignRecipient(TypedDict):
     createdAt: str
@@ -32,6 +37,7 @@ class CampaignRecipient(TypedDict):
     reported: str
     user: SimpleUser
 
+
 class PhishingCampaignRun(TypedDict):
     id: int
     createdAt: str
@@ -40,21 +46,27 @@ class PhishingCampaignRun(TypedDict):
     totalReported: int
     campaignRecipients: list[CampaignRecipient]
 
+
 class PhishingNodes(TypedDict):
     nodes: list[PhishingCampaignRun]
+
 
 class PhishingCampaignResponse(TypedDict):
     phishingCampaignRuns: PhishingNodes
 
+
 # User Info
+
 
 class RiskScoreRecord(TypedDict):
     createdAt: str
     riskScore: float
 
+
 class TrainingCampaign(TypedDict):
     id: int
     name: str
+
 
 class Enrollment(TypedDict):
     id: int
@@ -64,6 +76,7 @@ class Enrollment(TypedDict):
     totalScore: float
     type: str
     trainingCampaign: TrainingCampaign
+
 
 class User(TypedDict):
     id: int
@@ -76,16 +89,20 @@ class User(TypedDict):
     riskScore: float
     riskScoreHistories: list[RiskScoreRecord]
     mandatoryEnrollments: list[Enrollment]
-    electedEnrollments: list[Enrollment]
+    optionalEnrollments: list[Enrollment]
+
 
 class UserNodes(TypedDict):
     nodes: list[User]
 
+
 class UserResponse(TypedDict):
     users: UserNodes
 
+
 class YearlyEnrollmentUser(TypedDict):
     id: int
+
 
 class YearlyEnrollment(TypedDict):
     id: int
@@ -97,39 +114,64 @@ class YearlyEnrollment(TypedDict):
     trainingCampaign: TrainingCampaign
     user: YearlyEnrollmentUser
 
+
 class Pagination(TypedDict):
     totalCount: int
+
 
 class EnrollmentNodes(TypedDict):
     nodes: list[YearlyEnrollment]
     pagination: Pagination
 
+
 class EnrollmentResponse(TypedDict):
     enrollments: EnrollmentNodes
 
+
 # PasswordIQ
+DetectionTypeName = Literal[
+    "AD_PW_CLEAR_TEXT",
+    "AD_PW_EMPTY",
+    "AD_PW_FOUND_IN_BREACH",
+    "AD_PW_NEVER_EXPIRES",
+    "AD_PW_NOT_REQD",
+    "AD_PW_SHARED",
+    "AD_PW_WEAK",
+    "AD_USER_AES_ENCRYPTION_NOT_SET",
+    "AD_USER_DES_ONLY_ENCRYPTION",
+    "AD_USER_HAS_PREAUTHENTICATION",
+    "AD_USER_USES_LM_HASH",
+    "ALL",
+]
+
 
 class DetectionType(TypedDict):
-    name: str
+    name: DetectionTypeName
+
 
 class Event(TypedDict):
     detectionType: DetectionType
     occurredAt: str
     status: str
 
+
 class Email(TypedDict):
     address: str
+
 
 class PasswordIQUser(TypedDict):
     id: int
     emails: list[Email]
     events: list[Event]
 
+
 class PasswordIQUserNode(TypedDict):
     users: list[PasswordIQUser]
 
+
 class PasswordIQUserResponse(TypedDict):
     passwordIqUserStates: PasswordIQUserNode
+
 
 class PasswordIQDetectionCount(TypedDict):
     AD_PW_CLEAR_TEXT: int
@@ -138,33 +180,41 @@ class PasswordIQDetectionCount(TypedDict):
     AD_PW_NEVER_EXPIRES: int
     AD_PW_NOT_REQD: int
     AD_PW_SHARED: int
-    AD_PW_WEAK:int
+    AD_PW_WEAK: int
     AD_USER_AES_ENCRYPTION_NOT_SET: int
     AD_USER_DES_ONLY_ENCRYPTION: int
     AD_USER_HAS_PREAUTHENTICATION: int
     AD_USER_USES_LM_HASH: int
     ALL: int
 
+
 class PasswordIQDetectionCounts(TypedDict):
     counts: PasswordIQDetectionCount
+
 
 class PasswordIQDetectionResponse(TypedDict):
     passwordIqDetectionCounts: PasswordIQDetectionCounts
 
+
 # Assessment results
+
 
 class AssessmentDomain(TypedDict):
     name: str
     score: int
 
+
 class AssessmentResults(TypedDict):
     domains: list[AssessmentDomain]
     score: int
 
+
 class AssessmentResultsResponse(TypedDict):
     assessmentResults: AssessmentResults
 
+
 # Metrics
+
 
 class TemplateMetrics(TypedDict):
     name: str
@@ -172,48 +222,78 @@ class TemplateMetrics(TypedDict):
     topics: list[Topic]
     clicked_count_perc: float
 
+
 class ClickMetrics(TypedDict):
     clicks: int
     reports: int
     opened: int
+
 
 class VulnerableMetrics(TypedDict):
     phishing_clicks: int
     last_click: str
     completed_enrollments: int | None
 
-class Achievements(Enum):
-    LESS_RISK = 'LESS_RISK'
-    SAME_RISK = 'SAME_RISK'
-    ONE_MONTHLY_ENROLLMENT = 'ONE_MONTHLY_ENROLLMENT'
-    ALL_MONTHLY_ENROLLMENTS = 'ALL_MONTHLY_ENROLLMENTS'
-    AVG_SCORE_80 = 'AVG_SCORE_80'
-    AVG_SCORE_100 = 'AVG_SCORE_100'
-    NO_PHISHING_MONTH = 'NO_PHISHING_MONTH'
-    TOP_10_TEMPLATES = 'TOP_10_TEMPLATES'
-    MONTHLY_PHISH_REPORTS = 'MONTHLY_PHISH_REPORTS'
-    NO_PHISHING_YEAR = 'NO_PHISHING_YEAR'
-    ALL_PHISH_REPORTS = 'ALL_PHISH_REPORTS'
-    ALL_YEARLY_ENROLLMENTS = 'ALL_YEARLY_ENROLLMENTS'
+
+class Achievements(StrEnum):
+    LESS_RISK = "LESS_RISK"
+    SAME_RISK = "SAME_RISK"
+    ONE_MONTHLY_ENROLLMENT = "ONE_MONTHLY_ENROLLMENT"
+    ALL_MONTHLY_ENROLLMENTS = "ALL_MONTHLY_ENROLLMENTS"
+    AVG_SCORE_80 = "AVG_SCORE_80"
+    AVG_SCORE_100 = "AVG_SCORE_100"
+    NO_PHISHING_MONTH = "NO_PHISHING_MONTH"
+    TOP_10_TEMPLATES = "TOP_10_TEMPLATES"
+    MONTHLY_PHISH_REPORTS = "MONTHLY_PHISH_REPORTS"
+    NO_PHISHING_YEAR = "NO_PHISHING_YEAR"
+    ALL_PHISH_REPORTS = "ALL_PHISH_REPORTS"
+    ALL_YEARLY_ENROLLMENTS = "ALL_YEARLY_ENROLLMENTS"
     OPTIONAL_ENROLLMENTS = "OPTIONAL_ENROLLMENTS"
+
 
 class UserScores(TypedDict):
     acc_score: float
     achievements: list[Achievements]
 
+
+class ContextData(TypedDict):
+    active_window: int
+    risk_score_history: dict[int, float]
+    month_min: int
+    year_min: int
+    current_date: datetime
+    achievement_info: dict[str, int]
+    best_templates: dict[int, TemplateMetrics]
+
+
+class UserData(TypedDict):
+    user: User
+    user_recipients: list[CampaignRecipient]
+    user_templates: dict[int, int]
+    mandatory_enrollments: list[Enrollment]
+    completed_enrollments: list[YearlyEnrollment]
+    year_clicks: list[CampaignRecipient]
+    year_opened: list[CampaignRecipient]
+
+
 # Risk Score Histories
+
 
 class RiskScoreHistoryNode(TypedDict):
     riskScore: float
     user: SimpleUser
 
+
 class RiskScoreHistories(TypedDict):
     nodes: list[RiskScoreHistoryNode]
+
 
 class RiskScoreHistoryResponse(TypedDict):
     riskScoreHistories: RiskScoreHistories
 
+
 # DB
+
 
 class DBMetrics(TypedDict):
     id: str
@@ -229,6 +309,7 @@ class DBMetrics(TypedDict):
     top_educated: list[int]
     low_risk: list[int]
     enrollments: float
+
 
 class DBUser(TypedDict):
     id: int
@@ -249,12 +330,14 @@ class DBUser(TypedDict):
     phish_clicks_abs: int
     phish_opened: int
 
+
 class DBUserScore(TypedDict):
     id: str
     updated_at: str
     score: float
     achievements: list[str]
     user_id: int
+
 
 class DBUserScoreHistory(TypedDict):
     id: str
@@ -265,6 +348,7 @@ class DBUserScoreHistory(TypedDict):
     risk_score: float
     user_id: int
 
+
 class DBTemplate(TypedDict):
     id: int
     template_name: str
@@ -272,11 +356,13 @@ class DBTemplate(TypedDict):
     position: int
     topics: list[str]
 
+
 class DBMonthlyRisk(TypedDict):
     id: str
     user_id: int
     risk_score: float
     created_at: str
+
 
 class DBVulnerableUsers(TypedDict):
     id: str
@@ -284,6 +370,7 @@ class DBVulnerableUsers(TypedDict):
     last_click: str
     completed_enrollments: int | None
     user_id: int
+
 
 class DBPasswords(TypedDict):
     id: str
@@ -301,6 +388,7 @@ class DBPasswords(TypedDict):
     pw_preauth: int
     pw_lm_hash: int
 
+
 class DBPasswordDetections(TypedDict):
     id: str
     user_id: int
@@ -308,6 +396,7 @@ class DBPasswordDetections(TypedDict):
     detection_type: str
     ocurred_at: str
     status: str
+
 
 class DBAssessmentResults(TypedDict):
     id: str

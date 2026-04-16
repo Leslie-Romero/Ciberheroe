@@ -6,18 +6,16 @@ from collections import defaultdict
 from dateutil.parser import isoparse
 from dateutil.relativedelta import relativedelta
 
-from scores import filter_by_date
-from custom_types import (
+from kb4.scores import filter_by_date
+from config.custom_types import (
     PhishingCampaignRun,
     CampaignRecipient,
     ClickMetrics,
     TemplateMetrics,
     User,
-    UserScores,
     Enrollment,
     YearlyEnrollment,
 )
-from main import save_json
 
 # ========================== LOGGING ==========================
 
@@ -35,7 +33,9 @@ filterByDateInput = (
 )
 
 
-def filter_by_year(items: filterByDateInput, property_name: str, by_year: datetime):
+def filter_by_year(
+    items: filterByDateInput, property_name: str, by_year: datetime
+):
     """Filtra las formaciones asignadas por año (copia de filter_by_date, exclusiva por 12 meses)
 
     Parameters:
@@ -69,8 +69,8 @@ def phish_prone_percentage(psts: list[PhishingCampaignRun]) -> float:
     """Obtiene el porcentaje de usuarios phish prone en todas las campañas de phishing"""
     year_psts = filter_by_year(psts, "createdAt", CURRENT_DATE)
     year_psts = cast(list[PhishingCampaignRun], year_psts)
-    
-    avg_phish_prone = 0
+
+    avg_phish_prone = 0.0
 
     for test in year_psts:
         avg_phish_prone += test["phishPronePercentage"]
@@ -93,7 +93,9 @@ def phishing_reports(psts: list[PhishingCampaignRun]) -> float:
         opened += test["totalOpened"]
 
     if opened > 0:
-        logger.info("Calculado el porcentaje de emails de phishing denunciados")
+        logger.info(
+            "Calculado el porcentaje de emails de phishing denunciados"
+        )
         reported_perc = (reported / opened) * 100
         return round(reported_perc, 2)
     else:
@@ -128,7 +130,9 @@ def most_educated(
 
 def click_percentage(
     recipients: list[CampaignRecipient], users: list[User], active_window
-) -> tuple[dict[int, float], dict[int, float], dict[int, tuple[int, int, int]]]:
+) -> tuple[
+    dict[int, float], dict[int, float], dict[int, tuple[int, int, int]]
+]:
     """Otbiene el porcentaje de clicks con respecto a los correos abiertos por usuario"""
     total_recipients: defaultdict[int, ClickMetrics] = defaultdict(
         lambda: {"clicks": 0, "reports": 0, "opened": 0}
@@ -175,7 +179,9 @@ def click_percentage(
             )
             for user_id, values in total_recipients.items()
         }
-        sorted_clicks = sorted(click_percentage.items(), key=lambda item: item[1])
+        sorted_clicks = sorted(
+            click_percentage.items(), key=lambda item: item[1]
+        )
         report_percentage = {
             user_id: (
                 round((values["reports"] / values["opened"]) * 100, 2)
@@ -184,7 +190,9 @@ def click_percentage(
             )
             for user_id, values in total_recipients.items()
         }
-        sorted_reports = sorted(report_percentage.items(), key=lambda item: item[1])
+        sorted_reports = sorted(
+            report_percentage.items(), key=lambda item: item[1]
+        )
         logger.info(
             "Calculado el porcentaje de clicks en links de phishing para cada usuario"
         )
@@ -216,9 +224,13 @@ def best_phishing_templates(
         selected_recipients = filter_by_date(
             recipients, "clicked", active_window, filter[0], filter[1]
         )
-        selected_recipients = cast(list[CampaignRecipient], selected_recipients)
+        selected_recipients = cast(
+            list[CampaignRecipient], selected_recipients
+        )
 
-    total_clicks = sum(1 for i in selected_recipients if i["clicked"] is not None)
+    total_clicks = sum(
+        1 for i in selected_recipients if i["clicked"] is not None
+    )
 
     for r in selected_recipients:
         template = r["emailTemplate"]
@@ -229,13 +241,15 @@ def best_phishing_templates(
             templates[template["id"]]["clicked_count"] += r["clickedCount"]
 
     for template_id in templates.keys():
-        template = templates[template_id]
+        processed_template = templates[template_id]
         templates[template_id]["clicked_count_perc"] = (
-            template["clicked_count"] / total_clicks
+            processed_template["clicked_count"] / total_clicks
         ) * 100
 
     sorted_templates = sorted(
-        templates.items(), key=lambda item: item[1]["clicked_count"], reverse=True
+        templates.items(),
+        key=lambda item: item[1]["clicked_count"],
+        reverse=True,
     )
     monthly_clicks = sum(i["clicked_count"] for i in templates.values())
     best_templates = dict(sorted_templates[:n_templates])
@@ -261,7 +275,10 @@ def lowest_risk_users(n_users: int, users: list[User]) -> dict[int, float]:
 
 # Métricas generales de usuario (añadidos)
 def get_reporting_users(
-    recipients: list[CampaignRecipient], active_users: set[int], n_users: int, active_window: int
+    recipients: list[CampaignRecipient],
+    active_users: set[int],
+    n_users: int,
+    active_window: int,
 ) -> tuple[float, float, float]:
     """Devuelve el porcentaje de usuarios que han denunciado phishinig"""
 
@@ -276,10 +293,7 @@ def get_reporting_users(
 
     # AW = Active Window
     aw_reports = filter_by_date(
-        recipients,
-        "reported",
-        active_window,
-        CURRENT_DATE
+        recipients, "reported", active_window, CURRENT_DATE
     )
 
     aw_reports = cast(list[CampaignRecipient], aw_reports)
@@ -288,7 +302,9 @@ def get_reporting_users(
     yearly_reports = cast(list[CampaignRecipient], yearly_reports)
 
     month_reporting_users = {
-        i["user"]["id"] for i in monthly_reports if i["user"]["id"] in active_users
+        i["user"]["id"]
+        for i in monthly_reports
+        if i["user"]["id"] in active_users
     }
     month_perc_reporting_users = (len(month_reporting_users) / n_users) * 100
 
@@ -298,7 +314,9 @@ def get_reporting_users(
     aw_perc_reporting_users = (len(aw_reporting_users) / n_users) * 100
 
     year_reporting_users = {
-        i["user"]["id"] for i in yearly_reports if i["user"]["id"] in active_users
+        i["user"]["id"]
+        for i in yearly_reports
+        if i["user"]["id"] in active_users
     }
     logger.info(
         f"Se han registrado {len(year_reporting_users)} usuarios que han reportado phishing"
@@ -328,7 +346,7 @@ def get_educated_users(
     )
     monthly_enrollments = cast(list[YearlyEnrollment], monthly_enrollments)
     monthly_educated = {e["user"]["id"] for e in monthly_enrollments}
-    
+
     perc_monthly_educated = (len(monthly_educated) / n_users) * 100
 
     # AW = Active Window
@@ -348,11 +366,7 @@ def get_educated_users(
     logger.info(
         f"Se han registrado {len(yearly_educated)} usuarios que han realizado al menos una formación"
     )
-    return (
-        perc_monthly_educated,
-        perc_aw_educated,
-        perc_yearly_educated
-    )
+    return (perc_monthly_educated, perc_aw_educated, perc_yearly_educated)
 
 
 def get_year_enrollments(users: list[User]) -> float:

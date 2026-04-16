@@ -5,9 +5,8 @@ from datetime import datetime
 import pytz
 from typing import Any
 
-from custom_types import (
+from config.custom_types import (
     CampaignRecipient,
-    VulnerableMetrics,
     VulnerableMetrics,
     User,
     PasswordIQUser,
@@ -24,6 +23,7 @@ logger = logging.getLogger(f"kb4_integration.{__name__}")
 
 CURRENT_DATE = datetime.now(pytz.utc)
 
+
 def get_vulnerable_users(
     users: list[User],
     yearly_completed_enrollments: list[YearlyEnrollment],
@@ -32,11 +32,17 @@ def get_vulnerable_users(
 ) -> dict[int, VulnerableMetrics]:
     """Obtiene a los usuarios que no han realizado ninguna formación y han caído en más de un phishing en los últimos 12 meses"""
     vulnerable_users: defaultdict[int, VulnerableMetrics] = defaultdict(
-        lambda: {"phishing_clicks": 0, "last_click": "", "completed_enrollments": None}
+        lambda: {
+            "phishing_clicks": 0,
+            "last_click": "",
+            "completed_enrollments": None,
+        }
     )
     for user in users:
         count_completed = sum(
-            1 for e in yearly_completed_enrollments if e["user"]["id"] == user["id"]
+            1
+            for e in yearly_completed_enrollments
+            if e["user"]["id"] == user["id"]
         )
         phishing_clicks = raw_metrics.get(user["id"], (0, 0, 0))[
             0
@@ -46,12 +52,18 @@ def get_vulnerable_users(
             for i in recipients
             if i["user"]["id"] == user["id"] and i["clicked"] is not None
         ]
-        last_click = sorted(user_recipients, key=lambda item: isoparse(item["clicked"]))
+        last_click = sorted(
+            user_recipients, key=lambda item: isoparse(item["clicked"])
+        )
         if phishing_clicks > 1:
             vulnerable_users[user["id"]]["phishing_clicks"] = phishing_clicks
-            vulnerable_users[user["id"]]["last_click"] = last_click[-1]["clicked"]
+            vulnerable_users[user["id"]]["last_click"] = last_click[-1][
+                "clicked"
+            ]
             if count_completed > 0:
-                vulnerable_users[user["id"]]["completed_enrollments"] = count_completed
+                vulnerable_users[user["id"]][
+                    "completed_enrollments"
+                ] = count_completed
 
     logger.info("Se han obtenido los usuarios vulnerables")
     return vulnerable_users
@@ -97,8 +109,15 @@ def get_vulnerable_pwd(
     logger.info("Se han obtenido a los usuarios con contraseñas vulnerables")
     return detections_per_user, pwds
 
-def get_assessment_results(assessments: AssessmentResultsResponse) -> dict[str, int]:
+
+def get_assessment_results(
+    assessments: AssessmentResultsResponse,
+) -> dict[str, int]:
     assessment_domains = assessments["assessmentResults"]["domains"]
-    assessment_results = {domain["name"]: int(domain["score"]) for domain in assessment_domains}
-    assessment_results["security_score"] = int(assessments["assessmentResults"]["score"])
+    assessment_results = {
+        domain["name"]: int(domain["score"]) for domain in assessment_domains
+    }
+    assessment_results["security_score"] = int(
+        assessments["assessmentResults"]["score"]
+    )
     return assessment_results

@@ -8,7 +8,7 @@ from supabase import Client, create_client
 import pytz
 
 import config.env_config as config
-from kb4.scores import filter_by_date
+from knowbe4.kb4_scores import filter_by_date
 from custom_types import (
     PasswordIQDetectionCount,
 )
@@ -33,7 +33,7 @@ from custom_types.kb4_db import (
 
 # ========================== LOGGING ==========================
 
-logger = logging.getLogger(f"kb4_integration.{__name__}")
+logger = logging.getLogger(f"ciberheroe.{__name__}")
 
 # ======================= BASE DE DATOS =======================
 

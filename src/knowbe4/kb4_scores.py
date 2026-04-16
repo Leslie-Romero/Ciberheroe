@@ -22,7 +22,7 @@ from custom_types.kb4_metrics_info import (
 
 # ========================== LOGGING ==========================
 
-logger = logging.getLogger(f"kb4_integration.{__name__}")
+logger = logging.getLogger(f"ciberheroe.{__name__}")
 
 # ==================== FUNCIONES PARA LAS PUNTUACIONES ====================
 

@@ -17,7 +17,7 @@ from custom_types import (
 
 # ========================== LOGGING ==========================
 
-logger = logging.getLogger(f"kb4_integration.{__name__}")
+logger = logging.getLogger(f"ciberheroe.{__name__}")
 
 # ==================== FUNCIONES PARA MÉTRICAS DE ADMIN ====================
 

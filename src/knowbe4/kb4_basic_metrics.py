@@ -6,7 +6,7 @@ from collections import defaultdict
 from dateutil.parser import isoparse
 from dateutil.relativedelta import relativedelta
 
-from kb4.scores import filter_by_date
+from knowbe4.kb4_scores import filter_by_date
 from custom_types.kb4_metrics_info import (
     PhishingCampaignRun,
     CampaignRecipient,
@@ -19,7 +19,7 @@ from custom_types.kb4_metrics_info import (
 
 # ========================== LOGGING ==========================
 
-logger = logging.getLogger(f"kb4_integration.{__name__}")
+logger = logging.getLogger(f"ciberheroe.{__name__}")
 
 # ==================== FUNCIONES PARA MÉTRICAS INICIALES ====================
 

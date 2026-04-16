@@ -8,9 +8,16 @@ import pytz
 
 import db
 import config.env_config as config
-from kb4 import kb4_api, basic_metrics, admin_metrics, scores
-from kb4.helper_functions import save_json
-from config.custom_types import (
+from kb4 import (
+    fetch_graph_api_data,
+    fetch_rest_api_data,
+    calculate_scores,
+    get_historical_data,
+    save_json,
+    basic_metrics,
+    admin_metrics,
+)
+from custom_types import (
     PasswordIQUser,
     User,
     CampaignRecipient,
@@ -61,10 +68,10 @@ def main():
     # Ventana activa para el filtrado por fecha
     active_window = achievement_info["ACTIVE_WINDOW"]
 
-    n_users, n_psts = kb4_api.fetch_rest_api_data()
+    n_users, n_psts = fetch_rest_api_data()
 
     api_psts, user_info, pwd_user_events, year_enrollments, assessment = (
-        kb4_api.fetch_graph_api_data(n_users, n_psts)
+        fetch_graph_api_data(n_users, n_psts)
     )
 
     users: list[User] = user_info["users"]["nodes"]
@@ -117,7 +124,7 @@ def main():
 
     # Inserción de datos históricos a falta de datos del último mes
     if config.HISTORICAL_DATA:
-        historical_data = scores.get_historical_data(users)
+        historical_data = get_historical_data(users)
         db_monthly_risk_hist: list[DBMonthlyRisk] = list()
         for record in historical_data:
             db_monthly_risk_hist.append(
@@ -178,7 +185,7 @@ def main():
         active_window,
         (current_time, (last_month.month, last_month.year)),
     )
-    user_scores, user_score_history = scores.calculate_scores(
+    user_scores, user_score_history = calculate_scores(
         users,
         yearly_completed_enrollments,
         recipients,

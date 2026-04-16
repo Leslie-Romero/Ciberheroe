@@ -7,7 +7,7 @@ from dateutil.parser import isoparse
 from dateutil.relativedelta import relativedelta
 
 from kb4.scores import filter_by_date
-from config.custom_types import (
+from custom_types.kb4_metrics_info import (
     PhishingCampaignRun,
     CampaignRecipient,
     ClickMetrics,

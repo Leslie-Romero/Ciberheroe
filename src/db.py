@@ -9,11 +9,16 @@ import pytz
 
 import config.env_config as config
 from kb4.scores import filter_by_date
-from config.custom_types import (
+from custom_types import (
     PasswordIQDetectionCount,
+)
+from custom_types.kb4_metrics_info import (
     User,
+    VulnerableMetrics,
     UserScores,
     TemplateMetrics,
+)
+from custom_types.kb4_db import (
     DBUser,
     DBUserScore,
     DBUserScoreHistory,
@@ -21,7 +26,6 @@ from config.custom_types import (
     DBMetrics,
     DBMonthlyRisk,
     DBVulnerableUsers,
-    VulnerableMetrics,
     DBPasswords,
     DBPasswordDetections,
     DBAssessmentResults,

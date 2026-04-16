@@ -9,7 +9,7 @@ import config.exceptions as exceptions
 
 # Temporarily everything is hardcoded in config
 import config.env_config as config
-from config.custom_types import (
+from custom_types import (
     PasswordIQUserResponse,
     PhishingCampaignResponse,
     UserResponse,

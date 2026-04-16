@@ -5,7 +5,7 @@ from datetime import datetime
 import pytz
 from typing import Any
 
-from config.custom_types import (
+from custom_types import (
     CampaignRecipient,
     VulnerableMetrics,
     User,

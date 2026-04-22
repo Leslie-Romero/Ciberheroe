@@ -26,6 +26,8 @@ from custom_types import (
 
 logger = logging.getLogger(f"ciberheroe.{__name__}")
 
+# TODO: Optimize this function
+
 
 def kb4_integration():
 

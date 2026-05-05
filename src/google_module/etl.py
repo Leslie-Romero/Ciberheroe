@@ -13,6 +13,8 @@ logger = logging.getLogger(f"ciberheroe.{__name__}")
 
 def google_etl():
     admin_directory = AdminDirectoryExtractor()
+    users = admin_directory.extract_user_list()
+    save_json(users, "google_user_list")
     admin_reports = AdminReportsExtractor()
     # users = admin_directory.extract_user_list()
 

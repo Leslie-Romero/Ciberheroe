@@ -21,7 +21,6 @@ class AdminDirectoryExtractor(GoogleAPIBase):
         self.domain = domain
 
     def extract_user_list(self):
-        # Se puede modificar después acorde a las necesidades (pasarlo por parámetro)
         request = self.users_collection.list(
             domain=self.domain, fields="users(primaryEmail)"
         )

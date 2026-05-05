@@ -7,7 +7,7 @@ from typing import cast, Any
 from dateutil.parser import isoparse
 import pytz
 
-from custom_types.kb4_metrics_info import (
+from custom_types.knowbe4.metrics_info import (
     Enrollment,
     CampaignRecipient,
     User,

@@ -6,8 +6,8 @@ from collections import defaultdict
 from dateutil.parser import isoparse
 from dateutil.relativedelta import relativedelta
 
-from knowbe4.kb4_scores import filter_by_date
-from custom_types.kb4_metrics_info import (
+from knowbe4_module.scores import filter_by_date
+from custom_types.knowbe4.metrics_info import (
     PhishingCampaignRun,
     CampaignRecipient,
     ClickMetrics,

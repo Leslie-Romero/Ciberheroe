@@ -6,13 +6,13 @@ import pytz
 
 import db
 import config.env_config as config
-from knowbe4 import (
+from knowbe4_module import (
+    admin_metrics,
+    basic_metrics,
     fetch_graph_api_data,
     fetch_rest_api_data,
     calculate_scores,
     get_historical_data,
-    kb4_admin_metrics,
-    kb4_basic_metrics,
     save_json,
 )
 from custom_types import (
@@ -75,29 +75,29 @@ def kb4_integration():
     ]["nodes"]
 
     # 1. Porcentaje promedio de usuarios phish-prone
-    phish_prone_percentage = kb4_basic_metrics.phish_prone_percentage(psts)
+    phish_prone_percentage = basic_metrics.phish_prone_percentage(psts)
 
     # 2. Porcentaje de denuncias de phishing (simuladas)
-    phishing = kb4_basic_metrics.phishing_reports(psts)
+    phishing = basic_metrics.phishing_reports(psts)
 
     # 3. Usuarios con más formaciones realizadas (top 5)
-    top_educated, sorted_enrollments = kb4_basic_metrics.most_educated(
+    top_educated, sorted_enrollments = basic_metrics.most_educated(
         users, yearly_completed_enrollments, 5
     )
 
     # 4. Porcentaje de clicks y denuncias por usuario en
     # simulaciones de phishing
     clicks_percentages, report_percentages, raw_metrics = (
-        kb4_basic_metrics.click_percentage(recipients, users, active_window)
+        basic_metrics.click_percentage(recipients, users, active_window)
     )
 
     # 5. Plantillas de phishing con mayor tasa de éxitoç
-    best_templates, monthly_clicks = kb4_basic_metrics.best_phishing_templates(
+    best_templates, monthly_clicks = basic_metrics.best_phishing_templates(
         recipients, 10, active_window
     )
 
     # 6. Usuarios con menor riesgo (KSAT)
-    low_risk = kb4_basic_metrics.lowest_risk_users(10, users)
+    low_risk = basic_metrics.lowest_risk_users(10, users)
 
     # Inserción de datos históricos a falta de datos del último mes
     if config.HISTORICAL_DATA:
@@ -156,7 +156,7 @@ def kb4_integration():
             for score in db_last_semester_scores
         }
 
-    top10_month_templates, m = kb4_basic_metrics.best_phishing_templates(
+    top10_month_templates, m = basic_metrics.best_phishing_templates(
         recipients,
         10,
         active_window,
@@ -176,24 +176,24 @@ def kb4_integration():
     # db.save_score_history(db_client, users, user_score_history)
 
     # Métricas adicionales (mensual y anual)
-    user_reports = kb4_basic_metrics.get_reporting_users(
+    user_reports = basic_metrics.get_reporting_users(
         recipients, active_users, n_users, active_window
     )
-    user_education = kb4_basic_metrics.get_educated_users(
+    user_education = basic_metrics.get_educated_users(
         yearly_completed_enrollments, active_window, n_users
     )
-    enrollments = kb4_basic_metrics.get_year_enrollments(users)
+    enrollments = basic_metrics.get_year_enrollments(users)
 
     # Vulnerabilidades
-    vulnerable_users = kb4_admin_metrics.get_vulnerable_users(
+    vulnerable_users = admin_metrics.get_vulnerable_users(
         users, yearly_completed_enrollments, raw_metrics, recipients
     )
 
-    pwds_detections_per_user, pwds = kb4_admin_metrics.get_vulnerable_pwd(
+    pwds_detections_per_user, pwds = admin_metrics.get_vulnerable_pwd(
         user_pwds, users
     )
 
-    assessment_results = kb4_admin_metrics.get_assessment_results(assessment)
+    assessment_results = admin_metrics.get_assessment_results(assessment)
 
     # Rellenamos la base de datos
     db.fill_db_user_info(

@@ -4,7 +4,7 @@ import time
 import math
 from typing import cast
 
-import knowbe4.kb4_queries as kb4_queries
+import knowbe4_module.queries as queries
 import config.exceptions as exceptions
 
 # Temporarily everything is hardcoded in config
@@ -87,7 +87,7 @@ def fetch_rest_api_data() -> tuple[int, int]:
 def fetch_assessment_results():
     assessment_results = cast(
         AssessmentResultsResponse,
-        request_graphql_api(kb4_queries.get_query_assessment(2157482, 864417)),
+        request_graphql_api(queries.get_query_assessment(2157482, 864417)),
     )
     # save_json(dict(assessment_results), "assessment_results")
     logger.info(
@@ -116,14 +116,14 @@ def fetch_passwords():
     password_user_events = cast(
         PasswordIQUserResponse,
         request_graphql_api(
-            kb4_queries.get_query_password_users(1, 75), is_ksat=False
+            queries.get_query_password_users(1, 75), is_ksat=False
         ),
     )
     for i in range(1, math.ceil(n_detections / 75)):
         new_response = cast(
             PasswordIQUserResponse,
             request_graphql_api(
-                kb4_queries.get_query_password_users(i + 1, 75), is_ksat=False
+                queries.get_query_password_users(i + 1, 75), is_ksat=False
             ),
         )
         password_user_events["passwordIqUserStates"]["users"] += new_response[
@@ -138,12 +138,12 @@ def fetch_passwords():
 def fetch_campaign_runs(n_psts):
     campaign_runs = cast(
         PhishingCampaignResponse,
-        request_graphql_api(kb4_queries.get_query_pst(1, 50)),
+        request_graphql_api(queries.get_query_pst(1, 50)),
     )
     for i in range(1, math.ceil(n_psts / 50)):
         new_response = cast(
             PhishingCampaignResponse,
-            request_graphql_api(kb4_queries.get_query_pst(i + 1, 50)),
+            request_graphql_api(queries.get_query_pst(i + 1, 50)),
         )
         campaign_runs["phishingCampaignRuns"]["nodes"] += new_response[
             "phishingCampaignRuns"
@@ -158,12 +158,12 @@ def fetch_campaign_runs(n_psts):
 
 def fetch_user_info(n_users):
     user_info = cast(
-        UserResponse, request_graphql_api(kb4_queries.get_query_user(1, 75))
+        UserResponse, request_graphql_api(queries.get_query_user(1, 75))
     )
     for i in range(1, math.ceil(n_users / 75)):
         new_response = cast(
             UserResponse,
-            request_graphql_api(kb4_queries.get_query_user(i + 1, 75)),
+            request_graphql_api(queries.get_query_user(i + 1, 75)),
         )
         user_info["users"]["nodes"] += new_response["users"]["nodes"]
 
@@ -178,13 +178,13 @@ def fetch_user_info(n_users):
 def fetch_enrollment_info():
     enrollment_info = cast(
         EnrollmentResponse,
-        request_graphql_api(kb4_queries.get_query_enrollments(1, 500)),
+        request_graphql_api(queries.get_query_enrollments(1, 500)),
     )
     n_enrollments = enrollment_info["enrollments"]["pagination"]["totalCount"]
     for i in range(1, math.ceil(n_enrollments / 500)):
         new_response = cast(
             EnrollmentResponse,
-            request_graphql_api(kb4_queries.get_query_enrollments(i + 1, 500)),
+            request_graphql_api(queries.get_query_enrollments(i + 1, 500)),
         )
         enrollment_info["enrollments"]["nodes"] += new_response["enrollments"][
             "nodes"

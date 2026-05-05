@@ -8,17 +8,17 @@ from supabase import Client, create_client
 import pytz
 
 import config.env_config as config
-from knowbe4.kb4_scores import filter_by_date
+from knowbe4_module.scores import filter_by_date
 from custom_types import (
     PasswordIQDetectionCount,
 )
-from custom_types.kb4_metrics_info import (
+from custom_types.knowbe4.metrics_info import (
     User,
     VulnerableMetrics,
     UserScores,
     TemplateMetrics,
 )
-from custom_types.kb4_db import (
+from custom_types.knowbe4.db import (
     DBUser,
     DBUserScore,
     DBUserScoreHistory,

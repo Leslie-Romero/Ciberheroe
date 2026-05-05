@@ -19,7 +19,7 @@ def enum_serializer(obj: Any) -> Any:
 def save_json(info: MutableMapping | dict, file: str):
     """Vuelca los datos pasados por parámetro a un archivo JSON"""
     try:
-        with open(f"./out/{file}.json", "w") as f:
+        with open(f"C:/TFT/out/{file}.json", "w") as f:
             json.dump(info, f, default=enum_serializer)
     except TypeError as e:
         logger.error(

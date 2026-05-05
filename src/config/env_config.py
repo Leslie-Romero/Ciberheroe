@@ -38,3 +38,9 @@ SUPABASE_KEY = os.environ.get("SUPABASE_SERVICE_KEY", "key_not_found_in_env")
 HISTORICAL_DATA = False
 
 # === GOOGLE WORKSPACE ===
+
+SERVICE_ACCOUNT_FILE = os.environ.get(
+    "SERVICE_ACCOUNT_FILE_PATH", "path/to/credentials.json"
+)
+
+SUBJECT_EMAIL = os.environ.get("SUBJECT_EMAIL", "admin@example.com")

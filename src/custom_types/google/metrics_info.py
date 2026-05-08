@@ -21,14 +21,13 @@ class FileListResponse(TypedDict):
 
 
 class UserMetrics(TypedDict):
-    ignore_cert_warning: int
-    reused_passwords: int
-    device_platform: list[str]
-    dangerous_files: int
-    malware_download: int
-    vulnerable_password: int
-    two_step_ver: bool
-    non_corporate_devices: bool
-    full_access_files: int
-    files_with_exp_date: int
-    confidential_messages: int
+    unsafe_site: int
+    reused_pwds: int
+    device_platforms: list[str]
+    risky_file_downloads: int
+    malware_downloads: int
+    enabled_2sv: bool
+    use_of_non_corporate_devices: int
+    files_with_public_link: int
+    files_wih_exp_date: int
+    messages_in_conf_mode: int

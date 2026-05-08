@@ -29,7 +29,8 @@ class GoogleDriveExtractor(GoogleAPIBase):
         files = []
         while request is not None:
             response = self.exec_request(request)
-            files += response["files"]
+            if response != {}:
+                files += response["files"]
             request = self.files_collection.list_next(request, response)
 
         return files

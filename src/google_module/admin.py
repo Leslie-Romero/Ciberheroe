@@ -3,11 +3,16 @@ from google.oauth2 import service_account
 from googleapiclient.discovery import build
 from config import env_config as config
 from datetime import datetime, timezone, timedelta
+import os
+from collections import defaultdict
 
 SCOPES = [
     "https://www.googleapis.com/auth/admin.reports.audit.readonly",
     "https://www.googleapis.com/auth/admin.directory.user.readonly",
 ]
+
+# Falta añadir este SCOPE
+# "https://www.googleapis.com/auth/admin.directory.device.mobile.readonly",
 
 admin_creds = service_account.Credentials.from_service_account_file(
     config.SERVICE_ACCOUNT_FILE, scopes=SCOPES, subject=config.SUBJECT_EMAIL
@@ -18,11 +23,13 @@ class AdminDirectoryExtractor(GoogleAPIBase):
     def __init__(self, domain="satocan.com"):
         self.service = build("admin", "directory_v1", credentials=admin_creds)
         self.users_collection = self.service.users()
+        self.mobiledevices_collecion = self.service.mobiledevices()
         self.domain = domain
 
     def extract_user_list(self):
+        # Extracts both the user list and the 2SV
         request = self.users_collection.list(
-            domain=self.domain, fields="users(primaryEmail)"
+            domain=self.domain, fields="users(primaryEmail, isEnrolledIn2Sv)"
         )
 
         print("Request:", request)
@@ -30,22 +37,26 @@ class AdminDirectoryExtractor(GoogleAPIBase):
         users = []
         while request is not None:
             response = self.exec_request(request)
-            users += response["users"]
-            request = self.files_collection.list_next(request, response)
+            if response != {}:
+                users += response["users"]
+            request = self.users_collection.list_next(request, response)
 
         return users
 
-    def check_2sv(self):
-        # TODO: Finish query
-        request = self.users_collection.list(domain=self.domain, fields="")
-
-        results = []
+    def check_device_platform(self):
+        request = self.mobiledevices_collecion.list(
+            customerId="my_customer",
+            maxResults=100,
+            projection="FULL",
+        )
+        devices = defaultdict(lambda: {"devices": []})
         while request is not None:
             response = self.exec_request(request)
-            results += response["users"]
-            request = self.files_collection.list_next(request, response)
-
-        return results
+            for device in response.get("mobiledevices", []):
+                owner = device.get("email", ["no_email_found"])[0]
+                devices[owner]["devices"].append(device)
+            request = self.activities_collection.list_next(request, response)
+        return devices
 
 
 class AdminReportsExtractor(GoogleAPIBase):
@@ -66,7 +77,7 @@ class AdminReportsExtractor(GoogleAPIBase):
         events = []
         while request is not None:
             response = self.exec_request(request)
-            events = response["activities"]
+            events = response.get("items", [])
             request = self.activities_collection.list_next(request, response)
 
         return events
@@ -82,51 +93,70 @@ class AdminReportsExtractor(GoogleAPIBase):
         events = []
         while request is not None:
             response = self.exec_request(request)
-            events = response["activities"]
-            request = self.activities_collection.list_next(request, response)
-
-        return events
-
-    def check_device_platform(self):
-        request = self.activities_collection.list(
-            userKey="all",
-            applicationName="chrome",
-            eventName="LOGIN_EVENT",
-            startTime=self.start_time_string,
-        )
-        events = []
-        # TODO: Falta añadir el post-procesado para buscar el parámetro DEVICE_PLATFORM
-        while request is not None:
-            response = self.exec_request(request)
-            events = response["activities"]
+            events = response.get("items", [])
             request = self.activities_collection.list_next(request, response)
 
         return events
 
     def check_file_downloads(
-        self, dangerous_file_types=[".exe", ".bat", ".cmd", ".ps1"]
+        self,
+        dangerous_file_types={
+            ".exe",
+            ".bat",
+            ".cmd",
+            ".ps1",
+            ".vbs",
+            ".scr",
+            ".msi",
+            ".jar",
+        },
     ):
-        # TODO: correct this function
         request = self.activities_collection.list(
-            applicationName="chrome", event_type="CONTENT_TRANSFER"
+            userKey="all",
+            applicationName="chrome",
+            eventName="CONTENT_TRANSFER",
+            startTime=self.start_time_string,
+            fields="items(actor, events(parameters))",
         )
-        # TODO: Se filtra por TRIGGER_TYPE=FILE_DOWNLOAD y luego se revisa el parámetro CONTENT_TYPE
-        response = self.exec_request(request)
+        events = defaultdict(lambda: {"events": []})
+        while request is not None:
+            response = self.exec_request(request)
+            items = response.get("items", [])
+            for item in items:
+                actor = item["actor"].get("email", "missing-email")
+                for event in item.get("events", []):
+                    download_event = next(
+                        (
+                            d.get("value")
+                            for d in event.get("parameters")
+                            if d.get("name") == "CONTENT_NAME"
+                            and os.path.splitext(d.get("value"))[1]
+                            in dangerous_file_types
+                        ),
+                        "No events",
+                    )
+                    if download_event == "No events":
+                        continue
+                    events[actor]["events"].append(download_event)
+            request = self.activities_collection.list_next(request, response)
 
-        # TODO: Añadir IF statement que depende de si la descarga tiene un tipo de riesgo
-        events = response["activities"]
         return events
 
     def check_malware_download(self):
-        # TODO: correct this function
         request = self.activities_collection.list(
-            applicationName="chrome", event_type="MALWARE_TRANSFER"
+            userKey="all",
+            applicationName="chrome",
+            eventName="MALWARE_TRANSFER",
+            startTime=self.start_time_string,
+            fields="items(actor, events(parameters))",
         )
         response = self.exec_request(request)
 
+        return response
+
         # TODO: Filtrar por EVENT_REASON=MALWARE_TRANSFER_DANGEROUS_FILE
 
-        events = response["activities"]
+        events = response.get("items", [])
         return events
 
     def check_vulnerable_password(self):
@@ -140,7 +170,7 @@ class AdminReportsExtractor(GoogleAPIBase):
         events = []
         while request is not None:
             response = self.exec_request(request)
-            events = response["activities"]
+            events = response.get("items", [])
             request = self.activities_collection.list_next(request, response)
 
         return events

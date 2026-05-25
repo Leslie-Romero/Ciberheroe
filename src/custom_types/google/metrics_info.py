@@ -20,14 +20,15 @@ class FileListResponse(TypedDict):
     files: list[File]
 
 
-class UserMetrics(TypedDict):
-    unsafe_site: int
+class GoogleUserMetrics(TypedDict):
+    unsafe_sites: int
     reused_pwds: int
-    device_platforms: list[str]
-    risky_file_downloads: int
+    device_platform: float
+    risky_downloads: int
     malware_downloads: int
+    vulnerable_pwds: int
     enabled_2sv: bool
-    use_of_non_corporate_devices: int
-    files_with_public_link: int
-    files_wih_exp_date: int
-    messages_in_conf_mode: int
+    non_corp_devices: int
+    files_public_link: int
+    files_exp_date: int
+    messages_conf: int

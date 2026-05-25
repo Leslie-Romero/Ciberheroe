@@ -1,6 +1,8 @@
 import logging
 from logging.handlers import RotatingFileHandler
 import traceback
+import db
+import google_module
 
 logger = logging.getLogger("ciberheroe")
 logger.setLevel(logging.INFO)
@@ -25,7 +27,8 @@ if not logger.handlers:
 
 
 def main():
-    # TODO: Call three ETLs (kb4, google, events)
+    db_client = db.initialize_supabase_client()
+    google_module.google_etl(db_client)
     return
 
 

@@ -1,40 +1,33 @@
-# TODO: Establish the point system for each of the achievements/faults
-# (e.g. if someone has done something right but also if they have done nothing wrong)
-# Do it in a way that it makes sense with the existing point system, set a base and then
-# talk to Robert about it
+from custom_types import GoogleUserMetrics, DBGooglePointSystem
+from collections import defaultdict
+from typing import cast
 
 
 class GoogleScoreCalculator:
-    def __init__(self, data, points):
-        self.data = data
-        self.points = points
 
-    def check_2sv(self):
-        return
+    def process_devices(self, user_devices) -> tuple[int, float]:
+        non_corp_devices = set()
+        platform = defaultdict(lambda: 0)
+        for device in user_devices:
+            if device["ownership"] == "BYOD":
+                non_corp_devices.add(device["device_id"])
+            platform[device["platform"]] += 1
 
-    def unsafe_sites(self):
-        return
+        windows = platform.get("WINDOWS", 0)
+        all_platforms = sum(value for key, value in platform.items())
+        total = 1 if all_platforms == 0 else all_platforms
 
-    def reuse_passwords(self):
-        return
+        return len(non_corp_devices), (windows / total)
 
-    def device_platform(self):
-        return
-
-    def download_dangerous_files(self):
-        return
-
-    def malware_download(self):
-        return
-
-    def vulnerable_passwords(self):
-        return
-
-    def full_access_files(self):
-        return
-
-    def exp_date_files(self):
-        return
-
-    def confidential_messages(self):
-        return
+    def calculate_scores(
+        self,
+        user_metrics: GoogleUserMetrics,
+        points: list[DBGooglePointSystem],
+    ) -> float:
+        user_score = 0
+        processed_points = {elem["label"]: elem["points"] for elem in points}
+        for label, value in user_metrics.items():
+            user_score += processed_points.get(label, 0) * cast(
+                float | int | bool, value
+            )
+        return user_score

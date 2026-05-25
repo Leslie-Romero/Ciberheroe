@@ -16,4 +16,10 @@ from .knowbe4.password_iq import (
 )
 from .knowbe4.assessment_results import AssessmentResultsResponse
 from .knowbe4.db import DBMonthlyRisk
-from .google.db import DBUserGoogleMetrics, DBGoogleUser
+from .google.metrics_info import GoogleUserMetrics
+from .google.db import (
+    DBUserGoogleMetrics,
+    DBGoogleUser,
+    DBGooglePointSystem,
+    DBGoogleUserScores,
+)

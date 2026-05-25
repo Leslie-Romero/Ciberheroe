@@ -2,6 +2,7 @@ from google_module.base import GoogleAPIBase
 from google.oauth2 import service_account
 from googleapiclient.discovery import build
 from config import env_config as config
+from logging import Logger
 
 SCOPES = ["https://www.googleapis.com/auth/drive.readonly"]
 
@@ -11,10 +12,12 @@ base_creds = service_account.Credentials.from_service_account_file(
 
 
 class GoogleDriveExtractor(GoogleAPIBase):
-    def __init__(self, user_email):
+    def __init__(self, logger: Logger, user_email: str):
+
         user_credentials = base_creds.with_subject(user_email)
 
         self.service = build("drive", "v3", credentials=user_credentials)
+        super().__init__(logger, self.service)
         self.files_collection = self.service.files()
 
     def extract_files_with_full_access(self):
@@ -29,8 +32,9 @@ class GoogleDriveExtractor(GoogleAPIBase):
         files = []
         while request is not None:
             response = self.exec_request(request)
-            if response != {}:
-                files += response["files"]
+            if response is None:
+                break
+            files += response.get("files", [])
             request = self.files_collection.list_next(request, response)
 
         return files
@@ -47,8 +51,9 @@ class GoogleDriveExtractor(GoogleAPIBase):
 
         while request is not None:
             response = self.exec_request(request)
-            if response != {}:
-                files += response["files"]
+            if response is None:
+                break
+            files += response.get("files", [])
             request = self.files_collection.list_next(request, response)
 
         return files

@@ -14,7 +14,7 @@ class DBClientBase:
         """Inserta datos en la base de datos"""
         try:
             response = (
-                self.client.table(table_name)
+                self.db_client.table(table_name)
                 .upsert(cast(list[dict], data), on_conflict=conflict)
                 .execute()
             )
@@ -22,5 +22,26 @@ class DBClientBase:
         except Exception as e:
             self.logger.error(
                 f"Ha ocurrido un error al intentar insertar los datos en la BD (tabla: {table_name}): {e}"
+            )
+            raise e
+
+    def read_db_data(
+        self,
+        table_name: str,
+        select: str,
+        date_column: str | None = None,
+        date: str | None = None,
+    ):
+        """Lee datos de la base de datos"""
+        try:
+            query = self.db_client.table(table_name).select(select)
+            if date_column and date:
+                query.eq(date_column, date)
+
+            response = query.execute()
+            return cast(list[dict[str, Any]], response.data)
+        except Exception as e:
+            self.logger.error(
+                f"Ha ocurrido un error al intentar leer los datos en la BD (tabla: {table_name}): {e}"
             )
             raise e

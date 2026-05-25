@@ -1,23 +1,40 @@
-from typing import TypedDict
+from typing import TypedDict, Literal
+from custom_types import GoogleUserMetrics
 
 
-class DBUserGoogleMetrics(TypedDict):
-    id: int
-    user_id: int
-    date: str
-    unsafe_site: int
-    reused_pwds: int
-    device_platforms: list[str]
-    risky_file_downloads: int
-    malware_downloads: int
-    enabled_2sv: bool
-    use_of_non_corporate_devices: int
-    files_with_public_link: int
-    files_wih_exp_date: int
-    messages_in_conf_mode: int
+# TODO: Crear Enums
+class DBUserGoogleMetrics(GoogleUserMetrics):
+    # Cambiar nombres para que coincidan con la tabla
+    user_email: str
+    month: str
 
 
 class DBGoogleUser(TypedDict):
-    id: int
+    created: str
     email: str
-    metrics: DBUserGoogleMetrics
+
+
+class DBGoogleUserScores(TypedDict):
+    month: str
+    user_email: str
+    score: float
+
+
+GoogleMetricsLabel = Literal[
+    "unsafe_sites",
+    "reused_pwds",
+    "device_platform",
+    "risky_downloads",
+    "malware_downloads",
+    "vulnerable_pwds",
+    "enabled_2sv",
+    "non_corporate_devices",
+    "files_with_public_link",
+    "files_with_exp_date",
+    "messages_in_conf_mode",
+]
+
+
+class DBGooglePointSystem(TypedDict):
+    label: GoogleMetricsLabel
+    points: int

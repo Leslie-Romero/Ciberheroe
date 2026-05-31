@@ -23,11 +23,34 @@ class GoogleScoreCalculator:
         self,
         user_metrics: GoogleUserMetrics,
         points: list[DBGooglePointSystem],
+        max_accumulation: int = 10,
     ) -> float:
         user_score = 0
         processed_points = {elem["label"]: elem["points"] for elem in points}
+        bad_practices = [
+            "reused_pwds",
+            "unsafe_sites",
+            "risky_downloads",
+            "non_corp_devices",
+            "files_public_link",
+            "vulnerable_pwds",
+            "malware_downloads",
+        ]
+        good_practices = [
+            "messages_conf",
+            "enabled_2sv",
+            "files_exp_date",
+            "device_platform",
+        ]
         for label, value in user_metrics.items():
-            user_score += processed_points.get(label, 0) * cast(
-                float | int | bool, value
-            )
+            if label in bad_practices and value == 0:
+                user_score += processed_points.get(label, 0)
+            elif label in good_practices:
+                if cast(int, value) > max_accumulation:
+                    user_score += processed_points.get(label, 0) * 10
+                else:
+                    user_score += processed_points.get(label, 0) * cast(
+                        float | int | bool, value
+                    )
+
         return user_score

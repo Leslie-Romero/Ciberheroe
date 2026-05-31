@@ -44,3 +44,7 @@ SERVICE_ACCOUNT_FILE = os.environ.get(
 )
 
 SUBJECT_EMAIL = os.environ.get("SUBJECT_EMAIL", "admin@example.com")
+
+# == EVENTS ==
+
+LOGS_FILE_PATH = os.environ.get("LOGS_FILE_PATH", "path_not_in_env")

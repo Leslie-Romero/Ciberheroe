@@ -23,3 +23,6 @@ from .google.db import (
     DBGooglePointSystem,
     DBGoogleUserScores,
 )
+
+from .events.metrics_info import EventMetrics
+from .events.db import DBEventsUser, DBEventMetrics, DBEventUserScores

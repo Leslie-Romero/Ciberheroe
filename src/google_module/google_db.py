@@ -3,21 +3,12 @@ from custom_types import (
     DBUserGoogleMetrics,
     DBGoogleUser,
     DBGoogleUserScores,
-    GoogleUserMetrics,
 )
-from typing import cast, Any
-from datetime import datetime
-import pytz
 
 
 class GoogleDBClient(DBClientBase):
     def __init__(self, db_client, logger):
         super().__init__(db_client, logger)
-        self.current_time = datetime.now(pytz.utc)
-        first_day_month = self.current_time.replace(
-            day=1, hour=0, minute=0, second=0, microsecond=0
-        )
-        self.current_month = first_day_month.strftime("%Y-%m-%d")
 
     def insert_users(self, users: list[dict]):
 
@@ -31,6 +22,13 @@ class GoogleDBClient(DBClientBase):
         self.insert_db_data("google_users", db_users, "email")
         self.logger.info("Insertados los usuarios en la base de datos")
 
+    def get_current_month_metrics(self):
+        current_metrics = self.read_db_data(
+            "google_metrics", "*", "month", self.current_month
+        )
+        self.logger.info("Leídas las métricas existentes de este mes de la BD")
+        return current_metrics
+
     def insert_scores(self, scores: list[DBGoogleUserScores]):
         self.insert_db_data("google_user_scores", scores, "user_email, month")
         self.logger.info(
@@ -38,7 +36,7 @@ class GoogleDBClient(DBClientBase):
         )
 
     def fetch_points(self, table_name="google_metrics_info"):
-        points = self.read_db_data("google_metrics_info", "label, points")
+        points = self.read_db_data(table_name, "label, points")
         self.logger.info(
             "Extraídas las puntuaciones para las métricas de Google"
         )

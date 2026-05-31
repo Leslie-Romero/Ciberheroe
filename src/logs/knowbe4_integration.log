@@ -1,674 +1,2074 @@
-2026-05-25 15:58:49 - ERROR - ciberheroe.google_module.etl: line 34
-         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 15:58:52 - ERROR - ciberheroe.google_module.etl: line 34
-         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 15:58:55 - ERROR - ciberheroe.google_module.etl: line 34
-         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 15:58:58 - ERROR - ciberheroe.google_module.etl: line 34
-         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 15:58:59 - ERROR - ciberheroe.google_module.etl: line 34
-         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 15:59:02 - ERROR - ciberheroe.google_module.etl: line 34
-         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 15:59:03 - ERROR - ciberheroe.google_module.etl: line 34
-         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 15:59:07 - ERROR - ciberheroe.google_module.etl: line 34
-         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 15:59:07 - ERROR - ciberheroe.google_module.etl: line 34
-         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 15:59:08 - ERROR - ciberheroe.google_module.etl: line 34
-         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 15:59:10 - ERROR - ciberheroe.google_module.etl: line 34
-         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 15:59:13 - ERROR - ciberheroe.google_module.etl: line 34
-         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 15:59:17 - ERROR - ciberheroe.google_module.etl: line 34
-         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 15:59:17 - ERROR - ciberheroe.google_module.etl: line 34
-         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 15:59:18 - ERROR - ciberheroe.google_module.etl: line 34
-         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 15:59:20 - ERROR - ciberheroe.google_module.etl: line 34
-         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 15:59:22 - ERROR - ciberheroe.google_module.etl: line 34
-         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 15:59:23 - ERROR - ciberheroe.google_module.etl: line 34
-         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 15:59:26 - ERROR - ciberheroe.google_module.etl: line 34
-         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 15:59:29 - ERROR - ciberheroe.google_module.etl: line 34
-         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 15:59:30 - ERROR - ciberheroe.google_module.etl: line 34
-         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 15:59:33 - ERROR - ciberheroe.google_module.etl: line 34
-         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 15:59:35 - ERROR - ciberheroe.google_module.etl: line 34
-         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 15:59:36 - ERROR - ciberheroe.google_module.etl: line 34
-         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 15:59:37 - ERROR - ciberheroe.google_module.etl: line 34
-         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 15:59:38 - ERROR - ciberheroe.google_module.etl: line 34
-         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 15:59:41 - ERROR - ciberheroe.google_module.etl: line 34
-         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 15:59:43 - ERROR - ciberheroe.google_module.etl: line 34
-         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 15:59:44 - ERROR - ciberheroe.google_module.etl: line 34
-         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 15:59:45 - ERROR - ciberheroe.google_module.etl: line 34
-         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 15:59:46 - ERROR - ciberheroe.google_module.etl: line 34
-         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 15:59:48 - ERROR - ciberheroe.google_module.etl: line 34
-         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 15:59:50 - ERROR - ciberheroe.google_module.etl: line 34
-         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 15:59:52 - ERROR - ciberheroe.google_module.etl: line 34
-         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 15:59:54 - ERROR - ciberheroe.google_module.etl: line 34
-         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 15:59:57 - ERROR - ciberheroe.google_module.etl: line 34
-         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 15:59:58 - ERROR - ciberheroe.google_module.etl: line 34
-         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 15:59:59 - ERROR - ciberheroe.google_module.etl: line 34
-         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:00:00 - ERROR - ciberheroe.google_module.etl: line 34
-         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:00:02 - ERROR - ciberheroe.google_module.etl: line 34
-         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:00:03 - ERROR - ciberheroe.google_module.etl: line 34
-         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:00:04 - ERROR - ciberheroe.google_module.etl: line 34
-         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:00:05 - ERROR - ciberheroe.google_module.etl: line 34
-         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:00:05 - ERROR - ciberheroe.google_module.etl: line 34
-         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:00:12 - ERROR - ciberheroe.google_module.etl: line 34
-         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:00:17 - ERROR - ciberheroe.google_module.etl: line 34
-         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:00:17 - ERROR - ciberheroe.google_module.etl: line 34
-         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:00:18 - ERROR - ciberheroe.google_module.etl: line 34
-         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:00:19 - ERROR - ciberheroe.google_module.etl: line 34
-         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:00:19 - ERROR - ciberheroe.google_module.etl: line 34
-         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:00:20 - ERROR - ciberheroe.google_module.etl: line 34
-         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:00:25 - ERROR - ciberheroe.google_module.etl: line 34
-         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:00:26 - ERROR - ciberheroe.google_module.etl: line 34
-         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:00:31 - ERROR - ciberheroe.google_module.etl: line 34
-         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:00:33 - ERROR - ciberheroe.google_module.etl: line 34
-         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:00:33 - ERROR - ciberheroe.google_module.etl: line 34
-         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:00:34 - ERROR - ciberheroe.google_module.etl: line 34
-         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:00:35 - ERROR - ciberheroe.google_module.etl: line 34
-         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:00:35 - ERROR - ciberheroe.google_module.etl: line 34
-         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:00:35 - ERROR - ciberheroe.google_module.etl: line 34
-         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:00:37 - ERROR - ciberheroe.google_module.etl: line 34
-         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:00:39 - ERROR - ciberheroe.google_module.etl: line 34
-         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:00:39 - ERROR - ciberheroe.google_module.etl: line 34
-         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:00:39 - ERROR - ciberheroe.google_module.etl: line 34
-         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:00:41 - ERROR - ciberheroe.google_module.etl: line 34
-         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:00:46 - ERROR - ciberheroe.google_module.etl: line 34
-         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:00:46 - ERROR - ciberheroe.google_module.etl: line 34
-         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:00:46 - ERROR - ciberheroe.google_module.etl: line 34
-         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:00:47 - ERROR - ciberheroe.google_module.etl: line 34
-         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:00:47 - ERROR - ciberheroe.google_module.etl: line 34
-         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:00:48 - ERROR - ciberheroe.google_module.etl: line 34
-         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:00:49 - ERROR - ciberheroe.google_module.etl: line 34
-         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:00:50 - ERROR - ciberheroe.google_module.etl: line 34
-         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:00:53 - ERROR - ciberheroe.google_module.etl: line 34
-         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:00:54 - ERROR - ciberheroe.google_module.etl: line 34
-         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:00:57 - ERROR - ciberheroe.google_module.etl: line 34
-         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:00:57 - ERROR - ciberheroe.google_module.etl: line 34
-         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:00:58 - ERROR - ciberheroe.google_module.etl: line 34
-         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:00:59 - ERROR - ciberheroe.google_module.etl: line 34
-         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:00:59 - ERROR - ciberheroe.google_module.etl: line 34
-         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:01:01 - ERROR - ciberheroe.google_module.etl: line 34
-         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:01:01 - ERROR - ciberheroe.google_module.etl: line 34
-         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:01:08 - ERROR - ciberheroe.google_module.etl: line 34
-         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:01:08 - ERROR - ciberheroe.google_module.etl: line 34
-         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:01:10 - ERROR - ciberheroe.google_module.etl: line 34
-         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:01:14 - ERROR - ciberheroe.google_module.etl: line 34
-         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:01:15 - ERROR - ciberheroe.google_module.etl: line 34
-         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:01:15 - ERROR - ciberheroe.google_module.etl: line 34
-         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:01:15 - ERROR - ciberheroe.google_module.etl: line 34
-         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:01:15 - ERROR - ciberheroe.google_module.etl: line 34
-         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:01:15 - ERROR - ciberheroe.google_module.etl: line 34
-         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:01:17 - ERROR - ciberheroe.google_module.etl: line 34
-         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:01:19 - ERROR - ciberheroe.google_module.etl: line 34
-         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:01:20 - ERROR - ciberheroe.google_module.etl: line 34
-         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:01:20 - ERROR - ciberheroe.google_module.etl: line 34
-         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:01:21 - ERROR - ciberheroe.google_module.etl: line 34
-         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:01:21 - ERROR - ciberheroe.google_module.etl: line 34
-         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:01:21 - ERROR - ciberheroe.google_module.etl: line 34
-         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:01:23 - ERROR - ciberheroe.google_module.etl: line 34
-         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:01:23 - ERROR - ciberheroe.google_module.etl: line 34
-         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:01:23 - ERROR - ciberheroe.google_module.etl: line 34
-         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:01:23 - ERROR - ciberheroe.google_module.etl: line 34
-         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:01:24 - ERROR - ciberheroe.google_module.etl: line 34
-         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:01:25 - ERROR - ciberheroe.google_module.etl: line 34
-         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:01:25 - ERROR - ciberheroe.google_module.etl: line 34
-         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:01:25 - ERROR - ciberheroe.google_module.etl: line 34
-         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:01:26 - ERROR - ciberheroe.google_module.etl: line 34
-         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:01:27 - ERROR - ciberheroe.google_module.etl: line 34
-         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:01:29 - ERROR - ciberheroe.google_module.etl: line 34
-         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:01:29 - ERROR - ciberheroe.google_module.etl: line 34
-         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:01:32 - ERROR - ciberheroe.google_module.etl: line 34
-         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:01:33 - ERROR - ciberheroe.google_module.etl: line 34
-         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:01:34 - ERROR - ciberheroe.google_module.etl: line 34
-         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:01:36 - ERROR - ciberheroe.google_module.etl: line 34
-         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:01:40 - ERROR - ciberheroe.google_module.etl: line 34
-         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:01:41 - ERROR - ciberheroe.google_module.etl: line 34
-         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:01:41 - ERROR - ciberheroe.google_module.etl: line 34
-         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:01:42 - ERROR - ciberheroe.google_module.etl: line 34
-         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:01:42 - ERROR - ciberheroe.google_module.etl: line 206
-         - Se han registrado 203 usuarios cuyo email no se puede acceder
-2026-05-25 16:01:42 - INFO - ciberheroe.google_module.etl: line 209
+2026-05-31 12:04:55 - INFO - ciberheroe.google_module.etl: line 72
+         - Extraídos los archivos con fecha de caducidad
+2026-05-31 12:04:55 - INFO - ciberheroe.google_module.etl: line 50
+         - Extraídos los archivos de visibilidad pública
+2026-05-31 12:04:55 - INFO - ciberheroe.google_module.etl: line 72
+         - Extraídos los archivos con fecha de caducidad
+2026-05-31 12:04:55 - INFO - ciberheroe.google_module.etl: line 50
+         - Extraídos los archivos de visibilidad pública
+2026-05-31 12:04:56 - INFO - ciberheroe.google_module.etl: line 47
+         - Extraídos los correos del usuario
+2026-05-31 12:04:56 - INFO - ciberheroe.google_module.etl: line 47
+         - Extraídos los correos del usuario
+2026-05-31 12:04:56 - INFO - ciberheroe.google_module.etl: line 47
+         - Extraídos los correos del usuario
+2026-05-31 12:04:56 - INFO - ciberheroe.google_module.etl: line 72
+         - Extraídos los archivos con fecha de caducidad
+2026-05-31 12:04:57 - INFO - ciberheroe.google_module.etl: line 50
+         - Extraídos los archivos de visibilidad pública
+2026-05-31 12:04:57 - INFO - ciberheroe.google_module.etl: line 50
+         - Extraídos los archivos de visibilidad pública
+2026-05-31 12:04:57 - INFO - ciberheroe.google_module.etl: line 50
+         - Extraídos los archivos de visibilidad pública
+2026-05-31 12:04:57 - INFO - ciberheroe.google_module.etl: line 47
+         - Extraídos los correos del usuario
+2026-05-31 12:04:57 - INFO - ciberheroe.google_module.etl: line 72
+         - Extraídos los archivos con fecha de caducidad
+2026-05-31 12:04:57 - INFO - ciberheroe.google_module.etl: line 72
+         - Extraídos los archivos con fecha de caducidad
+2026-05-31 12:04:57 - INFO - ciberheroe.google_module.etl: line 72
+         - Extraídos los archivos con fecha de caducidad
+2026-05-31 12:04:57 - INFO - ciberheroe.google_module.etl: line 47
+         - Extraídos los correos del usuario
+2026-05-31 12:04:58 - INFO - ciberheroe.google_module.etl: line 47
+         - Extraídos los correos del usuario
+2026-05-31 12:04:58 - INFO - ciberheroe.google_module.etl: line 47
+         - Extraídos los correos del usuario
+2026-05-31 12:04:58 - INFO - ciberheroe.google_module.etl: line 72
+         - Extraídos los archivos con fecha de caducidad
+2026-05-31 12:04:58 - INFO - ciberheroe.google_module.etl: line 50
+         - Extraídos los archivos de visibilidad pública
+2026-05-31 12:04:58 - INFO - ciberheroe.google_module.etl: line 72
+         - Extraídos los archivos con fecha de caducidad
+2026-05-31 12:04:59 - INFO - ciberheroe.google_module.etl: line 47
+         - Extraídos los correos del usuario
+2026-05-31 12:04:59 - INFO - ciberheroe.google_module.etl: line 50
+         - Extraídos los archivos de visibilidad pública
+2026-05-31 12:04:59 - INFO - ciberheroe.google_module.etl: line 47
+         - Extraídos los correos del usuario
+2026-05-31 12:04:59 - INFO - ciberheroe.google_module.etl: line 72
+         - Extraídos los archivos con fecha de caducidad
+2026-05-31 12:04:59 - INFO - ciberheroe.google_module.etl: line 50
+         - Extraídos los archivos de visibilidad pública
+2026-05-31 12:05:00 - INFO - ciberheroe.google_module.etl: line 47
+         - Extraídos los correos del usuario
+2026-05-31 12:05:00 - INFO - ciberheroe.google_module.etl: line 50
+         - Extraídos los archivos de visibilidad pública
+2026-05-31 12:05:00 - INFO - ciberheroe.google_module.etl: line 72
+         - Extraídos los archivos con fecha de caducidad
+2026-05-31 12:05:00 - INFO - ciberheroe.google_module.etl: line 50
+         - Extraídos los archivos de visibilidad pública
+2026-05-31 12:05:01 - ERROR - ciberheroe.google_module.etl: line 34
+         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
+2026-05-31 12:05:01 - INFO - ciberheroe.google_module.etl: line 47
+         - Extraídos los correos del usuario
+2026-05-31 12:05:02 - INFO - ciberheroe.google_module.etl: line 72
+         - Extraídos los archivos con fecha de caducidad
+2026-05-31 12:05:02 - INFO - ciberheroe.google_module.etl: line 47
+         - Extraídos los correos del usuario
+2026-05-31 12:05:02 - INFO - ciberheroe.google_module.etl: line 72
+         - Extraídos los archivos con fecha de caducidad
+2026-05-31 12:05:02 - INFO - ciberheroe.google_module.etl: line 50
+         - Extraídos los archivos de visibilidad pública
+2026-05-31 12:05:03 - INFO - ciberheroe.google_module.etl: line 72
+         - Extraídos los archivos con fecha de caducidad
+2026-05-31 12:05:03 - INFO - ciberheroe.google_module.etl: line 50
+         - Extraídos los archivos de visibilidad pública
+2026-05-31 12:05:03 - INFO - ciberheroe.google_module.etl: line 72
+         - Extraídos los archivos con fecha de caducidad
+2026-05-31 12:05:03 - INFO - ciberheroe.google_module.etl: line 50
+         - Extraídos los archivos de visibilidad pública
+2026-05-31 12:05:03 - INFO - ciberheroe.google_module.etl: line 47
+         - Extraídos los correos del usuario
+2026-05-31 12:05:03 - INFO - ciberheroe.google_module.etl: line 72
+         - Extraídos los archivos con fecha de caducidad
+2026-05-31 12:05:03 - INFO - ciberheroe.google_module.etl: line 50
+         - Extraídos los archivos de visibilidad pública
+2026-05-31 12:05:03 - INFO - ciberheroe.google_module.etl: line 47
+         - Extraídos los correos del usuario
+2026-05-31 12:05:03 - INFO - ciberheroe.google_module.etl: line 47
+         - Extraídos los correos del usuario
+2026-05-31 12:05:03 - INFO - ciberheroe.google_module.etl: line 72
+         - Extraídos los archivos con fecha de caducidad
+2026-05-31 12:05:03 - INFO - ciberheroe.google_module.etl: line 47
+         - Extraídos los correos del usuario
+2026-05-31 12:05:04 - INFO - ciberheroe.google_module.etl: line 50
+         - Extraídos los archivos de visibilidad pública
+2026-05-31 12:05:04 - INFO - ciberheroe.google_module.etl: line 50
+         - Extraídos los archivos de visibilidad pública
+2026-05-31 12:05:04 - INFO - ciberheroe.google_module.etl: line 72
+         - Extraídos los archivos con fecha de caducidad
+2026-05-31 12:05:04 - INFO - ciberheroe.google_module.etl: line 50
+         - Extraídos los archivos de visibilidad pública
+2026-05-31 12:05:04 - INFO - ciberheroe.google_module.etl: line 47
+         - Extraídos los correos del usuario
+2026-05-31 12:05:04 - INFO - ciberheroe.google_module.etl: line 72
+         - Extraídos los archivos con fecha de caducidad
+2026-05-31 12:05:04 - INFO - ciberheroe.google_module.etl: line 72
+         - Extraídos los archivos con fecha de caducidad
+2026-05-31 12:05:04 - INFO - ciberheroe.google_module.etl: line 50
+         - Extraídos los archivos de visibilidad pública
+2026-05-31 12:05:04 - INFO - ciberheroe.google_module.etl: line 72
+         - Extraídos los archivos con fecha de caducidad
+2026-05-31 12:05:04 - INFO - ciberheroe.google_module.etl: line 72
+         - Extraídos los archivos con fecha de caducidad
+2026-05-31 12:05:04 - INFO - ciberheroe.google_module.etl: line 47
+         - Extraídos los correos del usuario
+2026-05-31 12:05:04 - INFO - ciberheroe.google_module.etl: line 50
+         - Extraídos los archivos de visibilidad pública
+2026-05-31 12:05:05 - INFO - ciberheroe.google_module.etl: line 72
+         - Extraídos los archivos con fecha de caducidad
+2026-05-31 12:05:05 - INFO - ciberheroe.google_module.etl: line 72
+         - Extraídos los archivos con fecha de caducidad
+2026-05-31 12:05:05 - INFO - ciberheroe.google_module.etl: line 50
+         - Extraídos los archivos de visibilidad pública
+2026-05-31 12:05:05 - INFO - ciberheroe.google_module.etl: line 72
+         - Extraídos los archivos con fecha de caducidad
+2026-05-31 12:05:05 - INFO - ciberheroe.google_module.etl: line 47
+         - Extraídos los correos del usuario
+2026-05-31 12:05:05 - ERROR - ciberheroe.google_module.etl: line 34
+         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
+2026-05-31 12:05:05 - INFO - ciberheroe.google_module.etl: line 47
+         - Extraídos los correos del usuario
+2026-05-31 12:05:06 - ERROR - ciberheroe.google_module.etl: line 34
+         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
+2026-05-31 12:05:06 - INFO - ciberheroe.google_module.etl: line 47
+         - Extraídos los correos del usuario
+2026-05-31 12:05:06 - ERROR - ciberheroe.google_module.etl: line 34
+         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
+2026-05-31 12:05:06 - INFO - ciberheroe.google_module.etl: line 47
+         - Extraídos los correos del usuario
+2026-05-31 12:05:06 - ERROR - ciberheroe.google_module.etl: line 34
+         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
+2026-05-31 12:05:06 - INFO - ciberheroe.google_module.etl: line 47
+         - Extraídos los correos del usuario
+2026-05-31 12:05:06 - INFO - ciberheroe.google_module.etl: line 47
+         - Extraídos los correos del usuario
+2026-05-31 12:05:06 - INFO - ciberheroe.google_module.etl: line 50
+         - Extraídos los archivos de visibilidad pública
+2026-05-31 12:05:06 - INFO - ciberheroe.google_module.etl: line 50
+         - Extraídos los archivos de visibilidad pública
+2026-05-31 12:05:06 - INFO - ciberheroe.google_module.etl: line 50
+         - Extraídos los archivos de visibilidad pública
+2026-05-31 12:05:06 - ERROR - ciberheroe.google_module.etl: line 34
+         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
+2026-05-31 12:05:06 - INFO - ciberheroe.google_module.etl: line 47
+         - Extraídos los correos del usuario
+2026-05-31 12:05:07 - INFO - ciberheroe.google_module.etl: line 50
+         - Extraídos los archivos de visibilidad pública
+2026-05-31 12:05:07 - INFO - ciberheroe.google_module.etl: line 50
+         - Extraídos los archivos de visibilidad pública
+2026-05-31 12:05:07 - INFO - ciberheroe.google_module.etl: line 50
+         - Extraídos los archivos de visibilidad pública
+2026-05-31 12:05:07 - INFO - ciberheroe.google_module.etl: line 72
+         - Extraídos los archivos con fecha de caducidad
+2026-05-31 12:05:08 - INFO - ciberheroe.google_module.etl: line 72
+         - Extraídos los archivos con fecha de caducidad
+2026-05-31 12:05:08 - INFO - ciberheroe.google_module.etl: line 47
+         - Extraídos los correos del usuario
+2026-05-31 12:05:08 - INFO - ciberheroe.google_module.etl: line 47
+         - Extraídos los correos del usuario
+2026-05-31 12:05:09 - INFO - ciberheroe.google_module.etl: line 72
+         - Extraídos los archivos con fecha de caducidad
+2026-05-31 12:05:09 - INFO - ciberheroe.google_module.etl: line 50
+         - Extraídos los archivos de visibilidad pública
+2026-05-31 12:05:09 - INFO - ciberheroe.google_module.etl: line 72
+         - Extraídos los archivos con fecha de caducidad
+2026-05-31 12:05:09 - INFO - ciberheroe.google_module.etl: line 50
+         - Extraídos los archivos de visibilidad pública
+2026-05-31 12:05:09 - INFO - ciberheroe.google_module.etl: line 47
+         - Extraídos los correos del usuario
+2026-05-31 12:05:09 - INFO - ciberheroe.google_module.etl: line 47
+         - Extraídos los correos del usuario
+2026-05-31 12:05:09 - INFO - ciberheroe.google_module.etl: line 72
+         - Extraídos los archivos con fecha de caducidad
+2026-05-31 12:05:09 - INFO - ciberheroe.google_module.etl: line 72
+         - Extraídos los archivos con fecha de caducidad
+2026-05-31 12:05:10 - INFO - ciberheroe.google_module.etl: line 47
+         - Extraídos los correos del usuario
+2026-05-31 12:05:10 - INFO - ciberheroe.google_module.etl: line 50
+         - Extraídos los archivos de visibilidad pública
+2026-05-31 12:05:10 - INFO - ciberheroe.google_module.etl: line 50
+         - Extraídos los archivos de visibilidad pública
+2026-05-31 12:05:10 - INFO - ciberheroe.google_module.etl: line 72
+         - Extraídos los archivos con fecha de caducidad
+2026-05-31 12:05:10 - INFO - ciberheroe.google_module.etl: line 47
+         - Extraídos los correos del usuario
+2026-05-31 12:05:10 - INFO - ciberheroe.google_module.etl: line 72
+         - Extraídos los archivos con fecha de caducidad
+2026-05-31 12:05:10 - INFO - ciberheroe.google_module.etl: line 72
+         - Extraídos los archivos con fecha de caducidad
+2026-05-31 12:05:10 - INFO - ciberheroe.google_module.etl: line 47
+         - Extraídos los correos del usuario
+2026-05-31 12:05:11 - INFO - ciberheroe.google_module.etl: line 72
+         - Extraídos los archivos con fecha de caducidad
+2026-05-31 12:05:11 - INFO - ciberheroe.google_module.etl: line 50
+         - Extraídos los archivos de visibilidad pública
+2026-05-31 12:05:11 - INFO - ciberheroe.google_module.etl: line 47
+         - Extraídos los correos del usuario
+2026-05-31 12:05:11 - INFO - ciberheroe.google_module.etl: line 72
+         - Extraídos los archivos con fecha de caducidad
+2026-05-31 12:05:11 - INFO - ciberheroe.google_module.etl: line 72
+         - Extraídos los archivos con fecha de caducidad
+2026-05-31 12:05:11 - INFO - ciberheroe.google_module.etl: line 50
+         - Extraídos los archivos de visibilidad pública
+2026-05-31 12:05:11 - INFO - ciberheroe.google_module.etl: line 72
+         - Extraídos los archivos con fecha de caducidad
+2026-05-31 12:05:11 - INFO - ciberheroe.google_module.etl: line 50
+         - Extraídos los archivos de visibilidad pública
+2026-05-31 12:05:11 - INFO - ciberheroe.google_module.etl: line 47
+         - Extraídos los correos del usuario
+2026-05-31 12:05:11 - INFO - ciberheroe.google_module.etl: line 72
+         - Extraídos los archivos con fecha de caducidad
+2026-05-31 12:05:11 - INFO - ciberheroe.google_module.etl: line 47
+         - Extraídos los correos del usuario
+2026-05-31 12:05:12 - ERROR - ciberheroe.google_module.etl: line 34
+         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
+2026-05-31 12:05:12 - INFO - ciberheroe.google_module.etl: line 47
+         - Extraídos los correos del usuario
+2026-05-31 12:05:12 - INFO - ciberheroe.google_module.etl: line 47
+         - Extraídos los correos del usuario
+2026-05-31 12:05:12 - INFO - ciberheroe.google_module.etl: line 50
+         - Extraídos los archivos de visibilidad pública
+2026-05-31 12:05:12 - INFO - ciberheroe.google_module.etl: line 50
+         - Extraídos los archivos de visibilidad pública
+2026-05-31 12:05:12 - INFO - ciberheroe.google_module.etl: line 72
+         - Extraídos los archivos con fecha de caducidad
+2026-05-31 12:05:12 - INFO - ciberheroe.google_module.etl: line 50
+         - Extraídos los archivos de visibilidad pública
+2026-05-31 12:05:12 - INFO - ciberheroe.google_module.etl: line 50
+         - Extraídos los archivos de visibilidad pública
+2026-05-31 12:05:12 - INFO - ciberheroe.google_module.etl: line 50
+         - Extraídos los archivos de visibilidad pública
+2026-05-31 12:05:12 - ERROR - ciberheroe.google_module.etl: line 34
+         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
+2026-05-31 12:05:12 - INFO - ciberheroe.google_module.etl: line 47
+         - Extraídos los correos del usuario
+2026-05-31 12:05:13 - INFO - ciberheroe.google_module.etl: line 47
+         - Extraídos los correos del usuario
+2026-05-31 12:05:13 - ERROR - ciberheroe.google_module.etl: line 34
+         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
+2026-05-31 12:05:13 - INFO - ciberheroe.google_module.etl: line 47
+         - Extraídos los correos del usuario
+2026-05-31 12:05:13 - INFO - ciberheroe.google_module.etl: line 50
+         - Extraídos los archivos de visibilidad pública
+2026-05-31 12:05:13 - INFO - ciberheroe.google_module.etl: line 50
+         - Extraídos los archivos de visibilidad pública
+2026-05-31 12:05:14 - INFO - ciberheroe.google_module.etl: line 50
+         - Extraídos los archivos de visibilidad pública
+2026-05-31 12:05:14 - INFO - ciberheroe.google_module.etl: line 72
+         - Extraídos los archivos con fecha de caducidad
+2026-05-31 12:05:14 - INFO - ciberheroe.google_module.etl: line 72
+         - Extraídos los archivos con fecha de caducidad
+2026-05-31 12:05:14 - INFO - ciberheroe.google_module.etl: line 72
+         - Extraídos los archivos con fecha de caducidad
+2026-05-31 12:05:14 - INFO - ciberheroe.google_module.etl: line 72
+         - Extraídos los archivos con fecha de caducidad
+2026-05-31 12:05:14 - INFO - ciberheroe.google_module.etl: line 72
+         - Extraídos los archivos con fecha de caducidad
+2026-05-31 12:05:15 - INFO - ciberheroe.google_module.etl: line 47
+         - Extraídos los correos del usuario
+2026-05-31 12:05:15 - INFO - ciberheroe.google_module.etl: line 47
+         - Extraídos los correos del usuario
+2026-05-31 12:05:15 - INFO - ciberheroe.google_module.etl: line 47
+         - Extraídos los correos del usuario
+2026-05-31 12:05:15 - ERROR - ciberheroe.google_module.etl: line 34
+         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
+2026-05-31 12:05:15 - INFO - ciberheroe.google_module.etl: line 47
+         - Extraídos los correos del usuario
+2026-05-31 12:05:15 - ERROR - ciberheroe.google_module.etl: line 34
+         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
+2026-05-31 12:05:15 - INFO - ciberheroe.google_module.etl: line 47
+         - Extraídos los correos del usuario
+2026-05-31 12:05:15 - INFO - ciberheroe.google_module.etl: line 50
+         - Extraídos los archivos de visibilidad pública
+2026-05-31 12:05:16 - INFO - ciberheroe.google_module.etl: line 50
+         - Extraídos los archivos de visibilidad pública
+2026-05-31 12:05:16 - INFO - ciberheroe.google_module.etl: line 50
+         - Extraídos los archivos de visibilidad pública
+2026-05-31 12:05:16 - INFO - ciberheroe.google_module.etl: line 72
+         - Extraídos los archivos con fecha de caducidad
+2026-05-31 12:05:16 - INFO - ciberheroe.google_module.etl: line 72
+         - Extraídos los archivos con fecha de caducidad
+2026-05-31 12:05:16 - INFO - ciberheroe.google_module.etl: line 50
+         - Extraídos los archivos de visibilidad pública
+2026-05-31 12:05:16 - INFO - ciberheroe.google_module.etl: line 72
+         - Extraídos los archivos con fecha de caducidad
+2026-05-31 12:05:16 - INFO - ciberheroe.google_module.etl: line 50
+         - Extraídos los archivos de visibilidad pública
+2026-05-31 12:05:17 - INFO - ciberheroe.google_module.etl: line 72
+         - Extraídos los archivos con fecha de caducidad
+2026-05-31 12:05:17 - INFO - ciberheroe.google_module.etl: line 72
+         - Extraídos los archivos con fecha de caducidad
+2026-05-31 12:05:17 - INFO - ciberheroe.google_module.etl: line 47
+         - Extraídos los correos del usuario
+2026-05-31 12:05:17 - INFO - ciberheroe.google_module.etl: line 47
+         - Extraídos los correos del usuario
+2026-05-31 12:05:17 - ERROR - ciberheroe.google_module.etl: line 34
+         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
+2026-05-31 12:05:17 - INFO - ciberheroe.google_module.etl: line 47
+         - Extraídos los correos del usuario
+2026-05-31 12:05:18 - ERROR - ciberheroe.google_module.etl: line 34
+         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
+2026-05-31 12:05:18 - INFO - ciberheroe.google_module.etl: line 47
+         - Extraídos los correos del usuario
+2026-05-31 12:05:18 - ERROR - ciberheroe.google_module.etl: line 34
+         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
+2026-05-31 12:05:18 - INFO - ciberheroe.google_module.etl: line 47
+         - Extraídos los correos del usuario
+2026-05-31 12:05:18 - INFO - ciberheroe.google_module.etl: line 50
+         - Extraídos los archivos de visibilidad pública
+2026-05-31 12:05:18 - INFO - ciberheroe.google_module.etl: line 50
+         - Extraídos los archivos de visibilidad pública
+2026-05-31 12:05:18 - INFO - ciberheroe.google_module.etl: line 72
+         - Extraídos los archivos con fecha de caducidad
+2026-05-31 12:05:18 - INFO - ciberheroe.google_module.etl: line 50
+         - Extraídos los archivos de visibilidad pública
+2026-05-31 12:05:18 - INFO - ciberheroe.google_module.etl: line 50
+         - Extraídos los archivos de visibilidad pública
+2026-05-31 12:05:19 - INFO - ciberheroe.google_module.etl: line 50
+         - Extraídos los archivos de visibilidad pública
+2026-05-31 12:05:19 - INFO - ciberheroe.google_module.etl: line 50
+         - Extraídos los archivos de visibilidad pública
+2026-05-31 12:05:19 - INFO - ciberheroe.google_module.etl: line 72
+         - Extraídos los archivos con fecha de caducidad
+2026-05-31 12:05:20 - ERROR - ciberheroe.google_module.etl: line 34
+         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
+2026-05-31 12:05:20 - INFO - ciberheroe.google_module.etl: line 47
+         - Extraídos los correos del usuario
+2026-05-31 12:05:21 - INFO - ciberheroe.google_module.etl: line 72
+         - Extraídos los archivos con fecha de caducidad
+2026-05-31 12:05:21 - INFO - ciberheroe.google_module.etl: line 50
+         - Extraídos los archivos de visibilidad pública
+2026-05-31 12:05:21 - INFO - ciberheroe.google_module.etl: line 72
+         - Extraídos los archivos con fecha de caducidad
+2026-05-31 12:05:21 - ERROR - ciberheroe.google_module.etl: line 34
+         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
+2026-05-31 12:05:21 - INFO - ciberheroe.google_module.etl: line 47
+         - Extraídos los correos del usuario
+2026-05-31 12:05:21 - INFO - ciberheroe.google_module.etl: line 72
+         - Extraídos los archivos con fecha de caducidad
+2026-05-31 12:05:21 - INFO - ciberheroe.google_module.etl: line 72
+         - Extraídos los archivos con fecha de caducidad
+2026-05-31 12:05:21 - INFO - ciberheroe.google_module.etl: line 47
+         - Extraídos los correos del usuario
+2026-05-31 12:05:21 - INFO - ciberheroe.google_module.etl: line 47
+         - Extraídos los correos del usuario
+2026-05-31 12:05:21 - INFO - ciberheroe.google_module.etl: line 50
+         - Extraídos los archivos de visibilidad pública
+2026-05-31 12:05:21 - INFO - ciberheroe.google_module.etl: line 47
+         - Extraídos los correos del usuario
+2026-05-31 12:05:21 - INFO - ciberheroe.google_module.etl: line 72
+         - Extraídos los archivos con fecha de caducidad
+2026-05-31 12:05:21 - INFO - ciberheroe.google_module.etl: line 72
+         - Extraídos los archivos con fecha de caducidad
+2026-05-31 12:05:22 - INFO - ciberheroe.google_module.etl: line 72
+         - Extraídos los archivos con fecha de caducidad
+2026-05-31 12:05:22 - INFO - ciberheroe.google_module.etl: line 50
+         - Extraídos los archivos de visibilidad pública
+2026-05-31 12:05:22 - INFO - ciberheroe.google_module.etl: line 50
+         - Extraídos los archivos de visibilidad pública
+2026-05-31 12:05:22 - INFO - ciberheroe.google_module.etl: line 50
+         - Extraídos los archivos de visibilidad pública
+2026-05-31 12:05:22 - INFO - ciberheroe.google_module.etl: line 47
+         - Extraídos los correos del usuario
+2026-05-31 12:05:22 - INFO - ciberheroe.google_module.etl: line 72
+         - Extraídos los archivos con fecha de caducidad
+2026-05-31 12:05:22 - INFO - ciberheroe.google_module.etl: line 72
+         - Extraídos los archivos con fecha de caducidad
+2026-05-31 12:05:22 - ERROR - ciberheroe.google_module.etl: line 34
+         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
+2026-05-31 12:05:22 - INFO - ciberheroe.google_module.etl: line 47
+         - Extraídos los correos del usuario
+2026-05-31 12:05:23 - INFO - ciberheroe.google_module.etl: line 47
+         - Extraídos los correos del usuario
+2026-05-31 12:05:23 - INFO - ciberheroe.google_module.etl: line 50
+         - Extraídos los archivos de visibilidad pública
+2026-05-31 12:05:23 - ERROR - ciberheroe.google_module.etl: line 34
+         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
+2026-05-31 12:05:23 - INFO - ciberheroe.google_module.etl: line 47
+         - Extraídos los correos del usuario
+2026-05-31 12:05:23 - INFO - ciberheroe.google_module.etl: line 50
+         - Extraídos los archivos de visibilidad pública
+2026-05-31 12:05:23 - ERROR - ciberheroe.google_module.etl: line 34
+         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
+2026-05-31 12:05:23 - INFO - ciberheroe.google_module.etl: line 47
+         - Extraídos los correos del usuario
+2026-05-31 12:05:23 - INFO - ciberheroe.google_module.etl: line 50
+         - Extraídos los archivos de visibilidad pública
+2026-05-31 12:05:24 - INFO - ciberheroe.google_module.etl: line 72
+         - Extraídos los archivos con fecha de caducidad
+2026-05-31 12:05:24 - ERROR - ciberheroe.google_module.etl: line 34
+         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
+2026-05-31 12:05:24 - INFO - ciberheroe.google_module.etl: line 47
+         - Extraídos los correos del usuario
+2026-05-31 12:05:24 - INFO - ciberheroe.google_module.etl: line 50
+         - Extraídos los archivos de visibilidad pública
+2026-05-31 12:05:24 - INFO - ciberheroe.google_module.etl: line 72
+         - Extraídos los archivos con fecha de caducidad
+2026-05-31 12:05:24 - INFO - ciberheroe.google_module.etl: line 50
+         - Extraídos los archivos de visibilidad pública
+2026-05-31 12:05:24 - INFO - ciberheroe.google_module.etl: line 72
+         - Extraídos los archivos con fecha de caducidad
+2026-05-31 12:05:24 - INFO - ciberheroe.google_module.etl: line 47
+         - Extraídos los correos del usuario
+2026-05-31 12:05:24 - INFO - ciberheroe.google_module.etl: line 47
+         - Extraídos los correos del usuario
+2026-05-31 12:05:24 - INFO - ciberheroe.google_module.etl: line 72
+         - Extraídos los archivos con fecha de caducidad
+2026-05-31 12:05:24 - INFO - ciberheroe.google_module.etl: line 50
+         - Extraídos los archivos de visibilidad pública
+2026-05-31 12:05:25 - INFO - ciberheroe.google_module.etl: line 47
+         - Extraídos los correos del usuario
+2026-05-31 12:05:25 - INFO - ciberheroe.google_module.etl: line 72
+         - Extraídos los archivos con fecha de caducidad
+2026-05-31 12:05:25 - INFO - ciberheroe.google_module.etl: line 50
+         - Extraídos los archivos de visibilidad pública
+2026-05-31 12:05:25 - INFO - ciberheroe.google_module.etl: line 50
+         - Extraídos los archivos de visibilidad pública
+2026-05-31 12:05:26 - INFO - ciberheroe.google_module.etl: line 72
+         - Extraídos los archivos con fecha de caducidad
+2026-05-31 12:05:26 - INFO - ciberheroe.google_module.etl: line 72
+         - Extraídos los archivos con fecha de caducidad
+2026-05-31 12:05:26 - ERROR - ciberheroe.google_module.etl: line 34
+         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
+2026-05-31 12:05:26 - INFO - ciberheroe.google_module.etl: line 47
+         - Extraídos los correos del usuario
+2026-05-31 12:05:26 - INFO - ciberheroe.google_module.etl: line 47
+         - Extraídos los correos del usuario
+2026-05-31 12:05:26 - INFO - ciberheroe.google_module.etl: line 72
+         - Extraídos los archivos con fecha de caducidad
+2026-05-31 12:05:26 - ERROR - ciberheroe.google_module.etl: line 34
+         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
+2026-05-31 12:05:26 - INFO - ciberheroe.google_module.etl: line 47
+         - Extraídos los correos del usuario
+2026-05-31 12:05:26 - INFO - ciberheroe.google_module.etl: line 47
+         - Extraídos los correos del usuario
+2026-05-31 12:05:27 - INFO - ciberheroe.google_module.etl: line 47
+         - Extraídos los correos del usuario
+2026-05-31 12:05:27 - INFO - ciberheroe.google_module.etl: line 50
+         - Extraídos los archivos de visibilidad pública
+2026-05-31 12:05:27 - INFO - ciberheroe.google_module.etl: line 50
+         - Extraídos los archivos de visibilidad pública
+2026-05-31 12:05:27 - INFO - ciberheroe.google_module.etl: line 50
+         - Extraídos los archivos de visibilidad pública
+2026-05-31 12:05:27 - INFO - ciberheroe.google_module.etl: line 72
+         - Extraídos los archivos con fecha de caducidad
+2026-05-31 12:05:27 - INFO - ciberheroe.google_module.etl: line 50
+         - Extraídos los archivos de visibilidad pública
+2026-05-31 12:05:27 - INFO - ciberheroe.google_module.etl: line 72
+         - Extraídos los archivos con fecha de caducidad
+2026-05-31 12:05:27 - INFO - ciberheroe.google_module.etl: line 72
+         - Extraídos los archivos con fecha de caducidad
+2026-05-31 12:05:27 - INFO - ciberheroe.google_module.etl: line 50
+         - Extraídos los archivos de visibilidad pública
+2026-05-31 12:05:27 - INFO - ciberheroe.google_module.etl: line 72
+         - Extraídos los archivos con fecha de caducidad
+2026-05-31 12:05:27 - INFO - ciberheroe.google_module.etl: line 47
+         - Extraídos los correos del usuario
+2026-05-31 12:05:28 - INFO - ciberheroe.google_module.etl: line 47
+         - Extraídos los correos del usuario
+2026-05-31 12:05:28 - INFO - ciberheroe.google_module.etl: line 72
+         - Extraídos los archivos con fecha de caducidad
+2026-05-31 12:05:28 - INFO - ciberheroe.google_module.etl: line 47
+         - Extraídos los correos del usuario
+2026-05-31 12:05:28 - INFO - ciberheroe.google_module.etl: line 72
+         - Extraídos los archivos con fecha de caducidad
+2026-05-31 12:05:28 - INFO - ciberheroe.google_module.etl: line 50
+         - Extraídos los archivos de visibilidad pública
+2026-05-31 12:05:29 - INFO - ciberheroe.google_module.etl: line 50
+         - Extraídos los archivos de visibilidad pública
+2026-05-31 12:05:29 - INFO - ciberheroe.google_module.etl: line 47
+         - Extraídos los correos del usuario
+2026-05-31 12:05:29 - ERROR - ciberheroe.google_module.etl: line 34
+         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
+2026-05-31 12:05:29 - INFO - ciberheroe.google_module.etl: line 47
+         - Extraídos los correos del usuario
+2026-05-31 12:05:29 - ERROR - ciberheroe.google_module.etl: line 34
+         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
+2026-05-31 12:05:29 - INFO - ciberheroe.google_module.etl: line 47
+         - Extraídos los correos del usuario
+2026-05-31 12:05:29 - INFO - ciberheroe.google_module.etl: line 50
+         - Extraídos los archivos de visibilidad pública
+2026-05-31 12:05:29 - INFO - ciberheroe.google_module.etl: line 50
+         - Extraídos los archivos de visibilidad pública
+2026-05-31 12:05:29 - INFO - ciberheroe.google_module.etl: line 72
+         - Extraídos los archivos con fecha de caducidad
+2026-05-31 12:05:30 - INFO - ciberheroe.google_module.etl: line 50
+         - Extraídos los archivos de visibilidad pública
+2026-05-31 12:05:30 - INFO - ciberheroe.google_module.etl: line 47
+         - Extraídos los correos del usuario
+2026-05-31 12:05:31 - INFO - ciberheroe.google_module.etl: line 72
+         - Extraídos los archivos con fecha de caducidad
+2026-05-31 12:05:31 - INFO - ciberheroe.google_module.etl: line 50
+         - Extraídos los archivos de visibilidad pública
+2026-05-31 12:05:31 - INFO - ciberheroe.google_module.etl: line 47
+         - Extraídos los correos del usuario
+2026-05-31 12:05:31 - INFO - ciberheroe.google_module.etl: line 50
+         - Extraídos los archivos de visibilidad pública
+2026-05-31 12:05:32 - INFO - ciberheroe.google_module.etl: line 50
+         - Extraídos los archivos de visibilidad pública
+2026-05-31 12:05:32 - INFO - ciberheroe.google_module.etl: line 72
+         - Extraídos los archivos con fecha de caducidad
+2026-05-31 12:05:33 - INFO - ciberheroe.google_module.etl: line 47
+         - Extraídos los correos del usuario
+2026-05-31 12:05:33 - INFO - ciberheroe.google_module.etl: line 72
+         - Extraídos los archivos con fecha de caducidad
+2026-05-31 12:05:33 - INFO - ciberheroe.google_module.etl: line 72
+         - Extraídos los archivos con fecha de caducidad
+2026-05-31 12:05:33 - INFO - ciberheroe.google_module.etl: line 72
+         - Extraídos los archivos con fecha de caducidad
+2026-05-31 12:05:33 - INFO - ciberheroe.google_module.etl: line 47
+         - Extraídos los correos del usuario
+2026-05-31 12:05:33 - INFO - ciberheroe.google_module.etl: line 50
+         - Extraídos los archivos de visibilidad pública
+2026-05-31 12:05:34 - INFO - ciberheroe.google_module.etl: line 47
+         - Extraídos los correos del usuario
+2026-05-31 12:05:34 - INFO - ciberheroe.google_module.etl: line 47
+         - Extraídos los correos del usuario
+2026-05-31 12:05:34 - INFO - ciberheroe.google_module.etl: line 50
+         - Extraídos los archivos de visibilidad pública
+2026-05-31 12:05:34 - INFO - ciberheroe.google_module.etl: line 50
+         - Extraídos los archivos de visibilidad pública
+2026-05-31 12:05:34 - INFO - ciberheroe.google_module.etl: line 50
+         - Extraídos los archivos de visibilidad pública
+2026-05-31 12:05:35 - INFO - ciberheroe.google_module.etl: line 72
+         - Extraídos los archivos con fecha de caducidad
+2026-05-31 12:05:35 - INFO - ciberheroe.google_module.etl: line 72
+         - Extraídos los archivos con fecha de caducidad
+2026-05-31 12:05:35 - INFO - ciberheroe.google_module.etl: line 47
+         - Extraídos los correos del usuario
+2026-05-31 12:05:35 - INFO - ciberheroe.google_module.etl: line 50
+         - Extraídos los archivos de visibilidad pública
+2026-05-31 12:05:35 - INFO - ciberheroe.google_module.etl: line 47
+         - Extraídos los correos del usuario
+2026-05-31 12:05:36 - INFO - ciberheroe.google_module.etl: line 72
+         - Extraídos los archivos con fecha de caducidad
+2026-05-31 12:05:36 - INFO - ciberheroe.google_module.etl: line 72
+         - Extraídos los archivos con fecha de caducidad
+2026-05-31 12:05:36 - INFO - ciberheroe.google_module.etl: line 50
+         - Extraídos los archivos de visibilidad pública
+2026-05-31 12:05:36 - INFO - ciberheroe.google_module.etl: line 47
+         - Extraídos los correos del usuario
+2026-05-31 12:05:37 - INFO - ciberheroe.google_module.etl: line 47
+         - Extraídos los correos del usuario
+2026-05-31 12:05:37 - INFO - ciberheroe.google_module.etl: line 50
+         - Extraídos los archivos de visibilidad pública
+2026-05-31 12:05:37 - INFO - ciberheroe.google_module.etl: line 72
+         - Extraídos los archivos con fecha de caducidad
+2026-05-31 12:05:37 - INFO - ciberheroe.google_module.etl: line 72
+         - Extraídos los archivos con fecha de caducidad
+2026-05-31 12:05:37 - INFO - ciberheroe.google_module.etl: line 72
+         - Extraídos los archivos con fecha de caducidad
+2026-05-31 12:05:38 - INFO - ciberheroe.google_module.etl: line 47
+         - Extraídos los correos del usuario
+2026-05-31 12:05:38 - INFO - ciberheroe.google_module.etl: line 50
+         - Extraídos los archivos de visibilidad pública
+2026-05-31 12:05:38 - ERROR - ciberheroe.google_module.etl: line 34
+         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
+2026-05-31 12:05:38 - INFO - ciberheroe.google_module.etl: line 47
+         - Extraídos los correos del usuario
+2026-05-31 12:05:39 - ERROR - ciberheroe.google_module.etl: line 34
+         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
+2026-05-31 12:05:39 - INFO - ciberheroe.google_module.etl: line 47
+         - Extraídos los correos del usuario
+2026-05-31 12:05:39 - INFO - ciberheroe.google_module.etl: line 50
+         - Extraídos los archivos de visibilidad pública
+2026-05-31 12:05:39 - INFO - ciberheroe.google_module.etl: line 50
+         - Extraídos los archivos de visibilidad pública
+2026-05-31 12:05:39 - INFO - ciberheroe.google_module.etl: line 72
+         - Extraídos los archivos con fecha de caducidad
+2026-05-31 12:05:40 - INFO - ciberheroe.google_module.etl: line 72
+         - Extraídos los archivos con fecha de caducidad
+2026-05-31 12:05:40 - INFO - ciberheroe.google_module.etl: line 47
+         - Extraídos los correos del usuario
+2026-05-31 12:05:40 - INFO - ciberheroe.google_module.etl: line 47
+         - Extraídos los correos del usuario
+2026-05-31 12:05:41 - INFO - ciberheroe.google_module.etl: line 50
+         - Extraídos los archivos de visibilidad pública
+2026-05-31 12:05:41 - INFO - ciberheroe.google_module.etl: line 50
+         - Extraídos los archivos de visibilidad pública
+2026-05-31 12:05:41 - INFO - ciberheroe.google_module.etl: line 72
+         - Extraídos los archivos con fecha de caducidad
+2026-05-31 12:05:41 - INFO - ciberheroe.google_module.etl: line 72
+         - Extraídos los archivos con fecha de caducidad
+2026-05-31 12:05:42 - INFO - ciberheroe.google_module.etl: line 47
+         - Extraídos los correos del usuario
+2026-05-31 12:05:43 - INFO - ciberheroe.google_module.etl: line 50
+         - Extraídos los archivos de visibilidad pública
+2026-05-31 12:05:43 - ERROR - ciberheroe.google_module.etl: line 34
+         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
+2026-05-31 12:05:43 - INFO - ciberheroe.google_module.etl: line 47
+         - Extraídos los correos del usuario
+2026-05-31 12:05:43 - INFO - ciberheroe.google_module.etl: line 72
+         - Extraídos los archivos con fecha de caducidad
+2026-05-31 12:05:44 - INFO - ciberheroe.google_module.etl: line 50
+         - Extraídos los archivos de visibilidad pública
+2026-05-31 12:05:44 - INFO - ciberheroe.google_module.etl: line 47
+         - Extraídos los correos del usuario
+2026-05-31 12:05:44 - INFO - ciberheroe.google_module.etl: line 50
+         - Extraídos los archivos de visibilidad pública
+2026-05-31 12:05:44 - INFO - ciberheroe.google_module.etl: line 50
+         - Extraídos los archivos de visibilidad pública
+2026-05-31 12:05:45 - INFO - ciberheroe.google_module.etl: line 72
+         - Extraídos los archivos con fecha de caducidad
+2026-05-31 12:05:45 - INFO - ciberheroe.google_module.etl: line 72
+         - Extraídos los archivos con fecha de caducidad
+2026-05-31 12:05:45 - INFO - ciberheroe.google_module.etl: line 72
+         - Extraídos los archivos con fecha de caducidad
+2026-05-31 12:05:45 - INFO - ciberheroe.google_module.etl: line 47
+         - Extraídos los correos del usuario
+2026-05-31 12:05:46 - INFO - ciberheroe.google_module.etl: line 47
+         - Extraídos los correos del usuario
+2026-05-31 12:05:46 - INFO - ciberheroe.google_module.etl: line 72
+         - Extraídos los archivos con fecha de caducidad
+2026-05-31 12:05:46 - INFO - ciberheroe.google_module.etl: line 47
+         - Extraídos los correos del usuario
+2026-05-31 12:05:46 - INFO - ciberheroe.google_module.etl: line 50
+         - Extraídos los archivos de visibilidad pública
+2026-05-31 12:05:46 - INFO - ciberheroe.google_module.etl: line 47
+         - Extraídos los correos del usuario
+2026-05-31 12:05:46 - INFO - ciberheroe.google_module.etl: line 50
+         - Extraídos los archivos de visibilidad pública
+2026-05-31 12:05:47 - INFO - ciberheroe.google_module.etl: line 50
+         - Extraídos los archivos de visibilidad pública
+2026-05-31 12:05:47 - INFO - ciberheroe.google_module.etl: line 50
+         - Extraídos los archivos de visibilidad pública
+2026-05-31 12:05:47 - INFO - ciberheroe.google_module.etl: line 72
+         - Extraídos los archivos con fecha de caducidad
+2026-05-31 12:05:47 - INFO - ciberheroe.google_module.etl: line 72
+         - Extraídos los archivos con fecha de caducidad
+2026-05-31 12:05:47 - INFO - ciberheroe.google_module.etl: line 72
+         - Extraídos los archivos con fecha de caducidad
+2026-05-31 12:05:48 - INFO - ciberheroe.google_module.etl: line 47
+         - Extraídos los correos del usuario
+2026-05-31 12:05:48 - INFO - ciberheroe.google_module.etl: line 47
+         - Extraídos los correos del usuario
+2026-05-31 12:05:48 - INFO - ciberheroe.google_module.etl: line 50
+         - Extraídos los archivos de visibilidad pública
+2026-05-31 12:05:49 - ERROR - ciberheroe.google_module.etl: line 34
+         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
+2026-05-31 12:05:49 - INFO - ciberheroe.google_module.etl: line 47
+         - Extraídos los correos del usuario
+2026-05-31 12:05:49 - INFO - ciberheroe.google_module.etl: line 72
+         - Extraídos los archivos con fecha de caducidad
+2026-05-31 12:05:49 - INFO - ciberheroe.google_module.etl: line 50
+         - Extraídos los archivos de visibilidad pública
+2026-05-31 12:05:49 - INFO - ciberheroe.google_module.etl: line 50
+         - Extraídos los archivos de visibilidad pública
+2026-05-31 12:05:50 - INFO - ciberheroe.google_module.etl: line 47
+         - Extraídos los correos del usuario
+2026-05-31 12:05:50 - INFO - ciberheroe.google_module.etl: line 50
+         - Extraídos los archivos de visibilidad pública
+2026-05-31 12:05:50 - INFO - ciberheroe.google_module.etl: line 50
+         - Extraídos los archivos de visibilidad pública
+2026-05-31 12:05:51 - INFO - ciberheroe.google_module.etl: line 72
+         - Extraídos los archivos con fecha de caducidad
+2026-05-31 12:05:51 - INFO - ciberheroe.google_module.etl: line 47
+         - Extraídos los correos del usuario
+2026-05-31 12:05:52 - INFO - ciberheroe.google_module.etl: line 72
+         - Extraídos los archivos con fecha de caducidad
+2026-05-31 12:05:52 - INFO - ciberheroe.google_module.etl: line 50
+         - Extraídos los archivos de visibilidad pública
+2026-05-31 12:05:53 - INFO - ciberheroe.google_module.etl: line 47
+         - Extraídos los correos del usuario
+2026-05-31 12:05:53 - INFO - ciberheroe.google_module.etl: line 72
+         - Extraídos los archivos con fecha de caducidad
+2026-05-31 12:05:54 - INFO - ciberheroe.google_module.etl: line 50
+         - Extraídos los archivos de visibilidad pública
+2026-05-31 12:05:54 - INFO - ciberheroe.google_module.etl: line 47
+         - Extraídos los correos del usuario
+2026-05-31 12:05:54 - INFO - ciberheroe.google_module.etl: line 72
+         - Extraídos los archivos con fecha de caducidad
+2026-05-31 12:05:54 - INFO - ciberheroe.google_module.etl: line 47
+         - Extraídos los correos del usuario
+2026-05-31 12:05:54 - INFO - ciberheroe.google_module.etl: line 50
+         - Extraídos los archivos de visibilidad pública
+2026-05-31 12:05:55 - INFO - ciberheroe.google_module.etl: line 72
+         - Extraídos los archivos con fecha de caducidad
+2026-05-31 12:05:55 - INFO - ciberheroe.google_module.etl: line 50
+         - Extraídos los archivos de visibilidad pública
+2026-05-31 12:05:55 - INFO - ciberheroe.google_module.etl: line 47
+         - Extraídos los correos del usuario
+2026-05-31 12:05:56 - INFO - ciberheroe.google_module.etl: line 72
+         - Extraídos los archivos con fecha de caducidad
+2026-05-31 12:05:56 - INFO - ciberheroe.google_module.etl: line 72
+         - Extraídos los archivos con fecha de caducidad
+2026-05-31 12:05:56 - INFO - ciberheroe.google_module.etl: line 72
+         - Extraídos los archivos con fecha de caducidad
+2026-05-31 12:05:56 - INFO - ciberheroe.google_module.etl: line 47
+         - Extraídos los correos del usuario
+2026-05-31 12:05:56 - INFO - ciberheroe.google_module.etl: line 47
+         - Extraídos los correos del usuario
+2026-05-31 12:05:56 - INFO - ciberheroe.google_module.etl: line 47
+         - Extraídos los correos del usuario
+2026-05-31 12:05:57 - INFO - ciberheroe.google_module.etl: line 72
+         - Extraídos los archivos con fecha de caducidad
+2026-05-31 12:05:57 - INFO - ciberheroe.google_module.etl: line 72
+         - Extraídos los archivos con fecha de caducidad
+2026-05-31 12:05:57 - INFO - ciberheroe.google_module.etl: line 50
+         - Extraídos los archivos de visibilidad pública
+2026-05-31 12:05:57 - INFO - ciberheroe.google_module.etl: line 50
+         - Extraídos los archivos de visibilidad pública
+2026-05-31 12:05:57 - INFO - ciberheroe.google_module.etl: line 47
+         - Extraídos los correos del usuario
+2026-05-31 12:05:57 - INFO - ciberheroe.google_module.etl: line 47
+         - Extraídos los correos del usuario
+2026-05-31 12:05:57 - INFO - ciberheroe.google_module.etl: line 50
+         - Extraídos los archivos de visibilidad pública
+2026-05-31 12:05:57 - INFO - ciberheroe.google_module.etl: line 72
+         - Extraídos los archivos con fecha de caducidad
+2026-05-31 12:05:57 - INFO - ciberheroe.google_module.etl: line 50
+         - Extraídos los archivos de visibilidad pública
+2026-05-31 12:05:58 - INFO - ciberheroe.google_module.etl: line 72
+         - Extraídos los archivos con fecha de caducidad
+2026-05-31 12:05:58 - INFO - ciberheroe.google_module.etl: line 50
+         - Extraídos los archivos de visibilidad pública
+2026-05-31 12:05:58 - INFO - ciberheroe.google_module.etl: line 47
+         - Extraídos los correos del usuario
+2026-05-31 12:05:58 - INFO - ciberheroe.google_module.etl: line 47
+         - Extraídos los correos del usuario
+2026-05-31 12:05:59 - INFO - ciberheroe.google_module.etl: line 50
+         - Extraídos los archivos de visibilidad pública
+2026-05-31 12:05:59 - INFO - ciberheroe.google_module.etl: line 50
+         - Extraídos los archivos de visibilidad pública
+2026-05-31 12:05:59 - INFO - ciberheroe.google_module.etl: line 72
+         - Extraídos los archivos con fecha de caducidad
+2026-05-31 12:06:00 - INFO - ciberheroe.google_module.etl: line 47
+         - Extraídos los correos del usuario
+2026-05-31 12:06:00 - INFO - ciberheroe.google_module.etl: line 50
+         - Extraídos los archivos de visibilidad pública
+2026-05-31 12:06:00 - INFO - ciberheroe.google_module.etl: line 50
+         - Extraídos los archivos de visibilidad pública
+2026-05-31 12:06:01 - INFO - ciberheroe.google_module.etl: line 72
+         - Extraídos los archivos con fecha de caducidad
+2026-05-31 12:06:01 - INFO - ciberheroe.google_module.etl: line 72
+         - Extraídos los archivos con fecha de caducidad
+2026-05-31 12:06:01 - INFO - ciberheroe.google_module.etl: line 47
+         - Extraídos los correos del usuario
+2026-05-31 12:06:02 - INFO - ciberheroe.google_module.etl: line 47
+         - Extraídos los correos del usuario
+2026-05-31 12:06:02 - INFO - ciberheroe.google_module.etl: line 72
+         - Extraídos los archivos con fecha de caducidad
+2026-05-31 12:06:02 - INFO - ciberheroe.google_module.etl: line 50
+         - Extraídos los archivos de visibilidad pública
+2026-05-31 12:06:02 - INFO - ciberheroe.google_module.etl: line 47
+         - Extraídos los correos del usuario
+2026-05-31 12:06:03 - INFO - ciberheroe.google_module.etl: line 72
+         - Extraídos los archivos con fecha de caducidad
+2026-05-31 12:06:03 - INFO - ciberheroe.google_module.etl: line 50
+         - Extraídos los archivos de visibilidad pública
+2026-05-31 12:06:04 - ERROR - ciberheroe.google_module.etl: line 34
+         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
+2026-05-31 12:06:04 - INFO - ciberheroe.google_module.etl: line 47
+         - Extraídos los correos del usuario
+2026-05-31 12:06:05 - INFO - ciberheroe.google_module.etl: line 72
+         - Extraídos los archivos con fecha de caducidad
+2026-05-31 12:06:05 - INFO - ciberheroe.google_module.etl: line 50
+         - Extraídos los archivos de visibilidad pública
+2026-05-31 12:06:05 - INFO - ciberheroe.google_module.etl: line 72
+         - Extraídos los archivos con fecha de caducidad
+2026-05-31 12:06:05 - INFO - ciberheroe.google_module.etl: line 72
+         - Extraídos los archivos con fecha de caducidad
+2026-05-31 12:06:05 - INFO - ciberheroe.google_module.etl: line 47
+         - Extraídos los correos del usuario
+2026-05-31 12:06:05 - INFO - ciberheroe.google_module.etl: line 50
+         - Extraídos los archivos de visibilidad pública
+2026-05-31 12:06:05 - INFO - ciberheroe.google_module.etl: line 72
+         - Extraídos los archivos con fecha de caducidad
+2026-05-31 12:06:05 - INFO - ciberheroe.google_module.etl: line 47
+         - Extraídos los correos del usuario
+2026-05-31 12:06:06 - INFO - ciberheroe.google_module.etl: line 50
+         - Extraídos los archivos de visibilidad pública
+2026-05-31 12:06:06 - INFO - ciberheroe.google_module.etl: line 72
+         - Extraídos los archivos con fecha de caducidad
+2026-05-31 12:06:06 - INFO - ciberheroe.google_module.etl: line 47
+         - Extraídos los correos del usuario
+2026-05-31 12:06:06 - INFO - ciberheroe.google_module.etl: line 72
+         - Extraídos los archivos con fecha de caducidad
+2026-05-31 12:06:06 - INFO - ciberheroe.google_module.etl: line 50
+         - Extraídos los archivos de visibilidad pública
+2026-05-31 12:06:07 - ERROR - ciberheroe.google_module.etl: line 34
+         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
+2026-05-31 12:06:07 - INFO - ciberheroe.google_module.etl: line 47
+         - Extraídos los correos del usuario
+2026-05-31 12:06:07 - INFO - ciberheroe.google_module.etl: line 50
+         - Extraídos los archivos de visibilidad pública
+2026-05-31 12:06:07 - INFO - ciberheroe.google_module.etl: line 47
+         - Extraídos los correos del usuario
+2026-05-31 12:06:07 - INFO - ciberheroe.google_module.etl: line 72
+         - Extraídos los archivos con fecha de caducidad
+2026-05-31 12:06:07 - INFO - ciberheroe.google_module.etl: line 50
+         - Extraídos los archivos de visibilidad pública
+2026-05-31 12:06:07 - ERROR - ciberheroe.google_module.etl: line 34
+         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
+2026-05-31 12:06:07 - INFO - ciberheroe.google_module.etl: line 47
+         - Extraídos los correos del usuario
+2026-05-31 12:06:08 - INFO - ciberheroe.google_module.etl: line 72
+         - Extraídos los archivos con fecha de caducidad
+2026-05-31 12:06:08 - INFO - ciberheroe.google_module.etl: line 47
+         - Extraídos los correos del usuario
+2026-05-31 12:06:08 - INFO - ciberheroe.google_module.etl: line 72
+         - Extraídos los archivos con fecha de caducidad
+2026-05-31 12:06:08 - INFO - ciberheroe.google_module.etl: line 72
+         - Extraídos los archivos con fecha de caducidad
+2026-05-31 12:06:08 - INFO - ciberheroe.google_module.etl: line 47
+         - Extraídos los correos del usuario
+2026-05-31 12:06:08 - INFO - ciberheroe.google_module.etl: line 47
+         - Extraídos los correos del usuario
+2026-05-31 12:06:09 - ERROR - ciberheroe.google_module.etl: line 34
+         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
+2026-05-31 12:06:09 - INFO - ciberheroe.google_module.etl: line 47
+         - Extraídos los correos del usuario
+2026-05-31 12:06:10 - INFO - ciberheroe.google_module.etl: line 72
+         - Extraídos los archivos con fecha de caducidad
+2026-05-31 12:06:10 - INFO - ciberheroe.google_module.etl: line 47
+         - Extraídos los correos del usuario
+2026-05-31 12:06:12 - INFO - ciberheroe.google_module.etl: line 72
+         - Extraídos los archivos con fecha de caducidad
+2026-05-31 12:06:12 - INFO - ciberheroe.google_module.etl: line 47
+         - Extraídos los correos del usuario
+2026-05-31 12:06:13 - INFO - ciberheroe.google_module.etl: line 72
+         - Extraídos los archivos con fecha de caducidad
+2026-05-31 12:06:14 - INFO - ciberheroe.google_module.etl: line 47
+         - Extraídos los correos del usuario
+2026-05-31 12:06:18 - INFO - ciberheroe.google_module.etl: line 72
+         - Extraídos los archivos con fecha de caducidad
+2026-05-31 12:06:18 - INFO - ciberheroe.google_module.etl: line 47
+         - Extraídos los correos del usuario
+2026-05-31 12:06:18 - ERROR - ciberheroe.google_module.etl: line 230
+         - Se han registrado 207 usuarios cuyo email no se puede acceder
+2026-05-31 12:06:18 - INFO - ciberheroe.google_module.etl: line 233
          - Completada la extracción, empezando la inserción en la BD...
-2026-05-25 16:01:43 - INFO - ciberheroe.google_module.etl: line 47
+2026-05-31 12:06:19 - INFO - ciberheroe.google_module.etl: line 28
+         - Insertados los datos en la tabla google_metrics
+2026-05-31 12:06:19 - INFO - ciberheroe.google_module.etl: line 47
          - Insertadas las métricas de Google para cada usuario
-2026-05-25 16:10:10 - INFO - ciberheroe.google_module.etl: line 40
-         - Extraídas las puntuaciones para las métricas de Google
-2026-05-25 16:10:10 - INFO - ciberheroe.google_module.etl: line 30
+2026-05-31 12:06:20 - INFO - ciberheroe.google_module.etl: line 28
+         - Insertados los datos en la tabla google_user_scores
+2026-05-31 12:06:20 - INFO - ciberheroe.google_module.etl: line 34
+         - Insertadas las puntuaciones de Google para cada usuario
+2026-05-31 12:06:20 - INFO - ciberheroe.events_module.etl: line 12
+         - Extraídas las puntuaciones para las métricas de los Eventos de Windows
+2026-05-31 12:06:20 - INFO - ciberheroe.events_module.etl: line 13
          - Obtenido el sistema de puntuación de la BD
-2026-05-25 16:10:14 - INFO - ciberheroe.google_module.etl: line 44
+2026-05-31 13:04:12 - INFO - ciberheroe.events_module.etl: line 12
+         - Extraídas las puntuaciones para las métricas de los Eventos de Windows
+2026-05-31 13:04:12 - INFO - ciberheroe.events_module.etl: line 22
+         - Obtenido el sistema de puntuación de la BD
+2026-05-31 13:04:12 - CRITICAL - ciberheroe: line 48
+         - Ha ocurrido un error critico, se ha interrumpido la ejecucion:
+              'device' 
+ Traceback (most recent call last):
+  File "C:\Users\lllrm\OneDrive\UNI\4GII\TFG\Ciberheroe\src\main.py", line 44, in <module>
+    main()
+  File "C:\Users\lllrm\OneDrive\UNI\4GII\TFG\Ciberheroe\src\main.py", line 38, in main
+    events_module.events_etl(db_client)
+  File "C:\Users\lllrm\OneDrive\UNI\4GII\TFG\Ciberheroe\src\events_module\etl.py", line 48, in events_etl
+    "user": users[row["device"]],
+                  ~~~^^^^^^^^^^
+KeyError: 'device'
+
+2026-05-31 13:04:47 - INFO - ciberheroe.events_module.etl: line 12
+         - Extraídas las puntuaciones para las métricas de los Eventos de Windows
+2026-05-31 13:04:47 - INFO - ciberheroe.events_module.etl: line 22
+         - Obtenido el sistema de puntuación de la BD
+2026-05-31 13:04:47 - CRITICAL - ciberheroe: line 48
+         - Ha ocurrido un error critico, se ha interrumpido la ejecucion:
+              'LAPTOP-DEV-01' 
+ Traceback (most recent call last):
+  File "C:\Users\lllrm\OneDrive\UNI\4GII\TFG\Ciberheroe\src\main.py", line 44, in <module>
+    main()
+  File "C:\Users\lllrm\OneDrive\UNI\4GII\TFG\Ciberheroe\src\main.py", line 38, in main
+    events_module.events_etl(db_client)
+  File "C:\Users\lllrm\OneDrive\UNI\4GII\TFG\Ciberheroe\src\events_module\etl.py", line 48, in events_etl
+    "user": users[row["equipo"]],
+            ~~~~~^^^^^^^^^^^^^^^
+KeyError: 'LAPTOP-DEV-01'
+
+2026-05-31 13:05:57 - INFO - ciberheroe.events_module.etl: line 12
+         - Extraídas las puntuaciones para las métricas de los Eventos de Windows
+2026-05-31 13:05:57 - INFO - ciberheroe.events_module.etl: line 22
+         - Obtenido el sistema de puntuación de la BD
+2026-05-31 13:15:02 - INFO - ciberheroe.events_module.etl: line 12
+         - Extraídas las puntuaciones para las métricas de los Eventos de Windows
+2026-05-31 13:15:02 - INFO - ciberheroe.events_module.etl: line 22
+         - Obtenido el sistema de puntuación de la BD
+2026-05-31 13:15:31 - INFO - ciberheroe.events_module.etl: line 12
+         - Extraídas las puntuaciones para las métricas de los Eventos de Windows
+2026-05-31 13:15:31 - INFO - ciberheroe.events_module.etl: line 22
+         - Obtenido el sistema de puntuación de la BD
+2026-05-31 13:15:31 - ERROR - ciberheroe.events_module.etl: line 31
+         - Ha ocurrido un error al intentar insertar los datos en la BD (tabla: event_users): {'message': "Could not find the table 'public.event_users' in the schema cache", 'code': 'PGRST205', 'hint': "Perhaps you meant the table 'public.events_users'", 'details': None}
+2026-05-31 13:15:31 - CRITICAL - ciberheroe: line 48
+         - Ha ocurrido un error critico, se ha interrumpido la ejecucion:
+              {'message': "Could not find the table 'public.event_users' in the schema cache", 'code': 'PGRST205', 'hint': "Perhaps you meant the table 'public.events_users'", 'details': None} 
+ Traceback (most recent call last):
+  File "C:\Users\lllrm\OneDrive\UNI\4GII\TFG\Ciberheroe\src\main.py", line 44, in <module>
+    main()
+  File "C:\Users\lllrm\OneDrive\UNI\4GII\TFG\Ciberheroe\src\main.py", line 38, in main
+    events_module.events_etl(db_client)
+  File "C:\Users\lllrm\OneDrive\UNI\4GII\TFG\Ciberheroe\src\events_module\etl.py", line 56, in events_etl
+    events_db.insert_users(db_users)
+  File "C:\Users\lllrm\OneDrive\UNI\4GII\TFG\Ciberheroe\src\events_module\events_db.py", line 24, in insert_users
+    self.insert_db_data(
+  File "C:\Users\lllrm\OneDrive\UNI\4GII\TFG\Ciberheroe\src\database\base.py", line 34, in insert_db_data
+    raise e
+  File "C:\Users\lllrm\OneDrive\UNI\4GII\TFG\Ciberheroe\src\database\base.py", line 26, in insert_db_data
+    .execute()
+     ^^^^^^^^^
+  File "C:\Users\lllrm\OneDrive\UNI\4GII\TFG\Ciberheroe\.venv\Lib\site-packages\postgrest\_sync\request_builder.py", line 53, in execute
+    raise APIError(dict(json_obj))
+postgrest.exceptions.APIError: {'message': "Could not find the table 'public.event_users' in the schema cache", 'code': 'PGRST205', 'hint': "Perhaps you meant the table 'public.events_users'", 'details': None}
+
+2026-05-31 13:15:51 - INFO - ciberheroe.events_module.etl: line 12
+         - Extraídas las puntuaciones para las métricas de los Eventos de Windows
+2026-05-31 13:15:51 - INFO - ciberheroe.events_module.etl: line 22
+         - Obtenido el sistema de puntuación de la BD
+2026-05-31 13:15:51 - INFO - ciberheroe.events_module.etl: line 28
+         - Insertados los datos en la tabla events_users
+2026-05-31 13:16:49 - INFO - ciberheroe.events_module.etl: line 12
+         - Extraídas las puntuaciones para las métricas de los Eventos de Windows
+2026-05-31 13:16:49 - INFO - ciberheroe.events_module.etl: line 22
+         - Obtenido el sistema de puntuación de la BD
+2026-05-31 13:16:49 - INFO - ciberheroe.events_module.etl: line 28
+         - Insertados los datos en la tabla events_users
+2026-05-31 13:17:56 - INFO - ciberheroe.events_module.etl: line 12
+         - Extraídas las puntuaciones para las métricas de los Eventos de Windows
+2026-05-31 13:17:56 - INFO - ciberheroe.events_module.etl: line 22
+         - Obtenido el sistema de puntuación de la BD
+2026-05-31 13:17:57 - INFO - ciberheroe.events_module.etl: line 28
+         - Insertados los datos en la tabla events_users
+2026-05-31 13:32:56 - INFO - ciberheroe.events_module.etl: line 12
+         - Extraídas las puntuaciones para las métricas de los Eventos de Windows
+2026-05-31 13:32:56 - INFO - ciberheroe.events_module.etl: line 23
+         - Obtenido el sistema de puntuación de la BD
+2026-05-31 13:32:56 - CRITICAL - ciberheroe: line 48
+         - Ha ocurrido un error critico, se ha interrumpido la ejecucion:
+              not readable 
+ Traceback (most recent call last):
+  File "C:\Users\lllrm\OneDrive\UNI\4GII\TFG\Ciberheroe\src\main.py", line 44, in <module>
+    main()
+  File "C:\Users\lllrm\OneDrive\UNI\4GII\TFG\Ciberheroe\src\main.py", line 38, in main
+    events_module.events_etl(db_client)
+  File "C:\Users\lllrm\OneDrive\UNI\4GII\TFG\Ciberheroe\src\events_module\etl.py", line 57, in events_etl
+    users, events_by_user = process_events_by_user(events)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lllrm\OneDrive\UNI\4GII\TFG\Ciberheroe\src\events_module\etl.py", line 36, in process_events_by_user
+    event_codes = get_event_codes()
+                  ^^^^^^^^^^^^^^^^^
+  File "C:\Users\lllrm\OneDrive\UNI\4GII\TFG\Ciberheroe\src\events_module\etl.py", line 30, in get_event_codes
+    event_codes_json = json.loads(f.read())
+                                  ^^^^^^^^
+io.UnsupportedOperation: not readable
+
+2026-05-31 13:33:33 - INFO - ciberheroe.events_module.etl: line 12
+         - Extraídas las puntuaciones para las métricas de los Eventos de Windows
+2026-05-31 13:33:33 - INFO - ciberheroe.events_module.etl: line 23
+         - Obtenido el sistema de puntuación de la BD
+2026-05-31 13:33:33 - CRITICAL - ciberheroe: line 48
+         - Ha ocurrido un error critico, se ha interrumpido la ejecucion:
+              Expecting value: line 1 column 1 (char 0) 
+ Traceback (most recent call last):
+  File "C:\Users\lllrm\OneDrive\UNI\4GII\TFG\Ciberheroe\src\main.py", line 44, in <module>
+    main()
+  File "C:\Users\lllrm\OneDrive\UNI\4GII\TFG\Ciberheroe\src\main.py", line 38, in main
+    events_module.events_etl(db_client)
+  File "C:\Users\lllrm\OneDrive\UNI\4GII\TFG\Ciberheroe\src\events_module\etl.py", line 57, in events_etl
+    users, events_by_user = process_events_by_user(events)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lllrm\OneDrive\UNI\4GII\TFG\Ciberheroe\src\events_module\etl.py", line 36, in process_events_by_user
+    event_codes = get_event_codes()
+                  ^^^^^^^^^^^^^^^^^
+  File "C:\Users\lllrm\OneDrive\UNI\4GII\TFG\Ciberheroe\src\events_module\etl.py", line 30, in get_event_codes
+    event_codes_json = json.loads(f.read())
+                       ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lllrm\AppData\Roaming\uv\python\cpython-3.12.12-windows-x86_64-none\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lllrm\AppData\Roaming\uv\python\cpython-3.12.12-windows-x86_64-none\Lib\json\decoder.py", line 338, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lllrm\AppData\Roaming\uv\python\cpython-3.12.12-windows-x86_64-none\Lib\json\decoder.py", line 356, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+2026-05-31 13:34:02 - INFO - ciberheroe.events_module.etl: line 12
+         - Extraídas las puntuaciones para las métricas de los Eventos de Windows
+2026-05-31 13:34:02 - INFO - ciberheroe.events_module.etl: line 23
+         - Obtenido el sistema de puntuación de la BD
+2026-05-31 13:34:02 - CRITICAL - ciberheroe: line 48
+         - Ha ocurrido un error critico, se ha interrumpido la ejecucion:
+              Expecting value: line 1 column 1 (char 0) 
+ Traceback (most recent call last):
+  File "C:\Users\lllrm\OneDrive\UNI\4GII\TFG\Ciberheroe\src\main.py", line 44, in <module>
+    main()
+  File "C:\Users\lllrm\OneDrive\UNI\4GII\TFG\Ciberheroe\src\main.py", line 38, in main
+    events_module.events_etl(db_client)
+  File "C:\Users\lllrm\OneDrive\UNI\4GII\TFG\Ciberheroe\src\events_module\etl.py", line 57, in events_etl
+    users, events_by_user = process_events_by_user(events)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lllrm\OneDrive\UNI\4GII\TFG\Ciberheroe\src\events_module\etl.py", line 36, in process_events_by_user
+    event_codes = get_event_codes()
+                  ^^^^^^^^^^^^^^^^^
+  File "C:\Users\lllrm\OneDrive\UNI\4GII\TFG\Ciberheroe\src\events_module\etl.py", line 30, in get_event_codes
+    event_codes_json = json.loads(f.read())
+                       ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lllrm\AppData\Roaming\uv\python\cpython-3.12.12-windows-x86_64-none\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lllrm\AppData\Roaming\uv\python\cpython-3.12.12-windows-x86_64-none\Lib\json\decoder.py", line 338, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lllrm\AppData\Roaming\uv\python\cpython-3.12.12-windows-x86_64-none\Lib\json\decoder.py", line 356, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+2026-05-31 13:38:02 - INFO - ciberheroe.events_module.etl: line 12
+         - Extraídas las puntuaciones para las métricas de los Eventos de Windows
+2026-05-31 13:38:02 - INFO - ciberheroe.events_module.etl: line 23
+         - Obtenido el sistema de puntuación de la BD
+2026-05-31 13:38:02 - CRITICAL - ciberheroe: line 48
+         - Ha ocurrido un error critico, se ha interrumpido la ejecucion:
+              Expecting value: line 1 column 1 (char 0) 
+ Traceback (most recent call last):
+  File "C:\Users\lllrm\OneDrive\UNI\4GII\TFG\Ciberheroe\src\main.py", line 44, in <module>
+    main()
+  File "C:\Users\lllrm\OneDrive\UNI\4GII\TFG\Ciberheroe\src\main.py", line 38, in main
+    events_module.events_etl(db_client)
+  File "C:\Users\lllrm\OneDrive\UNI\4GII\TFG\Ciberheroe\src\events_module\etl.py", line 59, in events_etl
+    users, events_by_user = process_events_by_user(events)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lllrm\OneDrive\UNI\4GII\TFG\Ciberheroe\src\events_module\etl.py", line 38, in process_events_by_user
+    event_codes = get_event_codes()
+                  ^^^^^^^^^^^^^^^^^
+  File "C:\Users\lllrm\OneDrive\UNI\4GII\TFG\Ciberheroe\src\events_module\etl.py", line 32, in get_event_codes
+    event_codes_json = json.loads(f.read())
+                       ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lllrm\AppData\Roaming\uv\python\cpython-3.12.12-windows-x86_64-none\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lllrm\AppData\Roaming\uv\python\cpython-3.12.12-windows-x86_64-none\Lib\json\decoder.py", line 338, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lllrm\AppData\Roaming\uv\python\cpython-3.12.12-windows-x86_64-none\Lib\json\decoder.py", line 356, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+2026-05-31 13:40:29 - INFO - ciberheroe.events_module.etl: line 12
+         - Extraídas las puntuaciones para las métricas de los Eventos de Windows
+2026-05-31 13:40:29 - INFO - ciberheroe.events_module.etl: line 23
+         - Obtenido el sistema de puntuación de la BD
+2026-05-31 13:40:29 - CRITICAL - ciberheroe: line 48
+         - Ha ocurrido un error critico, se ha interrumpido la ejecucion:
+              Expecting value: line 1 column 1 (char 0) 
+ Traceback (most recent call last):
+  File "C:\Users\lllrm\OneDrive\UNI\4GII\TFG\Ciberheroe\src\main.py", line 44, in <module>
+    main()
+  File "C:\Users\lllrm\OneDrive\UNI\4GII\TFG\Ciberheroe\src\main.py", line 38, in main
+    events_module.events_etl(db_client)
+  File "C:\Users\lllrm\OneDrive\UNI\4GII\TFG\Ciberheroe\src\events_module\etl.py", line 59, in events_etl
+    users, events_by_user = process_events_by_user(events)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lllrm\OneDrive\UNI\4GII\TFG\Ciberheroe\src\events_module\etl.py", line 38, in process_events_by_user
+    event_codes = get_event_codes()
+                  ^^^^^^^^^^^^^^^^^
+  File "C:\Users\lllrm\OneDrive\UNI\4GII\TFG\Ciberheroe\src\events_module\etl.py", line 32, in get_event_codes
+    event_codes_json = json.loads(f.read())
+                       ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lllrm\AppData\Roaming\uv\python\cpython-3.12.12-windows-x86_64-none\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lllrm\AppData\Roaming\uv\python\cpython-3.12.12-windows-x86_64-none\Lib\json\decoder.py", line 338, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lllrm\AppData\Roaming\uv\python\cpython-3.12.12-windows-x86_64-none\Lib\json\decoder.py", line 356, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+2026-05-31 13:40:58 - INFO - ciberheroe.events_module.etl: line 12
+         - Extraídas las puntuaciones para las métricas de los Eventos de Windows
+2026-05-31 13:40:58 - INFO - ciberheroe.events_module.etl: line 23
+         - Obtenido el sistema de puntuación de la BD
+2026-05-31 13:40:58 - CRITICAL - ciberheroe: line 48
+         - Ha ocurrido un error critico, se ha interrumpido la ejecucion:
+              [Errno 2] No such file or directory: 'event_codes.json' 
+ Traceback (most recent call last):
+  File "C:\Users\lllrm\OneDrive\UNI\4GII\TFG\Ciberheroe\src\main.py", line 44, in <module>
+    main()
+  File "C:\Users\lllrm\OneDrive\UNI\4GII\TFG\Ciberheroe\src\main.py", line 38, in main
+    events_module.events_etl(db_client)
+  File "C:\Users\lllrm\OneDrive\UNI\4GII\TFG\Ciberheroe\src\events_module\etl.py", line 59, in events_etl
+    users, events_by_user = process_events_by_user(events)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lllrm\OneDrive\UNI\4GII\TFG\Ciberheroe\src\events_module\etl.py", line 38, in process_events_by_user
+    event_codes = get_event_codes()
+                  ^^^^^^^^^^^^^^^^^
+  File "C:\Users\lllrm\OneDrive\UNI\4GII\TFG\Ciberheroe\src\events_module\etl.py", line 31, in get_event_codes
+    with open(file, "r", encoding="utf-8") as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'event_codes.json'
+
+2026-05-31 13:42:08 - INFO - ciberheroe.events_module.etl: line 12
+         - Extraídas las puntuaciones para las métricas de los Eventos de Windows
+2026-05-31 13:42:08 - INFO - ciberheroe.events_module.etl: line 24
+         - Obtenido el sistema de puntuación de la BD
+2026-05-31 13:42:08 - INFO - ciberheroe.events_module.etl: line 28
+         - Insertados los datos en la tabla events_users
+2026-05-31 17:52:00 - INFO - ciberheroe.events_module.etl: line 12
+         - Extraídas las puntuaciones para las métricas de los Eventos de Windows
+2026-05-31 17:52:00 - INFO - ciberheroe.events_module.etl: line 29
+         - Obtenido el sistema de puntuación de la BD
+2026-05-31 17:52:00 - INFO - ciberheroe.events_module.etl: line 28
+         - Insertados los datos en la tabla events_users
+2026-05-31 17:52:00 - INFO - ciberheroe.events_module.etl: line 41
+         - Insertados los usuarios de Eventos de Windows
+2026-05-31 17:52:00 - ERROR - ciberheroe.events_module.etl: line 52
+         - Ha ocurrido un error al intentar leer los datos en la BD (tabla: event_metrics): {'message': "Could not find the table 'public.event_metrics' in the schema cache", 'code': 'PGRST205', 'hint': "Perhaps you meant the table 'public.events_metrics'", 'details': None}
+2026-05-31 17:52:00 - CRITICAL - ciberheroe: line 48
+         - Ha ocurrido un error critico, se ha interrumpido la ejecucion:
+              {'message': "Could not find the table 'public.event_metrics' in the schema cache", 'code': 'PGRST205', 'hint': "Perhaps you meant the table 'public.events_metrics'", 'details': None} 
+ Traceback (most recent call last):
+  File "C:\Users\lllrm\OneDrive\UNI\4GII\TFG\Ciberheroe\src\main.py", line 44, in <module>
+    main()
+  File "C:\Users\lllrm\OneDrive\UNI\4GII\TFG\Ciberheroe\src\main.py", line 38, in main
+    events_module.events_etl(db_client)
+  File "C:\Users\lllrm\OneDrive\UNI\4GII\TFG\Ciberheroe\src\events_module\etl.py", line 116, in events_etl
+    current_month_metrics = events_db.get_current_month_metrics()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lllrm\OneDrive\UNI\4GII\TFG\Ciberheroe\src\events_module\events_db.py", line 30, in get_current_month_metrics
+    self.read_db_data("event_metrics", "*", "month", self.current_month)
+  File "C:\Users\lllrm\OneDrive\UNI\4GII\TFG\Ciberheroe\src\database\base.py", line 55, in read_db_data
+    raise e
+  File "C:\Users\lllrm\OneDrive\UNI\4GII\TFG\Ciberheroe\src\database\base.py", line 49, in read_db_data
+    response = query.execute()
+               ^^^^^^^^^^^^^^^
+  File "C:\Users\lllrm\OneDrive\UNI\4GII\TFG\Ciberheroe\.venv\Lib\site-packages\postgrest\_sync\request_builder.py", line 53, in execute
+    raise APIError(dict(json_obj))
+postgrest.exceptions.APIError: {'message': "Could not find the table 'public.event_metrics' in the schema cache", 'code': 'PGRST205', 'hint': "Perhaps you meant the table 'public.events_metrics'", 'details': None}
+
+2026-05-31 17:52:26 - INFO - ciberheroe.events_module.etl: line 12
+         - Extraídas las puntuaciones para las métricas de los Eventos de Windows
+2026-05-31 17:52:26 - INFO - ciberheroe.events_module.etl: line 29
+         - Obtenido el sistema de puntuación de la BD
+2026-05-31 17:52:26 - INFO - ciberheroe.events_module.etl: line 28
+         - Insertados los datos en la tabla events_users
+2026-05-31 17:52:26 - INFO - ciberheroe.events_module.etl: line 41
+         - Insertados los usuarios de Eventos de Windows
+2026-05-31 17:52:26 - INFO - ciberheroe.events_module.etl: line 31
+         - Leídas las métricas existentes de Eventos de Windows del mes actual
+2026-05-31 17:52:26 - CRITICAL - ciberheroe: line 48
+         - Ha ocurrido un error critico, se ha interrumpido la ejecucion:
+              'NoneType' object is not iterable 
+ Traceback (most recent call last):
+  File "C:\Users\lllrm\OneDrive\UNI\4GII\TFG\Ciberheroe\src\main.py", line 44, in <module>
+    main()
+  File "C:\Users\lllrm\OneDrive\UNI\4GII\TFG\Ciberheroe\src\main.py", line 38, in main
+    events_module.events_etl(db_client)
+  File "C:\Users\lllrm\OneDrive\UNI\4GII\TFG\Ciberheroe\src\events_module\etl.py", line 117, in events_etl
+    event_metrics: dict[str, EventMetrics] = accumulate_event_metrics(
+                                             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lllrm\OneDrive\UNI\4GII\TFG\Ciberheroe\src\events_module\etl.py", line 68, in accumulate_event_metrics
+    current_metrics = {row["user_email"]: row for row in current_month_metrics}
+                                                         ^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not iterable
+
+2026-05-31 17:54:44 - INFO - ciberheroe.events_module.etl: line 12
+         - Extraídas las puntuaciones para las métricas de los Eventos de Windows
+2026-05-31 17:54:44 - INFO - ciberheroe.events_module.etl: line 29
+         - Obtenido el sistema de puntuación de la BD
+2026-05-31 17:54:44 - INFO - ciberheroe.events_module.etl: line 28
+         - Insertados los datos en la tabla events_users
+2026-05-31 17:54:44 - INFO - ciberheroe.events_module.etl: line 41
+         - Insertados los usuarios de Eventos de Windows
+2026-05-31 17:54:44 - INFO - ciberheroe.events_module.etl: line 31
+         - Leídas las métricas existentes de Eventos de Windows del mes actual
+2026-05-31 17:54:44 - CRITICAL - ciberheroe: line 48
+         - Ha ocurrido un error critico, se ha interrumpido la ejecucion:
+              'NoneType' object is not iterable 
+ Traceback (most recent call last):
+  File "C:\Users\lllrm\OneDrive\UNI\4GII\TFG\Ciberheroe\src\main.py", line 44, in <module>
+    main()
+  File "C:\Users\lllrm\OneDrive\UNI\4GII\TFG\Ciberheroe\src\main.py", line 38, in main
+    events_module.events_etl(db_client)
+  File "C:\Users\lllrm\OneDrive\UNI\4GII\TFG\Ciberheroe\src\events_module\etl.py", line 121, in events_etl
+    event_metrics: dict[str, EventMetrics] = accumulate_event_metrics(
+                                             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lllrm\OneDrive\UNI\4GII\TFG\Ciberheroe\src\events_module\etl.py", line 70, in accumulate_event_metrics
+    for row in current_month_metrics
+               ^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not iterable
+
+2026-05-31 17:55:30 - INFO - ciberheroe.events_module.etl: line 12
+         - Extraídas las puntuaciones para las métricas de los Eventos de Windows
+2026-05-31 17:55:30 - INFO - ciberheroe.events_module.etl: line 29
+         - Obtenido el sistema de puntuación de la BD
+2026-05-31 17:55:30 - INFO - ciberheroe.events_module.etl: line 28
+         - Insertados los datos en la tabla events_users
+2026-05-31 17:55:30 - INFO - ciberheroe.events_module.etl: line 41
+         - Insertados los usuarios de Eventos de Windows
+2026-05-31 17:55:30 - INFO - ciberheroe.events_module.etl: line 31
+         - Leídas las métricas existentes de Eventos de Windows del mes actual
+2026-05-31 17:55:30 - CRITICAL - ciberheroe: line 48
+         - Ha ocurrido un error critico, se ha interrumpido la ejecucion:
+              'device' 
+ Traceback (most recent call last):
+  File "C:\Users\lllrm\OneDrive\UNI\4GII\TFG\Ciberheroe\src\main.py", line 44, in <module>
+    main()
+  File "C:\Users\lllrm\OneDrive\UNI\4GII\TFG\Ciberheroe\src\main.py", line 38, in main
+    events_module.events_etl(db_client)
+  File "C:\Users\lllrm\OneDrive\UNI\4GII\TFG\Ciberheroe\src\events_module\etl.py", line 125, in events_etl
+    event_metrics: dict[str, EventMetrics] = accumulate_event_metrics(
+                                             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lllrm\OneDrive\UNI\4GII\TFG\Ciberheroe\src\events_module\etl.py", line 80, in accumulate_event_metrics
+    user_email = next(
+                 ^^^^^
+  File "C:\Users\lllrm\OneDrive\UNI\4GII\TFG\Ciberheroe\src\events_module\etl.py", line 81, in <genexpr>
+    (row["email"] for row in map_device if row["device"] == device),
+                                           ~~~^^^^^^^^^^
+KeyError: 'device'
+
+2026-05-31 17:55:56 - INFO - ciberheroe.events_module.etl: line 12
+         - Extraídas las puntuaciones para las métricas de los Eventos de Windows
+2026-05-31 17:55:56 - INFO - ciberheroe.events_module.etl: line 29
+         - Obtenido el sistema de puntuación de la BD
+2026-05-31 17:55:56 - INFO - ciberheroe.events_module.etl: line 28
+         - Insertados los datos en la tabla events_users
+2026-05-31 17:55:56 - INFO - ciberheroe.events_module.etl: line 41
+         - Insertados los usuarios de Eventos de Windows
+2026-05-31 17:55:56 - INFO - ciberheroe.events_module.etl: line 31
+         - Leídas las métricas existentes de Eventos de Windows del mes actual
+2026-05-31 17:55:56 - CRITICAL - ciberheroe: line 48
+         - Ha ocurrido un error critico, se ha interrumpido la ejecucion:
+              'user1@test-events.com' 
+ Traceback (most recent call last):
+  File "C:\Users\lllrm\OneDrive\UNI\4GII\TFG\Ciberheroe\src\main.py", line 44, in <module>
+    main()
+  File "C:\Users\lllrm\OneDrive\UNI\4GII\TFG\Ciberheroe\src\main.py", line 38, in main
+    events_module.events_etl(db_client)
+  File "C:\Users\lllrm\OneDrive\UNI\4GII\TFG\Ciberheroe\src\events_module\etl.py", line 125, in events_etl
+    event_metrics: dict[str, EventMetrics] = accumulate_event_metrics(
+                                             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lllrm\OneDrive\UNI\4GII\TFG\Ciberheroe\src\events_module\etl.py", line 86, in accumulate_event_metrics
+    + current_metrics[user_email]["login_success"],
+      ~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'user1@test-events.com'
+
+2026-05-31 18:07:51 - INFO - ciberheroe.events_module.etl: line 12
+         - Extraídas las puntuaciones para las métricas de los Eventos de Windows
+2026-05-31 18:07:51 - INFO - ciberheroe.events_module.etl: line 29
+         - Obtenido el sistema de puntuación de la BD
+2026-05-31 18:07:51 - INFO - ciberheroe.events_module.etl: line 28
+         - Insertados los datos en la tabla events_users
+2026-05-31 18:07:51 - INFO - ciberheroe.events_module.etl: line 41
+         - Insertados los usuarios de Eventos de Windows
+2026-05-31 18:07:51 - INFO - ciberheroe.events_module.etl: line 31
+         - Leídas las métricas existentes de Eventos de Windows del mes actual
+2026-05-31 18:07:51 - CRITICAL - ciberheroe: line 48
+         - Ha ocurrido un error critico, se ha interrumpido la ejecucion:
+              'minimun' 
+ Traceback (most recent call last):
+  File "C:\Users\lllrm\OneDrive\UNI\4GII\TFG\Ciberheroe\src\main.py", line 44, in <module>
+    main()
+  File "C:\Users\lllrm\OneDrive\UNI\4GII\TFG\Ciberheroe\src\main.py", line 38, in main
+    events_module.events_etl(db_client)
+  File "C:\Users\lllrm\OneDrive\UNI\4GII\TFG\Ciberheroe\src\events_module\etl.py", line 132, in events_etl
+    scores = score_calculator.calculate_scores(event_metrics, point_system)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lllrm\OneDrive\UNI\4GII\TFG\Ciberheroe\src\events_module\scores.py", line 30, in calculate_scores
+    and value < processed_points[label]["minimun"]
+                ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+KeyError: 'minimun'
+
+2026-05-31 18:08:22 - INFO - ciberheroe.events_module.etl: line 12
+         - Extraídas las puntuaciones para las métricas de los Eventos de Windows
+2026-05-31 18:08:22 - INFO - ciberheroe.events_module.etl: line 29
+         - Obtenido el sistema de puntuación de la BD
+2026-05-31 18:08:22 - INFO - ciberheroe.events_module.etl: line 28
+         - Insertados los datos en la tabla events_users
+2026-05-31 18:08:22 - INFO - ciberheroe.events_module.etl: line 41
+         - Insertados los usuarios de Eventos de Windows
+2026-05-31 18:08:22 - INFO - ciberheroe.events_module.etl: line 31
+         - Leídas las métricas existentes de Eventos de Windows del mes actual
+2026-05-31 18:08:22 - CRITICAL - ciberheroe: line 48
+         - Ha ocurrido un error critico, se ha interrumpido la ejecucion:
+              'login_failed' 
+ Traceback (most recent call last):
+  File "C:\Users\lllrm\OneDrive\UNI\4GII\TFG\Ciberheroe\src\main.py", line 44, in <module>
+    main()
+  File "C:\Users\lllrm\OneDrive\UNI\4GII\TFG\Ciberheroe\src\main.py", line 38, in main
+    events_module.events_etl(db_client)
+  File "C:\Users\lllrm\OneDrive\UNI\4GII\TFG\Ciberheroe\src\events_module\etl.py", line 132, in events_etl
+    scores = score_calculator.calculate_scores(event_metrics, point_system)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lllrm\OneDrive\UNI\4GII\TFG\Ciberheroe\src\events_module\scores.py", line 30, in calculate_scores
+    and value < processed_points[label]["minimum"]
+                ~~~~~~~~~~~~~~~~^^^^^^^
+KeyError: 'login_failed'
+
+2026-05-31 18:10:04 - INFO - ciberheroe.events_module.etl: line 12
+         - Extraídas las puntuaciones para las métricas de los Eventos de Windows
+2026-05-31 18:10:04 - INFO - ciberheroe.events_module.etl: line 29
+         - Obtenido el sistema de puntuación de la BD
+2026-05-31 18:10:04 - INFO - ciberheroe.events_module.etl: line 28
+         - Insertados los datos en la tabla events_users
+2026-05-31 18:10:04 - INFO - ciberheroe.events_module.etl: line 41
+         - Insertados los usuarios de Eventos de Windows
+2026-05-31 18:10:05 - INFO - ciberheroe.events_module.etl: line 31
+         - Leídas las métricas existentes de Eventos de Windows del mes actual
+2026-05-31 18:10:05 - INFO - ciberheroe.events_module.etl: line 28
+         - Insertados los datos en la tabla events_metrics
+2026-05-31 18:10:05 - INFO - ciberheroe.events_module.etl: line 25
+         - Insertadas las métricas de Eventos de Windows para cada usuario
+2026-05-31 18:10:05 - ERROR - ciberheroe.events_module.etl: line 31
+         - Ha ocurrido un error al intentar insertar los datos en la BD (tabla: events_user_scores): {'message': 'duplicate key value violates unique constraint "events_user_scores_score_key"', 'code': '23505', 'hint': None, 'details': 'Key (score)=(20) already exists.'}
+2026-05-31 18:10:05 - CRITICAL - ciberheroe: line 48
+         - Ha ocurrido un error critico, se ha interrumpido la ejecucion:
+              {'message': 'duplicate key value violates unique constraint "events_user_scores_score_key"', 'code': '23505', 'hint': None, 'details': 'Key (score)=(20) already exists.'} 
+ Traceback (most recent call last):
+  File "C:\Users\lllrm\OneDrive\UNI\4GII\TFG\Ciberheroe\src\main.py", line 44, in <module>
+    main()
+  File "C:\Users\lllrm\OneDrive\UNI\4GII\TFG\Ciberheroe\src\main.py", line 38, in main
+    events_module.events_etl(db_client)
+  File "C:\Users\lllrm\OneDrive\UNI\4GII\TFG\Ciberheroe\src\events_module\etl.py", line 150, in events_etl
+    events_db.insert_scores(db_scores)
+  File "C:\Users\lllrm\OneDrive\UNI\4GII\TFG\Ciberheroe\src\events_module\events_db.py", line 18, in insert_scores
+    self.insert_db_data("events_user_scores", scores, "user_email, month")
+  File "C:\Users\lllrm\OneDrive\UNI\4GII\TFG\Ciberheroe\src\database\base.py", line 34, in insert_db_data
+    raise e
+  File "C:\Users\lllrm\OneDrive\UNI\4GII\TFG\Ciberheroe\src\database\base.py", line 26, in insert_db_data
+    .execute()
+     ^^^^^^^^^
+  File "C:\Users\lllrm\OneDrive\UNI\4GII\TFG\Ciberheroe\.venv\Lib\site-packages\postgrest\_sync\request_builder.py", line 53, in execute
+    raise APIError(dict(json_obj))
+postgrest.exceptions.APIError: {'message': 'duplicate key value violates unique constraint "events_user_scores_score_key"', 'code': '23505', 'hint': None, 'details': 'Key (score)=(20) already exists.'}
+
+2026-05-31 18:10:48 - INFO - ciberheroe.events_module.etl: line 12
+         - Extraídas las puntuaciones para las métricas de los Eventos de Windows
+2026-05-31 18:10:48 - INFO - ciberheroe.events_module.etl: line 29
+         - Obtenido el sistema de puntuación de la BD
+2026-05-31 18:10:48 - INFO - ciberheroe.events_module.etl: line 28
+         - Insertados los datos en la tabla events_users
+2026-05-31 18:10:48 - INFO - ciberheroe.events_module.etl: line 41
+         - Insertados los usuarios de Eventos de Windows
+2026-05-31 18:10:48 - INFO - ciberheroe.events_module.etl: line 31
+         - Leídas las métricas existentes de Eventos de Windows del mes actual
+2026-05-31 18:10:48 - INFO - ciberheroe.events_module.etl: line 28
+         - Insertados los datos en la tabla events_metrics
+2026-05-31 18:10:48 - INFO - ciberheroe.events_module.etl: line 25
+         - Insertadas las métricas de Eventos de Windows para cada usuario
+2026-05-31 18:10:48 - INFO - ciberheroe.events_module.etl: line 28
+         - Insertados los datos en la tabla events_user_scores
+2026-05-31 18:10:48 - INFO - ciberheroe.events_module.etl: line 19
+         - Insertadas las puntuaciones de Eventos de Windows para cada usuario
+2026-05-31 18:12:40 - INFO - ciberheroe.events_module.etl: line 12
+         - Extraídas las puntuaciones para las métricas de los Eventos de Windows
+2026-05-31 18:12:40 - INFO - ciberheroe.events_module.etl: line 29
+         - Obtenido el sistema de puntuación de la BD
+2026-05-31 18:12:40 - INFO - ciberheroe.events_module.etl: line 28
+         - Insertados los datos en la tabla events_users
+2026-05-31 18:12:40 - INFO - ciberheroe.events_module.etl: line 41
+         - Insertados los usuarios de Eventos de Windows
+2026-05-31 18:12:40 - INFO - ciberheroe.events_module.etl: line 31
+         - Leídas las métricas existentes de Eventos de Windows del mes actual
+2026-05-31 18:12:40 - ERROR - ciberheroe.events_module.etl: line 31
+         - Ha ocurrido un error al intentar insertar los datos en la BD (tabla: events_metrics): {'message': "Could not find the 'biometric_auth' column of 'events_metrics' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2026-05-31 18:12:40 - CRITICAL - ciberheroe: line 48
+         - Ha ocurrido un error critico, se ha interrumpido la ejecucion:
+              {'message': "Could not find the 'biometric_auth' column of 'events_metrics' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None} 
+ Traceback (most recent call last):
+  File "C:\Users\lllrm\OneDrive\UNI\4GII\TFG\Ciberheroe\src\main.py", line 44, in <module>
+    main()
+  File "C:\Users\lllrm\OneDrive\UNI\4GII\TFG\Ciberheroe\src\main.py", line 38, in main
+    events_module.events_etl(db_client)
+  File "C:\Users\lllrm\OneDrive\UNI\4GII\TFG\Ciberheroe\src\events_module\etl.py", line 151, in events_etl
+    events_db.insert_metrics(db_metrics)
+  File "C:\Users\lllrm\OneDrive\UNI\4GII\TFG\Ciberheroe\src\events_module\events_db.py", line 24, in insert_metrics
+    self.insert_db_data("events_metrics", metrics, "user_email, month")
+  File "C:\Users\lllrm\OneDrive\UNI\4GII\TFG\Ciberheroe\src\database\base.py", line 34, in insert_db_data
+    raise e
+  File "C:\Users\lllrm\OneDrive\UNI\4GII\TFG\Ciberheroe\src\database\base.py", line 26, in insert_db_data
+    .execute()
+     ^^^^^^^^^
+  File "C:\Users\lllrm\OneDrive\UNI\4GII\TFG\Ciberheroe\.venv\Lib\site-packages\postgrest\_sync\request_builder.py", line 53, in execute
+    raise APIError(dict(json_obj))
+postgrest.exceptions.APIError: {'message': "Could not find the 'biometric_auth' column of 'events_metrics' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+
+2026-05-31 18:13:18 - INFO - ciberheroe.events_module.etl: line 12
+         - Extraídas las puntuaciones para las métricas de los Eventos de Windows
+2026-05-31 18:13:18 - INFO - ciberheroe.events_module.etl: line 29
+         - Obtenido el sistema de puntuación de la BD
+2026-05-31 18:13:18 - INFO - ciberheroe.events_module.etl: line 28
+         - Insertados los datos en la tabla events_users
+2026-05-31 18:13:18 - INFO - ciberheroe.events_module.etl: line 41
+         - Insertados los usuarios de Eventos de Windows
+2026-05-31 18:13:18 - INFO - ciberheroe.events_module.etl: line 31
+         - Leídas las métricas existentes de Eventos de Windows del mes actual
+2026-05-31 18:13:18 - INFO - ciberheroe.events_module.etl: line 28
+         - Insertados los datos en la tabla events_metrics
+2026-05-31 18:13:18 - INFO - ciberheroe.events_module.etl: line 25
+         - Insertadas las métricas de Eventos de Windows para cada usuario
+2026-05-31 18:13:18 - INFO - ciberheroe.events_module.etl: line 28
+         - Insertados los datos en la tabla events_user_scores
+2026-05-31 18:13:18 - INFO - ciberheroe.events_module.etl: line 19
+         - Insertadas las puntuaciones de Eventos de Windows para cada usuario
+2026-05-31 18:17:13 - INFO - ciberheroe.events_module.etl: line 12
+         - Extraídas las puntuaciones para las métricas de los Eventos de Windows
+2026-05-31 18:17:13 - INFO - ciberheroe.events_module.etl: line 29
+         - Obtenido el sistema de puntuación de la BD
+2026-05-31 18:17:13 - INFO - ciberheroe.events_module.etl: line 28
+         - Insertados los datos en la tabla events_users
+2026-05-31 18:17:13 - INFO - ciberheroe.events_module.etl: line 41
+         - Insertados los usuarios de Eventos de Windows
+2026-05-31 18:17:13 - INFO - ciberheroe.events_module.etl: line 31
+         - Leídas las métricas existentes de Eventos de Windows del mes actual
+2026-05-31 18:17:13 - INFO - ciberheroe.events_module.etl: line 28
+         - Insertados los datos en la tabla events_metrics
+2026-05-31 18:17:13 - INFO - ciberheroe.events_module.etl: line 25
+         - Insertadas las métricas de Eventos de Windows para cada usuario
+2026-05-31 18:17:13 - INFO - ciberheroe.events_module.etl: line 28
+         - Insertados los datos en la tabla events_user_scores
+2026-05-31 18:17:13 - INFO - ciberheroe.events_module.etl: line 19
+         - Insertadas las puntuaciones de Eventos de Windows para cada usuario
+2026-05-31 18:18:57 - INFO - ciberheroe.events_module.etl: line 12
+         - Extraídas las puntuaciones para las métricas de los Eventos de Windows
+2026-05-31 18:18:57 - INFO - ciberheroe.events_module.etl: line 29
+         - Obtenido el sistema de puntuación de la BD
+2026-05-31 18:18:57 - INFO - ciberheroe.events_module.etl: line 28
+         - Insertados los datos en la tabla events_users
+2026-05-31 18:18:57 - INFO - ciberheroe.events_module.etl: line 41
+         - Insertados los usuarios de Eventos de Windows
+2026-05-31 18:18:57 - INFO - ciberheroe.events_module.etl: line 31
+         - Leídas las métricas existentes de Eventos de Windows del mes actual
+2026-05-31 18:18:57 - INFO - ciberheroe.events_module.etl: line 28
+         - Insertados los datos en la tabla events_metrics
+2026-05-31 18:18:57 - INFO - ciberheroe.events_module.etl: line 25
+         - Insertadas las métricas de Eventos de Windows para cada usuario
+2026-05-31 18:18:57 - INFO - ciberheroe.events_module.etl: line 28
+         - Insertados los datos en la tabla events_user_scores
+2026-05-31 18:18:57 - INFO - ciberheroe.events_module.etl: line 19
+         - Insertadas las puntuaciones de Eventos de Windows para cada usuario
+2026-05-31 18:20:49 - INFO - ciberheroe.events_module.etl: line 12
+         - Extraídas las puntuaciones para las métricas de los Eventos de Windows
+2026-05-31 18:20:49 - INFO - ciberheroe.events_module.etl: line 29
+         - Obtenido el sistema de puntuación de la BD
+2026-05-31 18:20:49 - INFO - ciberheroe.events_module.etl: line 28
+         - Insertados los datos en la tabla events_users
+2026-05-31 18:20:49 - INFO - ciberheroe.events_module.etl: line 41
+         - Insertados los usuarios de Eventos de Windows
+2026-05-31 18:20:49 - INFO - ciberheroe.events_module.etl: line 31
+         - Leídas las métricas existentes de Eventos de Windows del mes actual
+2026-05-31 18:20:49 - INFO - ciberheroe.events_module.etl: line 28
+         - Insertados los datos en la tabla events_metrics
+2026-05-31 18:20:49 - INFO - ciberheroe.events_module.etl: line 25
+         - Insertadas las métricas de Eventos de Windows para cada usuario
+2026-05-31 18:20:49 - INFO - ciberheroe.events_module.etl: line 28
+         - Insertados los datos en la tabla events_user_scores
+2026-05-31 18:20:49 - INFO - ciberheroe.events_module.etl: line 19
+         - Insertadas las puntuaciones de Eventos de Windows para cada usuario
+2026-05-31 18:23:20 - INFO - ciberheroe.google_module.etl: line 40
+         - Extraídas las puntuaciones para las métricas de Google
+2026-05-31 18:23:20 - INFO - ciberheroe.google_module.etl: line 30
+         - Obtenido el sistema de puntuación de la BD
+2026-05-31 18:23:20 - INFO - ciberheroe.google_module.etl: line 29
+         - Leídas las métricas existentes de este mes de la BD
+2026-05-31 18:23:20 - INFO - ciberheroe.events_module.etl: line 12
+         - Extraídas las puntuaciones para las métricas de los Eventos de Windows
+2026-05-31 18:23:20 - INFO - ciberheroe.events_module.etl: line 29
+         - Obtenido el sistema de puntuación de la BD
+2026-05-31 18:23:20 - INFO - ciberheroe.events_module.etl: line 28
+         - Insertados los datos en la tabla events_users
+2026-05-31 18:23:20 - INFO - ciberheroe.events_module.etl: line 41
+         - Insertados los usuarios de Eventos de Windows
+2026-05-31 18:23:20 - INFO - ciberheroe.events_module.etl: line 31
+         - Leídas las métricas existentes de Eventos de Windows del mes actual
+2026-05-31 18:23:20 - INFO - ciberheroe.events_module.etl: line 28
+         - Insertados los datos en la tabla events_metrics
+2026-05-31 18:23:20 - INFO - ciberheroe.events_module.etl: line 25
+         - Insertadas las métricas de Eventos de Windows para cada usuario
+2026-05-31 18:23:20 - INFO - ciberheroe.events_module.etl: line 28
+         - Insertados los datos en la tabla events_user_scores
+2026-05-31 18:23:20 - INFO - ciberheroe.events_module.etl: line 19
+         - Insertadas las puntuaciones de Eventos de Windows para cada usuario
+2026-05-31 18:24:53 - INFO - ciberheroe.events_module.etl: line 12
+         - Extraídas las puntuaciones para las métricas de los Eventos de Windows
+2026-05-31 18:24:53 - INFO - ciberheroe.events_module.etl: line 29
+         - Obtenido el sistema de puntuación de la BD
+2026-05-31 18:24:53 - INFO - ciberheroe.events_module.etl: line 28
+         - Insertados los datos en la tabla events_users
+2026-05-31 18:24:53 - INFO - ciberheroe.events_module.etl: line 44
+         - Insertados los usuarios de Eventos de Windows
+2026-05-31 18:24:53 - INFO - ciberheroe.events_module.etl: line 33
+         - Leídas las métricas existentes de Eventos de Windows del mes actual
+2026-05-31 18:24:53 - INFO - ciberheroe.events_module.etl: line 28
+         - Insertados los datos en la tabla events_metrics
+2026-05-31 18:24:53 - INFO - ciberheroe.events_module.etl: line 25
+         - Insertadas las métricas de Eventos de Windows para cada usuario
+2026-05-31 18:24:53 - INFO - ciberheroe.events_module.etl: line 28
+         - Insertados los datos en la tabla events_user_scores
+2026-05-31 18:24:53 - INFO - ciberheroe.events_module.etl: line 19
+         - Insertadas las puntuaciones de Eventos de Windows para cada usuario
+2026-05-31 18:37:32 - INFO - ciberheroe.events_module.etl: line 12
+         - Extraídas las puntuaciones para las métricas de los Eventos de Windows
+2026-05-31 18:37:32 - INFO - ciberheroe.events_module.etl: line 29
+         - Obtenido el sistema de puntuación de la BD
+2026-05-31 18:37:32 - INFO - ciberheroe.events_module.etl: line 28
+         - Insertados los datos en la tabla events_users
+2026-05-31 18:37:32 - INFO - ciberheroe.events_module.etl: line 44
+         - Insertados los usuarios de Eventos de Windows
+2026-05-31 18:37:32 - INFO - ciberheroe.events_module.etl: line 33
+         - Leídas las métricas existentes de Eventos de Windows del mes actual
+2026-05-31 18:37:32 - INFO - ciberheroe.events_module.etl: line 28
+         - Insertados los datos en la tabla events_metrics
+2026-05-31 18:37:32 - INFO - ciberheroe.events_module.etl: line 25
+         - Insertadas las métricas de Eventos de Windows para cada usuario
+2026-05-31 18:37:32 - INFO - ciberheroe.events_module.etl: line 28
+         - Insertados los datos en la tabla events_user_scores
+2026-05-31 18:37:32 - INFO - ciberheroe.events_module.etl: line 19
+         - Insertadas las puntuaciones de Eventos de Windows para cada usuario
+2026-05-31 18:37:42 - INFO - ciberheroe.google_module.etl: line 40
+         - Extraídas las puntuaciones para las métricas de Google
+2026-05-31 18:37:42 - INFO - ciberheroe.google_module.etl: line 30
+         - Obtenido el sistema de puntuación de la BD
+2026-05-31 18:37:42 - INFO - ciberheroe.google_module.etl: line 29
+         - Leídas las métricas existentes de este mes de la BD
+2026-05-31 18:37:47 - INFO - ciberheroe.google_module.etl: line 44
          - Obtenida la lista de todos los usuarios
-2026-05-25 16:10:46 - INFO - ciberheroe.google_module.etl: line 102
+2026-05-31 18:37:56 - INFO - ciberheroe.google_module.etl: line 111
          - Dispositivos corporativos: obtenidos los dispositivos fisicos
-2026-05-25 16:12:26 - INFO - ciberheroe.google_module.etl: line 132
+2026-05-31 18:38:24 - INFO - ciberheroe.google_module.etl: line 141
          - Dispositivos corporativos: obtenidos los dispositivos junto con los usuarios
-2026-05-25 16:12:26 - INFO - ciberheroe.google_module.etl: line 51
+2026-05-31 18:38:24 - INFO - ciberheroe.google_module.etl: line 51
          - Obtenida la lista de dispositivos utilizados
-2026-05-25 16:12:34 - INFO - ciberheroe.google_module.etl: line 32
+2026-05-31 18:38:29 - INFO - ciberheroe.google_module.etl: line 28
+         - Insertados los datos en la tabla google_users
+2026-05-31 18:38:29 - INFO - ciberheroe.google_module.etl: line 23
          - Insertados los usuarios en la base de datos
-2026-05-25 16:12:34 - INFO - ciberheroe.google_module.etl: line 193
-         - Empezando la extracción de la información de los 1442 usuarios...
-2026-05-25 16:12:37 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 18:38:29 - INFO - ciberheroe.google_module.etl: line 218
+         - Empezando la extracción de la información de los 1441 usuarios...
+2026-05-31 18:38:32 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:12:38 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 18:38:36 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:12:41 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 18:38:44 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:12:41 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 18:38:45 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:12:41 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 18:38:47 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:12:42 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 18:38:49 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:12:53 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 18:39:14 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:12:54 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 18:39:16 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:12:57 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 18:39:23 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:12:59 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 18:39:33 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:13:07 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 18:40:01 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:13:07 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 18:40:02 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:13:13 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 18:40:27 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:13:14 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 18:40:32 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:13:16 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 18:40:35 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:13:16 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 18:40:37 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:13:17 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 18:40:40 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:13:19 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 18:40:43 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:13:22 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 18:40:56 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:13:24 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:03:41 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:13:25 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:03:43 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:13:27 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:03:48 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:13:36 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:03:50 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:13:36 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:04:10 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:13:36 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:04:11 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:13:37 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:04:12 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:13:38 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:04:15 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:13:40 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:04:24 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:13:44 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:04:31 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:13:47 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:05:15 - INFO - ciberheroe.google_module.etl: line 40
+         - Extraídas las puntuaciones para las métricas de Google
+2026-05-31 19:05:15 - INFO - ciberheroe.google_module.etl: line 30
+         - Obtenido el sistema de puntuación de la BD
+2026-05-31 19:05:16 - INFO - ciberheroe.google_module.etl: line 29
+         - Leídas las métricas existentes de este mes de la BD
+2026-05-31 19:05:20 - INFO - ciberheroe.google_module.etl: line 44
+         - Obtenida la lista de todos los usuarios
+2026-05-31 19:05:30 - INFO - ciberheroe.google_module.etl: line 111
+         - Dispositivos corporativos: obtenidos los dispositivos fisicos
+2026-05-31 19:05:57 - INFO - ciberheroe.google_module.etl: line 141
+         - Dispositivos corporativos: obtenidos los dispositivos junto con los usuarios
+2026-05-31 19:05:57 - INFO - ciberheroe.google_module.etl: line 51
+         - Obtenida la lista de dispositivos utilizados
+2026-05-31 19:06:03 - INFO - ciberheroe.google_module.etl: line 28
+         - Insertados los datos en la tabla google_users
+2026-05-31 19:06:03 - INFO - ciberheroe.google_module.etl: line 23
+         - Insertados los usuarios en la base de datos
+2026-05-31 19:06:03 - INFO - ciberheroe.google_module.etl: line 218
+         - Empezando la extracción de la información de los 1441 usuarios...
+2026-05-31 19:06:09 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:13:47 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:06:17 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:13:48 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:06:18 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:13:50 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:06:23 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:13:51 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:06:24 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:13:51 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:06:26 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:13:54 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:06:57 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:13:55 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:06:59 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:13:58 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:07:12 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:13:58 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:07:19 - ERROR - ciberheroe.google_module.etl: line 34
+         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
+2026-05-31 19:07:29 - ERROR - ciberheroe.google_module.etl: line 34
+         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
+2026-05-31 19:07:31 - ERROR - ciberheroe.google_module.etl: line 34
+         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
+2026-05-31 19:07:49 - ERROR - ciberheroe.google_module.etl: line 34
+         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
+2026-05-31 19:07:51 - ERROR - ciberheroe.google_module.etl: line 34
+         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
+2026-05-31 19:07:54 - ERROR - ciberheroe.google_module.etl: line 34
+         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
+2026-05-31 19:07:56 - ERROR - ciberheroe.google_module.etl: line 34
+         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
+2026-05-31 19:08:00 - ERROR - ciberheroe.google_module.etl: line 34
+         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
+2026-05-31 19:08:01 - ERROR - ciberheroe.google_module.etl: line 34
+         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
+2026-05-31 19:08:13 - ERROR - ciberheroe.google_module.etl: line 34
+         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
+2026-05-31 19:08:14 - ERROR - ciberheroe.google_module.etl: line 34
+         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
+2026-05-31 19:08:14 - ERROR - ciberheroe.google_module.etl: line 34
+         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
+2026-05-31 19:08:21 - ERROR - ciberheroe.google_module.etl: line 34
+         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
+2026-05-31 19:08:25 - ERROR - ciberheroe.google_module.etl: line 34
+         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
+2026-05-31 19:08:43 - ERROR - ciberheroe.google_module.etl: line 34
+         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
+2026-05-31 19:08:44 - ERROR - ciberheroe.google_module.etl: line 34
+         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
+2026-05-31 19:08:46 - ERROR - ciberheroe.google_module.etl: line 34
+         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
+2026-05-31 19:08:47 - ERROR - ciberheroe.google_module.etl: line 34
+         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
+2026-05-31 19:08:48 - ERROR - ciberheroe.google_module.etl: line 34
+         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
+2026-05-31 19:08:53 - ERROR - ciberheroe.google_module.etl: line 34
+         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
+2026-05-31 19:09:02 - ERROR - ciberheroe.google_module.etl: line 34
+         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
+2026-05-31 19:09:04 - ERROR - ciberheroe.google_module.etl: line 34
+         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
+2026-05-31 19:09:12 - ERROR - ciberheroe.google_module.etl: line 34
+         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
+2026-05-31 19:09:15 - ERROR - ciberheroe.google_module.etl: line 34
+         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
+2026-05-31 19:09:17 - ERROR - ciberheroe.google_module.etl: line 34
+         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
+2026-05-31 19:09:20 - ERROR - ciberheroe.google_module.etl: line 34
+         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
+2026-05-31 19:09:20 - ERROR - ciberheroe.google_module.etl: line 34
+         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
+2026-05-31 19:09:29 - ERROR - ciberheroe.google_module.etl: line 34
+         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
+2026-05-31 19:09:31 - ERROR - ciberheroe.google_module.etl: line 34
+         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
+2026-05-31 19:09:37 - ERROR - ciberheroe.google_module.etl: line 34
+         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
+2026-05-31 19:09:46 - ERROR - ciberheroe.google_module.etl: line 34
+         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
+2026-05-31 19:09:48 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 401: [{'message': 'Active session is invalid. Error code: 4', 'domain': 'global', 'reason': 'authError', 'location': 'Authorization', 'locationType': 'header'}]
-2026-05-25 16:13:59 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:09:49 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 401: [{'message': 'Active session is invalid. Error code: 4', 'domain': 'global', 'reason': 'authError', 'location': 'Authorization', 'locationType': 'header'}]
-2026-05-25 16:14:01 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:09:52 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:14:02 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:10:03 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:14:03 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:10:03 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:14:05 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:10:06 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:14:07 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:10:13 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:14:10 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:10:23 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:14:12 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:10:26 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:14:12 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:10:28 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:14:13 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:10:29 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:14:15 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:10:31 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:14:15 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:10:34 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:14:17 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:10:38 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:14:20 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:10:46 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:14:21 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:10:49 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:14:22 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:10:51 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:14:22 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:10:53 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:14:25 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:10:55 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:14:26 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:10:57 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:14:27 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:10:59 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:14:29 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:11:04 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:14:31 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:11:10 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:14:32 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:11:10 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:14:32 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:11:10 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:14:33 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:11:13 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:14:34 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:11:20 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:14:35 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:11:30 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:14:39 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:11:30 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:14:40 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:11:31 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:14:40 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:11:35 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:14:40 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:11:38 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:14:40 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:11:38 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:14:41 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:11:40 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:14:41 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:11:40 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:14:41 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:11:44 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:14:44 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:11:48 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:14:45 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:11:52 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:14:46 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:11:55 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:14:48 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:11:59 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:14:49 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:12:01 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:14:56 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:12:21 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:14:59 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:12:41 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:15:01 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:12:42 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:15:02 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:12:43 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:15:03 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:12:52 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:15:05 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:12:56 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:15:06 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:12:57 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:15:07 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:13:02 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:15:09 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:13:12 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:15:12 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:13:21 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:15:15 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:13:27 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:15:18 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:13:40 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:15:19 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:13:43 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:15:21 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:13:47 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:15:22 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:13:49 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:15:26 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:14:02 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:15:26 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:14:02 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:15:27 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:14:05 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:15:28 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:14:08 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:15:32 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:14:19 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:15:35 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:14:25 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:15:35 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:14:26 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:15:36 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:14:31 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:15:39 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:14:37 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:15:40 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:14:39 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:15:41 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:14:40 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:15:44 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:14:46 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:15:47 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:14:50 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:15:47 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:14:59 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:15:50 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:15:06 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:15:51 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:15:08 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:15:53 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:15:09 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:15:54 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:15:12 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:15:55 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:15:13 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:15:57 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:15:15 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:15:59 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:15:16 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:16:00 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:15:23 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:16:01 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:15:29 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:16:02 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:15:32 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:16:04 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:15:35 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:16:06 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:15:39 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:16:08 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:15:49 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:16:10 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:15:49 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:16:12 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:16:05 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:16:13 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:16:07 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:16:14 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:16:13 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:16:15 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:16:20 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:16:17 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:16:21 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:16:17 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:16:24 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:16:19 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:16:28 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:16:19 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:16:30 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:16:20 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:16:34 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:16:26 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:16:37 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:16:29 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:16:57 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:16:30 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:17:00 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:16:31 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:17:08 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:16:31 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:17:09 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:16:32 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:17:12 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:16:32 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:17:12 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:16:37 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:17:15 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:16:37 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:17:15 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:16:42 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:17:32 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:16:43 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:17:33 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:16:43 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:17:47 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:16:45 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:17:50 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:16:45 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:17:55 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:16:45 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:17:56 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:16:45 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:17:56 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:16:48 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:17:58 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:16:49 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:18:00 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:16:49 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:18:03 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:16:50 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:18:04 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:16:51 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:18:05 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:16:55 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:18:08 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:16:56 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:18:18 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:16:56 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:18:25 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:16:56 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:18:28 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:16:57 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:18:30 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:16:58 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:18:32 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:16:59 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:18:33 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:16:59 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:18:34 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:17:03 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:18:34 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:17:04 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:18:36 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:17:06 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:18:43 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:17:06 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:18:52 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:17:07 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:18:57 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:17:08 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:19:00 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:17:08 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:19:01 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:17:09 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:19:02 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:17:10 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:19:03 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:17:16 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:19:03 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:17:16 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:19:10 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:17:18 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:19:10 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:17:20 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:19:30 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:17:22 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:19:32 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:17:22 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:19:35 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:17:22 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:19:44 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:17:22 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:19:46 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:17:22 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:19:47 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:17:24 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:19:47 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:17:24 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:19:47 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:17:26 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:19:47 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:17:26 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:19:50 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:17:26 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:19:52 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:17:27 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:19:52 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:17:27 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:19:55 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:17:28 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:19:55 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:17:28 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:19:56 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:17:28 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:19:59 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:17:29 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:19:59 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:17:30 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:20:02 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:17:30 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:20:03 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:17:30 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:20:04 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:17:31 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:20:04 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:17:31 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:20:06 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:17:33 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:20:07 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:17:34 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:20:07 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:17:34 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:20:08 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:17:37 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:20:14 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:17:38 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:20:18 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:17:38 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:20:25 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:17:40 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:20:26 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:17:44 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:20:31 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:17:44 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:20:37 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:17:45 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:20:45 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:17:45 - ERROR - ciberheroe.google_module.etl: line 34
+2026-05-31 19:20:47 - ERROR - ciberheroe.google_module.etl: line 34
          - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
-2026-05-25 16:17:45 - ERROR - ciberheroe.google_module.etl: line 206
-         - Se han registrado 203 usuarios cuyo email no se puede acceder
-2026-05-25 16:17:45 - INFO - ciberheroe.google_module.etl: line 209
+2026-05-31 19:20:47 - ERROR - ciberheroe.google_module.etl: line 34
+         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
+2026-05-31 19:20:48 - ERROR - ciberheroe.google_module.etl: line 34
+         - Non-retriable error 400: [{'message': 'Mail service not enabled', 'domain': 'global', 'reason': 'failedPrecondition'}]
+2026-05-31 19:20:53 - ERROR - ciberheroe.google_module.etl: line 231
+         - Se han registrado 207 usuarios cuyo email no se puede acceder
+2026-05-31 19:20:53 - INFO - ciberheroe.google_module.etl: line 234
          - Completada la extracción, empezando la inserción en la BD...
-2026-05-25 16:17:46 - INFO - ciberheroe.google_module.etl: line 47
+2026-05-31 19:20:54 - INFO - ciberheroe.google_module.etl: line 28
+         - Insertados los datos en la tabla google_metrics
+2026-05-31 19:20:54 - INFO - ciberheroe.google_module.etl: line 47
          - Insertadas las métricas de Google para cada usuario
+2026-05-31 19:20:54 - INFO - ciberheroe.google_module.etl: line 28
+         - Insertados los datos en la tabla google_user_scores
+2026-05-31 19:20:54 - INFO - ciberheroe.google_module.etl: line 34
+         - Insertadas las puntuaciones de Google para cada usuario
+2026-05-31 19:20:54 - INFO - ciberheroe.events_module.etl: line 12
+         - Extraídas las puntuaciones para las métricas de los Eventos de Windows
+2026-05-31 19:20:54 - INFO - ciberheroe.events_module.etl: line 29
+         - Obtenido el sistema de puntuación de la BD
+2026-05-31 19:20:54 - INFO - ciberheroe.events_module.etl: line 28
+         - Insertados los datos en la tabla events_users
+2026-05-31 19:20:54 - INFO - ciberheroe.events_module.etl: line 44
+         - Insertados los usuarios de Eventos de Windows
+2026-05-31 19:20:54 - INFO - ciberheroe.events_module.etl: line 33
+         - Leídas las métricas existentes de Eventos de Windows del mes actual
+2026-05-31 19:20:55 - INFO - ciberheroe.events_module.etl: line 28
+         - Insertados los datos en la tabla events_metrics
+2026-05-31 19:20:55 - INFO - ciberheroe.events_module.etl: line 25
+         - Insertadas las métricas de Eventos de Windows para cada usuario
+2026-05-31 19:20:55 - INFO - ciberheroe.events_module.etl: line 28
+         - Insertados los datos en la tabla events_user_scores
+2026-05-31 19:20:55 - INFO - ciberheroe.events_module.etl: line 19
+         - Insertadas las puntuaciones de Eventos de Windows para cada usuario

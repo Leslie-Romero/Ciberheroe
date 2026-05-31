@@ -1,8 +1,11 @@
 import logging
 from logging.handlers import RotatingFileHandler
 import traceback
+from pathlib import Path
+
 import db
 import google_module
+import events_module
 
 logger = logging.getLogger("ciberheroe")
 logger.setLevel(logging.INFO)
@@ -11,8 +14,11 @@ MAX_BYTES = 285 * 1024
 BACKUP_COUNT = 2
 
 if not logger.handlers:
+    BASE_DIR = Path(__file__).resolve().parent
+    LOG_FILE_PATH = BASE_DIR / "logs/knowbe4_integration.log"
+
     file_handler = RotatingFileHandler(
-        "./logs/knowbe4_integration.log",
+        LOG_FILE_PATH,
         maxBytes=MAX_BYTES,
         backupCount=BACKUP_COUNT,
     )
@@ -29,6 +35,7 @@ if not logger.handlers:
 def main():
     db_client = db.initialize_supabase_client()
     google_module.google_etl(db_client)
+    events_module.events_etl(db_client)
     return
 
 

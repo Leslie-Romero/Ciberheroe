@@ -4,6 +4,8 @@ from datetime import datetime, timezone
 from dateutil.relativedelta import relativedelta
 import pytz
 
+from knowbe4_module import Knowbe4DBClient
+
 import db
 import config.env_config as config
 from knowbe4_module import (
@@ -26,24 +28,41 @@ from custom_types import (
 
 logger = logging.getLogger(f"ciberheroe.{__name__}")
 
+
+def fill_in_with_historical_data(users, knowbe4_db: Knowbe4DBClient):
+    """Obtenemos datos históricos para suplir el historial si no existen datos del mes anterior
+
+    Se activa con la variable HISTORICAL_DATA en el archivo .env
+    """
+    if config.HISTORICAL_DATA:
+        historical_data = get_historical_data(users)
+        db_monthly_risk_hist: list[DBMonthlyRisk] = list()
+        for record in historical_data:
+            db_monthly_risk_hist.append(
+                {
+                    "id": str(uuid.uuid4()),
+                    "user_id": int(record["user_id"]),
+                    "risk_score": float(record["risk_score"]),
+                    "created_at": "2024-12-01",
+                }
+            )
+        save_json({"data": db_monthly_risk_hist}, "historical_data")
+        knowbe4_db.insert_db_data(
+            "kb4_monthly_risk",
+            db_monthly_risk_hist,
+            "user_id, created_at",
+        )
+        logger.info("Insertamos los historicos para diciembre de 2024")
+
+
 # TODO: Optimize this function
 
 
-def kb4_integration():
+def knowbe4_etl(db_client):
 
-    db_client = db.initialize_supabase_client()
+    knowbe4_db = Knowbe4DBClient(db_client, logger)
 
-    # Test conexión con supabase y obtenemos la ventana activa
-    db_read_achievement_info = db.read_db_data(
-        db_client, "kb4_achievement_info", "tag, points"
-    )
-
-    achievement_info = {
-        row["tag"]: row["points"] for row in db_read_achievement_info
-    }
-
-    # Ventana activa para el filtrado por fecha
-    active_window = achievement_info["ACTIVE_WINDOW"]
+    achievement_info, active_window = knowbe4_db.get_achievement_info()
 
     n_users, n_psts = fetch_rest_api_data()
 
@@ -53,8 +72,6 @@ def kb4_integration():
 
     users: list[User] = user_info["users"]["nodes"]
     active_users = {user["id"] for user in users}
-
-    # check_histories(users)
 
     recipients: list[CampaignRecipient] = list()
     psts: list[PhishingCampaignRun] = list()
@@ -100,26 +117,6 @@ def kb4_integration():
     low_risk = basic_metrics.lowest_risk_users(10, users)
 
     # Inserción de datos históricos a falta de datos del último mes
-    if config.HISTORICAL_DATA:
-        historical_data = get_historical_data(users)
-        db_monthly_risk_hist: list[DBMonthlyRisk] = list()
-        for record in historical_data:
-            db_monthly_risk_hist.append(
-                {
-                    "id": str(uuid.uuid4()),
-                    "user_id": int(record["user_id"]),
-                    "risk_score": float(record["risk_score"]),
-                    "created_at": "2024-12-01",
-                }
-            )
-        save_json({"data": db_monthly_risk_hist}, "historical_data")
-        db.insert_db_data(
-            db_client,
-            "kb4_monthly_risk",
-            db_monthly_risk_hist,
-            "user_id, created_at",
-        )
-        logger.info("Insertamos los historicos para diciembre de 2024")
 
     # Obtenemos el riesgo del mes anterior
     now = datetime.now(pytz.utc).replace(

@@ -20,7 +20,12 @@ admin_creds = service_account.Credentials.from_service_account_file(
 
 class AdminDirectoryExtractor(GoogleAPIBase):
     def __init__(self, logger):
-        self.service = build("admin", "directory_v1", credentials=admin_creds)
+        self.service = build(
+            "admin",
+            "directory_v1",
+            credentials=admin_creds,
+            cache_discovery=False,
+        )
         super().__init__(logger, self.service)
         self.users_collection = self.service.users()
         self.mobiledevices_collecion = self.service.mobiledevices()
@@ -48,7 +53,7 @@ class AdminDirectoryExtractor(GoogleAPIBase):
             customerId="my_customer",
             maxResults=100,
             projection="BASIC",
-            fields="mobiledevices(model, os, type, status, firstSync, lastSync)",
+            fields="nextPageToken,mobiledevices(model, os, type, status, firstSync, lastSync)",
         )
         devices = defaultdict(lambda: {"devices": []})
         while request is not None:
@@ -66,16 +71,20 @@ class AdminDirectoryExtractor(GoogleAPIBase):
 
 
 class CloudIdentityExtractor(GoogleAPIBase):
-    def __init__(self, logger):
-        self.service = build("cloudidentity", "v1", credentials=admin_creds)
+    def __init__(self, logger, days_start=1):
+        self.service = build(
+            "cloudidentity",
+            "v1",
+            credentials=admin_creds,
+            cache_discovery=False,
+        )
         super().__init__(logger, self.service)
         self.devices_collection = self.service.devices()
         self.deviceUsers_collection = self.service.devices().deviceUsers()
-        start_time = datetime.now(timezone.utc) - timedelta(days=7)
+        start_time = datetime.now(timezone.utc) - timedelta(days=days_start)
         self.start_time_string = start_time.strftime("%Y-%m-%dT%H:%M:%S")
 
     def check_corporate_devices(self):
-        # Dispositivos físicos
         request_devices = self.devices_collection.list(
             customer="customers/my_customer",
             filter=f"sync:{self.start_time_string}..",
@@ -136,11 +145,16 @@ class CloudIdentityExtractor(GoogleAPIBase):
 
 
 class AdminReportsExtractor(GoogleAPIBase):
-    def __init__(self, logger, days_start: float = 7):
-        self.service = build("admin", "reports_v1", credentials=admin_creds)
+    def __init__(self, logger, days_start: float = 1):
+        self.service = build(
+            "admin",
+            "reports_v1",
+            credentials=admin_creds,
+            cache_discovery=False,
+        )
         super().__init__(logger, self.service)
         self.activities_collection = self.service.activities()
-        start_time = datetime.now(timezone.utc) - timedelta(days=7)
+        start_time = datetime.now(timezone.utc) - timedelta(days=days_start)
         self.start_time_string = start_time.isoformat().replace("+00:00", "Z")
 
     def check_ignore_certificate_warning(self):
@@ -150,7 +164,7 @@ class AdminReportsExtractor(GoogleAPIBase):
             applicationName="chrome",
             eventName="UNSAFE_SITE_VISIT",
             startTime=self.start_time_string,
-            fields="items(actor, events(parameters))",
+            fields="nextPageToken,items(actor, events(parameters))",
         )
         events = defaultdict(lambda: {"unsafe_site_events": []})
         while request is not None:
@@ -183,7 +197,7 @@ class AdminReportsExtractor(GoogleAPIBase):
             applicationName="chrome",
             eventName="PASSWORD_REUSE",
             startTime=self.start_time_string,
-            fields="items(actor, events(parameters))",
+            fields="nextPageToken,items(actor, events(parameters))",
         )
         events = defaultdict(lambda: {"reused_pwd_events": []})
         while request is not None:
@@ -227,7 +241,7 @@ class AdminReportsExtractor(GoogleAPIBase):
             applicationName="chrome",
             eventName="CONTENT_TRANSFER",
             startTime=self.start_time_string,
-            fields="items(actor, events(parameters))",
+            fields="nextPageToken,items(actor, events(parameters))",
         )
         events = defaultdict(lambda: {"download_events": []})
         while request is not None:
@@ -261,7 +275,7 @@ class AdminReportsExtractor(GoogleAPIBase):
             applicationName="chrome",
             eventName="MALWARE_TRANSFER",
             startTime=self.start_time_string,
-            fields="items(actor, events(parameters))",
+            fields="nextPageToken,items(actor, events(parameters))",
         )
         events = defaultdict(lambda: {"malware_events": []})
         while request is not None:
@@ -293,7 +307,7 @@ class AdminReportsExtractor(GoogleAPIBase):
             applicationName="chrome",
             eventName="PASSWORD_BREACH",
             startTime=self.start_time_string,
-            fields="items(actor, events(parameters))",
+            fields="nextPageToken,items(actor, events(parameters))",
         )
         events = defaultdict(lambda: {"vulnerable_pwd_events": []})
         while request is not None:

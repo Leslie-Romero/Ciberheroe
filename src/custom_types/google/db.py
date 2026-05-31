@@ -2,9 +2,7 @@ from typing import TypedDict, Literal
 from custom_types import GoogleUserMetrics
 
 
-# TODO: Crear Enums
 class DBUserGoogleMetrics(GoogleUserMetrics):
-    # Cambiar nombres para que coincidan con la tabla
     user_email: str
     month: str
 

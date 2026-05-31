@@ -1,25 +1,13 @@
 import subprocess
 import json
+from config import env_config as config
 
 
-def get_recent_events():
+def read_event_logs():
 
-    ps_command = """
-    $startTime = (Get-Date).AddHours(-24)
-    Get-WinEvent -FilterHashtable @{LogName='Security'; Id=4800; StartTime=$startTime} -ErrorAction SilentlyContinue | 
-    Select-Object TimeCreated, Id | 
-    ConvertTo-Json
-    """
-
-    # Execute the command from Python
-    process = subprocess.run(
-        ["powershell", "-Command", ps_command], capture_output=True, text=True
-    )
-
-    # If no events occurred, powershell returns nothing
-    if not process.stdout.strip():
-        return []
-
-    # Let Python parse the clean JSON!
-    events = json.loads(process.stdout)
+    # Read the file from E2S
+    # TODO: How would the script read this file?
+    file = config.LOGS_FILE_PATH
+    with open(file, "r") as logs:
+        events = json.loads(logs.read())
     return events

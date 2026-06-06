@@ -31,13 +31,13 @@ class GoogleDriveExtractor(GoogleAPIBase):
         request = self.files_collection.list(
             q=query,
             spaces="drive",
-            pageSize=100,
+            pageSize=10,
             fields="nextPageToken,files(id, name, mimeType)",
         )
 
         files = []
         page_count = 0
-        max_pages = 5
+        max_pages = 2
 
         while request is not None and page_count < max_pages:
             response = self.exec_request(request)
@@ -58,7 +58,7 @@ class GoogleDriveExtractor(GoogleAPIBase):
 
         files = []
         page_count = 0
-        max_pages = 5
+        max_pages = 2
         while request is not None and page_count < max_pages:
             response = self.exec_request(request)
             if response is None:

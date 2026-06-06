@@ -37,11 +37,15 @@ class GmailExtractor(GoogleAPIBase):
         messages = []
         errors = False
 
-        while request is not None:
+        page_count = 0
+        max_pages = 2
+
+        while request is not None and page_count < max_pages:
             response = self.exec_request(request)
             if response is None:
                 errors = True
                 break
+            page_count += 1
             messages += response.get("messages", [])
             request = self.messages_collection.list_next(request, response)
         return messages, errors

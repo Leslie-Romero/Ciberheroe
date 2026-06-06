@@ -2,10 +2,12 @@ import logging
 from logging.handlers import RotatingFileHandler
 import traceback
 from pathlib import Path
+from supabase import Client, create_client
 
-import db
+import config.env_config as config
 import google_module
 import events_module
+import knowbe4_module
 
 logger = logging.getLogger("ciberheroe")
 logger.setLevel(logging.INFO)
@@ -32,8 +34,21 @@ if not logger.handlers:
     logger.addHandler(file_handler)
 
 
+def initialize_supabase_client() -> Client:
+    if (
+        config.SUPABASE_URL == "SUPABASE_PROJECT_URL"
+        or config.SUPABASE_KEY == "SUPABASE_SERVICE_KEY"
+    ):
+        logger.error(
+            "Las credenciales de Supabase no se han establecido correctamente."
+        )
+        exit(1)
+    return create_client(config.SUPABASE_URL, config.SUPABASE_KEY)
+
+
 def main():
-    db_client = db.initialize_supabase_client()
+    db_client = initialize_supabase_client()
+    knowbe4_module.knowbe4_etl(db_client)
     google_module.google_etl(db_client)
     events_module.events_etl(db_client)
     return

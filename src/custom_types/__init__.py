@@ -7,6 +7,7 @@ from .knowbe4.metrics_info import (
     PhishingCampaignResponse,
     UserResponse,
     EnrollmentResponse,
+    TemplateMetrics,
 )
 from .knowbe4.password_iq import (
     PasswordIQUser,

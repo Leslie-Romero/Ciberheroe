@@ -7,7 +7,7 @@ from google_module import (
     GoogleDBClient,
     GoogleScoreCalculator,
 )
-from knowbe4_module import save_json
+from knowbe4_module.helper_functions import save_json
 import logging
 from custom_types import (
     GoogleUserMetrics,

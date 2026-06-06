@@ -298,7 +298,7 @@ def check_optional_enrollments(
     current_date = context["current_date"]
     achievement_info = context["achievement_info"]
 
-    if user["optionalEnrollments"] is not None:
+    if user["optionalEnrollments"] != []:
         completed_optional_enrollments = filter_by_date(
             user["optionalEnrollments"],
             "completedAt",
@@ -388,7 +388,9 @@ def calculate_scores(
         user_id = user["id"]
         user_scores[user_id]["acc_score"] = 0
 
-        user_recipients = [i for i in recipients if i["user"]["id"] == user_id]
+        user_recipients: list[CampaignRecipient] = [
+            i for i in recipients if i["user"]["id"] == user_id
+        ]
         user_templates = {
             i["emailTemplate"]["id"]: i["clickedCount"]
             for i in user_recipients
@@ -413,8 +415,8 @@ def calculate_scores(
             "user_templates": user_templates,
             "mandatory_enrollments": user["mandatoryEnrollments"],
             "completed_enrollments": completed_enrollments,
-            "year_clicks": year_clicks,
-            "year_opened": year_opened,
+            "year_clicks": cast(list[CampaignRecipient], year_clicks),
+            "year_opened": cast(list[CampaignRecipient], year_opened),
         }
 
         achievements, total_score = calculate_total_user_score(
@@ -443,10 +445,8 @@ def calculate_scores(
         key=lambda item: item[1]["acc_score"],
         reverse=True,
     )
-    logger.info(
-        """Se han calculado las puntuaciones de cada usuario
-         acorde a los criterios establecidos"""
-    )
+    logger.info("""Se han calculado las puntuaciones de cada usuario
+         acorde a los criterios establecidos""")
     return dict(sorted_scores), save_history
 
 

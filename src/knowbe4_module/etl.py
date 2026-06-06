@@ -1,12 +1,9 @@
 import logging
 import uuid
-from datetime import datetime, timezone
 from dateutil.relativedelta import relativedelta
-import pytz
 
-from knowbe4_module import Knowbe4DBClient
+from knowbe4_module.kb4_db import Knowbe4DBClient
 
-import db
 import config.env_config as config
 from knowbe4_module import (
     admin_metrics,
@@ -24,7 +21,18 @@ from custom_types import (
     PhishingCampaignRun,
     DBMonthlyRisk,
     YearlyEnrollment,
+    PasswordIQUserResponse,
+    PhishingCampaignResponse,
+    UserResponse,
+    EnrollmentResponse,
+    AssessmentResultsResponse,
+    VulnerableMetrics,
+    TemplateMetrics,
+    PasswordIQDetectionCount,
 )
+
+from dataclasses import dataclass, field
+from typing import Any, cast, List, Set, Dict
 
 logger = logging.getLogger(f"ciberheroe.{__name__}")
 
@@ -34,197 +42,253 @@ def fill_in_with_historical_data(users, knowbe4_db: Knowbe4DBClient):
 
     Se activa con la variable HISTORICAL_DATA en el archivo .env
     """
-    if config.HISTORICAL_DATA:
-        historical_data = get_historical_data(users)
-        db_monthly_risk_hist: list[DBMonthlyRisk] = list()
-        for record in historical_data:
-            db_monthly_risk_hist.append(
-                {
-                    "id": str(uuid.uuid4()),
-                    "user_id": int(record["user_id"]),
-                    "risk_score": float(record["risk_score"]),
-                    "created_at": "2024-12-01",
-                }
-            )
-        save_json({"data": db_monthly_risk_hist}, "historical_data")
-        knowbe4_db.insert_db_data(
-            "kb4_monthly_risk",
-            db_monthly_risk_hist,
-            "user_id, created_at",
+    historical_data = get_historical_data(users)
+    db_monthly_risk_hist: list[DBMonthlyRisk] = list()
+    for record in historical_data:
+        db_monthly_risk_hist.append(
+            {
+                "id": str(uuid.uuid4()),
+                "user_id": int(record["user_id"]),
+                "risk_score": float(record["risk_score"]),
+                "created_at": "2024-12-01",
+            }
         )
-        logger.info("Insertamos los historicos para diciembre de 2024")
+    save_json({"data": db_monthly_risk_hist}, "historical_data")
+    knowbe4_db.insert_db_data(
+        "kb4_monthly_risk",
+        db_monthly_risk_hist,
+        "user_id, created_at",
+    )
+    logger.info("Insertamos los historicos para diciembre de 2024")
 
 
-# TODO: Optimize this function
+@dataclass
+class Knowbe4Context:
+    achievement_info: Dict[Any, Any] = field(default_factory=dict)
+    active_window: int = 0
+
+    n_users: int = 0
+    n_psts: int = 0
+
+    raw_psts: PhishingCampaignResponse | None = None
+    raw_user_info: UserResponse | None = None
+    raw_pwd_user_events: PasswordIQUserResponse | None = None
+    raw_yearly_enrollments: EnrollmentResponse | None = None
+    raw_assessment_results: AssessmentResultsResponse | None = None
+
+    users: List[User] = field(default_factory=list)
+    active_users: Set[int] = field(default_factory=set)
+    recipients: List[CampaignRecipient] = field(default_factory=list)
+    psts: List[PhishingCampaignRun] = field(default_factory=list)
+    user_pwds: List[PasswordIQUser] = field(default_factory=list)
+    yearly_completed_enrollments: List[YearlyEnrollment] = field(
+        default_factory=list
+    )
+
+
+@dataclass
+class Knowbe4Metrics:
+    phish_prone_percentage: float = 0
+    phishing: float = 0
+    top_educated: Dict[int, int] = field(default_factory=dict)
+    sorted_enrollments: Dict[int, int] = field(default_factory=dict)
+    clicks_percentages: Dict[int, float] = field(default_factory=dict)
+    report_percentages: Dict[int, float] = field(default_factory=dict)
+    raw_metrics: Dict[int, tuple[int, int, int]] = field(default_factory=dict)
+    best_templates: Dict[int, TemplateMetrics] = field(default_factory=dict)
+    monthly_clicks: int = 0
+    low_risk: Dict[int, float] = field(default_factory=dict)
+
+    top10_month_templates: Dict[int, TemplateMetrics] = field(
+        default_factory=dict
+    )
+    user_reports: tuple[float, float, float] = (0, 0, 0)
+    user_education: tuple[float, float, float] = (0, 0, 0)
+    enrollments: float = 0
+    vulnerable_users: Dict[int, VulnerableMetrics] = field(
+        default_factory=dict
+    )
+    pwds_detections_per_user: List[dict[str, Any]] = field(
+        default_factory=list
+    )
+    pwds: PasswordIQDetectionCount | None = None
+    assessment_results: Dict[str, int] = field(default_factory=dict)
+
+
+class Knowbe4APIProcessor:
+
+    def extract_raw_data(self, context: Knowbe4Context):
+        (
+            context.raw_psts,
+            context.raw_user_info,
+            context.raw_pwd_user_events,
+            context.raw_yearly_enrollments,
+            context.raw_assessment_results,
+        ) = fetch_graph_api_data(context.n_users, context.n_psts)
+
+    def process_raw_data(self, context: Knowbe4Context):
+        raw_user_info = cast(UserResponse, context.raw_user_info)
+        raw_psts = cast(PhishingCampaignResponse, context.raw_psts)
+        raw_pwd_user_events = cast(
+            PasswordIQUserResponse, context.raw_pwd_user_events
+        )
+        raw_yearly_enrollments = cast(
+            EnrollmentResponse, context.raw_yearly_enrollments
+        )
+
+        context.users = raw_user_info["users"]["nodes"]
+        context.active_users = {user["id"] for user in context.users}
+        for pst in raw_psts["phishingCampaignRuns"]["nodes"]:
+            context.psts.append(pst)
+            context.recipients += [
+                recipient
+                for recipient in pst["campaignRecipients"]
+                if recipient["user"]["id"] in context.active_users
+            ]
+        context.user_pwds = raw_pwd_user_events["passwordIqUserStates"][
+            "users"
+        ]
+        context.yearly_completed_enrollments = raw_yearly_enrollments[
+            "enrollments"
+        ]["nodes"]
+
+        save_json({"users": context.users}, "kb4_users")
+
+
+class Knowbe4MetricsCalculator:
+    def calculate_general_metrics(
+        self, context: Knowbe4Context, metrics: Knowbe4Metrics
+    ):
+        metrics.phish_prone_percentage = basic_metrics.phish_prone_percentage(
+            context.psts
+        )
+        metrics.phishing = basic_metrics.phishing_reports(context.psts)
+        metrics.top_educated, metrics.sorted_enrollments = (
+            basic_metrics.most_educated(
+                context.users, context.yearly_completed_enrollments, 5
+            )
+        )
+        (
+            metrics.clicks_percentages,
+            metrics.report_percentages,
+            metrics.raw_metrics,
+        ) = basic_metrics.click_percentage(
+            context.recipients, context.users, context.active_window
+        )
+        metrics.best_templates, metrics.monthly_clicks = (
+            basic_metrics.best_phishing_templates(
+                context.recipients, 10, context.active_window
+            )
+        )
+        metrics.low_risk = basic_metrics.lowest_risk_users(10, context.users)
+
+    def calculate_additional_metrics(
+        self,
+        context: Knowbe4Context,
+        metrics: Knowbe4Metrics,
+        this_month,
+        last_month,
+    ):
+
+        metrics.top10_month_templates, m = (
+            basic_metrics.best_phishing_templates(
+                context.recipients,
+                10,
+                context.active_window,
+                (this_month, (last_month.month, last_month.year)),
+            )
+        )
+        metrics.user_reports = basic_metrics.get_reporting_users(
+            context.recipients,
+            context.active_users,
+            context.n_users,
+            context.active_window,
+        )
+        metrics.user_education = basic_metrics.get_educated_users(
+            context.yearly_completed_enrollments,
+            context.active_window,
+            context.n_users,
+        )
+        metrics.enrollments = basic_metrics.get_year_enrollments(context.users)
+
+        # Vulnerabilidades
+        metrics.vulnerable_users = admin_metrics.get_vulnerable_users(
+            context.users,
+            context.yearly_completed_enrollments,
+            metrics.raw_metrics,
+            context.recipients,
+        )
+
+        metrics.pwds_detections_per_user, metrics.pwds = (
+            admin_metrics.get_vulnerable_pwd(context.user_pwds, context.users)
+        )
+
+        raw_assessment_results = cast(
+            AssessmentResultsResponse, context.raw_assessment_results
+        )
+        metrics.assessment_results = admin_metrics.get_assessment_results(
+            raw_assessment_results
+        )
 
 
 def knowbe4_etl(db_client):
 
     knowbe4_db = Knowbe4DBClient(db_client, logger)
 
-    achievement_info, active_window = knowbe4_db.get_achievement_info()
+    context = Knowbe4Context()
 
-    n_users, n_psts = fetch_rest_api_data()
-
-    api_psts, user_info, pwd_user_events, year_enrollments, assessment = (
-        fetch_graph_api_data(n_users, n_psts)
+    context.achievement_info, context.active_window = (
+        knowbe4_db.get_achievement_info()
     )
+    context.n_users, context.n_psts = fetch_rest_api_data()
 
-    users: list[User] = user_info["users"]["nodes"]
-    active_users = {user["id"] for user in users}
+    processor = Knowbe4APIProcessor()
+    processor.extract_raw_data(context)
+    processor.process_raw_data(context)
 
-    recipients: list[CampaignRecipient] = list()
-    psts: list[PhishingCampaignRun] = list()
-    for pst in api_psts["phishingCampaignRuns"]["nodes"]:
-        psts.append(pst)
-        recipients += [
-            recipient
-            for recipient in pst["campaignRecipients"]
-            if recipient["user"]["id"] in active_users
-        ]
-
-    user_pwds: list[PasswordIQUser] = pwd_user_events["passwordIqUserStates"][
-        "users"
-    ]
-
-    yearly_completed_enrollments: list[YearlyEnrollment] = year_enrollments[
-        "enrollments"
-    ]["nodes"]
-
-    # 1. Porcentaje promedio de usuarios phish-prone
-    phish_prone_percentage = basic_metrics.phish_prone_percentage(psts)
-
-    # 2. Porcentaje de denuncias de phishing (simuladas)
-    phishing = basic_metrics.phishing_reports(psts)
-
-    # 3. Usuarios con más formaciones realizadas (top 5)
-    top_educated, sorted_enrollments = basic_metrics.most_educated(
-        users, yearly_completed_enrollments, 5
-    )
-
-    # 4. Porcentaje de clicks y denuncias por usuario en
-    # simulaciones de phishing
-    clicks_percentages, report_percentages, raw_metrics = (
-        basic_metrics.click_percentage(recipients, users, active_window)
-    )
-
-    # 5. Plantillas de phishing con mayor tasa de éxitoç
-    best_templates, monthly_clicks = basic_metrics.best_phishing_templates(
-        recipients, 10, active_window
-    )
-
-    # 6. Usuarios con menor riesgo (KSAT)
-    low_risk = basic_metrics.lowest_risk_users(10, users)
+    metrics = Knowbe4Metrics()
+    metrics_calculator = Knowbe4MetricsCalculator()
+    metrics_calculator.calculate_general_metrics(context, metrics)
 
     # Inserción de datos históricos a falta de datos del último mes
+    if config.HISTORICAL_DATA:
+        fill_in_with_historical_data(context.users, knowbe4_db)
 
     # Obtenemos el riesgo del mes anterior
-    now = datetime.now(pytz.utc).replace(
-        day=1, hour=0, minute=0, second=0, microsecond=0
-    )
-    ref_date = now - relativedelta(months=1)
-    if ref_date < pytz.utc.localize(datetime(2025, 11, 1)):
-        ref_date = pytz.utc.localize(datetime(2024, 12, 1))
-    db_last_risk = db.read_db_data(
-        db_client,
-        "kb4_monthly_risk",
-        "user_id, risk_score",
-        "created_at",
-        ref_date.isoformat(),
+    db_last_risk = knowbe4_db.get_last_month_risk()
+
+    # Leemos las puntuaciones de los últimos meses
+    # para sumar a las de este mes
+    db_score_data = knowbe4_db.get_last_months_scores(context)
+
+    # Métricas adicionales
+    last_month = knowbe4_db.first_day_month - relativedelta(months=1)
+    metrics_calculator.calculate_additional_metrics(
+        context, metrics, knowbe4_db.first_day_month, last_month
     )
 
     # Cálculo de puntuaciones
-
-    current_time = datetime.now(timezone.utc).replace(
-        day=1, hour=0, minute=0, second=0, microsecond=0
-    )
-    last_month = current_time - relativedelta(months=1)
-
-    # Leemos las puntuaciones de los últimos seis meses
-    # para sumar a las de este mes
-    db_last_semester_scores = db.read_last_semester_scores(
-        db_client, "updated_at", "kb4_user_score_history"
-    )
-
-    db_score_data = {user["id"]: 0 for user in users}
-    if db_last_semester_scores != list():
-        db_score_data = {
-            score["user_id"]: score["total_score"]
-            for score in db_last_semester_scores
-        }
-
-    top10_month_templates, m = basic_metrics.best_phishing_templates(
-        recipients,
-        10,
-        active_window,
-        (current_time, (last_month.month, last_month.year)),
-    )
     user_scores, user_score_history = calculate_scores(
-        users,
-        yearly_completed_enrollments,
-        recipients,
-        top10_month_templates,
+        context.users,
+        context.yearly_completed_enrollments,
+        context.recipients,
+        metrics.top10_month_templates,
         db_score_data,
-        achievement_info,
+        context.achievement_info,
         db_last_risk,
-        active_window,
+        context.active_window,
     )
 
-    # db.save_score_history(db_client, users, user_score_history)
-
-    # Métricas adicionales (mensual y anual)
-    user_reports = basic_metrics.get_reporting_users(
-        recipients, active_users, n_users, active_window
-    )
-    user_education = basic_metrics.get_educated_users(
-        yearly_completed_enrollments, active_window, n_users
-    )
-    enrollments = basic_metrics.get_year_enrollments(users)
-
-    # Vulnerabilidades
-    vulnerable_users = admin_metrics.get_vulnerable_users(
-        users, yearly_completed_enrollments, raw_metrics, recipients
-    )
-
-    pwds_detections_per_user, pwds = admin_metrics.get_vulnerable_pwd(
-        user_pwds, users
-    )
-
-    assessment_results = admin_metrics.get_assessment_results(assessment)
+    save_json(user_scores, "kb4_user_scores")
+    save_json(user_score_history, "kb4_user_score_history")
+    return
 
     # Rellenamos la base de datos
-    db.fill_db_user_info(
-        db_client,
-        active_window,
-        users,
-        sorted_enrollments,
-        report_percentages,
-        clicks_percentages,
-        raw_metrics,
-        user_scores,
-        user_score_history,
+    knowbe4_db.fill_db_user_info(
+        context, metrics, user_scores, user_score_history
     )
-
-    db.fill_db_basic_metrics(
-        db_client,
-        best_templates,
-        phish_prone_percentage,
-        phishing,
-        user_education[0],
-        user_reports[0],
-        user_education[1],
-        user_reports[1],
-        user_education[2],
-        user_reports[2],
-        top_educated,
-        low_risk,
-        enrollments,
-    )
-
-    db.fill_db_vulnerable_data(
-        db_client,
-        vulnerable_users,
-        pwds,
-        pwds_detections_per_user,
-        assessment_results,
-    )
+    knowbe4_db.fill_db_basic_metrics(metrics)
+    knowbe4_db.fill_db_vulnerable_users(metrics.vulnerable_users)
+    knowbe4_db.fill_db_passwords(cast(PasswordIQDetectionCount, metrics.pwds))
+    knowbe4_db.fill_db_passwords_detections(metrics.pwds_detections_per_user)
+    knowbe4_db.fill_db_assessment_results(metrics.assessment_results)

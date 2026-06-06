@@ -1,8 +1,13 @@
 from database.base import DBClientBase
 from dateutil.relativedelta import relativedelta
-from typing import Any, cast
+from datetime import datetime
+import pytz
+from typing import Any, cast, TYPE_CHECKING
 import uuid
 from knowbe4_module.scores import filter_by_date
+
+if TYPE_CHECKING:
+    from knowbe4_module.etl import Knowbe4Context, Knowbe4Metrics
 
 from custom_types import (
     PasswordIQDetectionCount,
@@ -77,14 +82,16 @@ class Knowbe4DBClient(DBClientBase):
                 f"Ha ocurrido un error al intentar eliminar los usuarios (tabla: kb4_vulnerable_users): {e}"
             )
 
-    def read_last_semester_scores(self, date_column: str, table_name: str):
-        "Lee datos de la base de datos filtrados por los últimos 6 meses"
+    def read_last_semester_scores(
+        self, active_window: int, date_column: str, table_name: str
+    ):
+        "Lee datos de la base de datos filtrados por los últimos meses acorde a la ventana activa"
         try:
-            six_months_start = self.first_day_month - relativedelta(months=6)
+            start = self.first_day_month - relativedelta(months=active_window)
             response = self.db_client.rpc(
                 "sum_scores_by_user",
                 {
-                    "start_date": six_months_start.isoformat(),
+                    "start_date": start.isoformat(),
                     "end_date": self.first_day_month.isoformat(),
                 },
             ).execute()
@@ -212,14 +219,37 @@ class Knowbe4DBClient(DBClientBase):
             "kb4_monthly_risk", db_monthly_risk, "user_id, created_at"
         )
 
+    def get_last_month_risk(self):
+        ref_date = self.first_day_month - relativedelta(months=1)
+        if ref_date < pytz.utc.localize(datetime(2025, 11, 1)):
+            ref_date = pytz.utc.localize(datetime(2024, 12, 1))
+
+        db_last_risk = self.read_db_data(
+            "kb4_monthly_risk",
+            "user_id, risk_score",
+            "created_at",
+            ref_date.isoformat(),
+        )
+
+        return db_last_risk
+
+    def get_last_months_scores(self, context: "Knowbe4Context"):
+        db_last_semester_scores = self.read_last_semester_scores(
+            context.active_window, "updated_at", "kb4_user_score_history"
+        )
+
+        db_score_data = {user["id"]: 0 for user in context.users}
+        if db_last_semester_scores != list():
+            db_score_data = {
+                score["user_id"]: score["total_score"]
+                for score in db_last_semester_scores
+            }
+        return db_score_data
+
     def fill_db_user_info(
         self,
-        active_window: int,
-        users: list[User],
-        sorted_enrollments: dict[int, int],
-        report_percentages: dict[int, float],
-        clicks_percentages: dict[int, float],
-        raw_metrics: dict[int, tuple[int, int, int]],
+        context: "Knowbe4Context",
+        metrics: "Knowbe4Metrics",
         scores: dict[int, UserScores],
         score_history: dict[int, dict[str, Any]],
     ):
@@ -228,16 +258,15 @@ class Knowbe4DBClient(DBClientBase):
         db_score_history: list[DBUserScoreHistory] = list()
         db_monthly_risk: list[DBMonthlyRisk] = list()
 
-        for user in users:
-
+        for user in context.users:
             db_users.append(
                 self.build_user_record(
                     user,
-                    active_window,
-                    sorted_enrollments,
-                    report_percentages,
-                    clicks_percentages,
-                    raw_metrics,
+                    context.active_window,
+                    metrics.sorted_enrollments,
+                    metrics.report_percentages,
+                    metrics.clicks_percentages,
+                    metrics.raw_metrics,
                 )
             )
             db_scores.append(self.build_score_record(user, scores))
@@ -275,32 +304,22 @@ class Knowbe4DBClient(DBClientBase):
 
     def fill_db_basic_metrics(
         self,
-        phish_prone: float,
-        phish_reports: float,
-        monthly_educated: float,
-        monthly_reporting: float,
-        aw_educated: float,
-        aw_reporting: float,
-        yearly_educated: float,
-        yearly_reporting: float,
-        top_educated: dict[int, int],
-        low_risk: dict[int, float],
-        enrollments: float,
+        metrics: "Knowbe4Metrics",
     ):
         db_metrics: DBMetrics = {
             "id": str(uuid.uuid4()),
             "date_registered": self.current_month,
-            "phish_prone": phish_prone,
-            "phish_reports": phish_reports,
-            "monthly_educated": monthly_educated,
-            "monthly_reporting": monthly_reporting,
-            "aw_educated": aw_educated,
-            "aw_reporting": aw_reporting,
-            "yearly_educated": yearly_educated,
-            "yearly_reporting": yearly_reporting,
-            "top_educated": list(top_educated.keys()),
-            "low_risk": list(low_risk.keys()),
-            "enrollments": enrollments,
+            "phish_prone": metrics.phish_prone_percentage,
+            "phish_reports": metrics.phishing,
+            "monthly_educated": metrics.user_education[0],
+            "monthly_reporting": metrics.user_reports[0],
+            "aw_educated": metrics.user_education[1],
+            "aw_reporting": metrics.user_reports[1],
+            "yearly_educated": metrics.user_education[2],
+            "yearly_reporting": metrics.user_reports[2],
+            "top_educated": list(metrics.top_educated.keys()),
+            "low_risk": list(metrics.low_risk.keys()),
+            "enrollments": metrics.enrollments,
         }
 
         self.insert_db_data("kb4_metrics", db_metrics, "date_registered")

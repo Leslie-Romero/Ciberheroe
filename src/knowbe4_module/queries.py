@@ -100,7 +100,7 @@ def get_query_user(page: int, per: int) -> str:
                         name
                     }}
                 }}
-                electedEnrollments {{
+                optionalEnrollments {{
                     id
                     completedAt
                 }}

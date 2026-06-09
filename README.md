@@ -1,6 +1,8 @@
 ## Título y Descripción
 **Nombre del Proyecto**: Ciberhéroe
 <br/>
+**Autora**: Leslie Liu Romero Martín
+<br/>
 **Título del Trabajo**: Plataforma de análisis y visualización de métricas de ciberseguridad basadas en el comportamiento del usuario en entornos corporativos
 <br/>
 **Descripción**: Pipeline ETL que extrae métricas de las distintas APIs de Google Workspace y registros de eventos de Windows para calcular puntuaciones de seguridad de los usuarios.

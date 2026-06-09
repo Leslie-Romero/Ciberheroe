@@ -26,10 +26,10 @@ GoogleMetricsLabel = Literal[
     "malware_downloads",
     "vulnerable_pwds",
     "enabled_2sv",
-    "non_corporate_devices",
-    "files_with_public_link",
-    "files_with_exp_date",
-    "messages_in_conf_mode",
+    "non_corp_devices",
+    "files_public_link",
+    "files_exp_date",
+    "messages_conf",
 ]
 
 

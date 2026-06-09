@@ -281,7 +281,6 @@ def knowbe4_etl(db_client):
 
     save_json(user_scores, "kb4_user_scores")
     save_json(user_score_history, "kb4_user_score_history")
-    return
 
     # Rellenamos la base de datos
     knowbe4_db.fill_db_user_info(

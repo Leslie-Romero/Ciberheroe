@@ -1,8 +1,11 @@
+from custom_types import EventMetrics
+
+
 class EventScoreCalculator:
     def process_events(self, events):
         return
 
-    def calculate_scores(self, events, points):
+    def calculate_scores(self, events: dict[str, EventMetrics], points):
         processed_points = {
             elem["label"]: {
                 "points": elem["points"],
@@ -27,7 +30,7 @@ class EventScoreCalculator:
                     score += processed_points[label]["points"]
                 elif (
                     label in bad_practices
-                    and value < processed_points[label]["minimum"]
+                    and value <= processed_points[label]["minimum"]
                 ):
                     score += processed_points[label]["points"]
             user_scores[user_email] = score

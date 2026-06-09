@@ -47,7 +47,9 @@ class GoogleScoreCalculator:
                 user_score += processed_points.get(label, 0)
             elif label in good_practices:
                 if cast(int, value) > max_accumulation:
-                    user_score += processed_points.get(label, 0) * 10
+                    user_score += (
+                        processed_points.get(label, 0) * max_accumulation
+                    )
                 else:
                     user_score += processed_points.get(label, 0) * cast(
                         float | int | bool, value

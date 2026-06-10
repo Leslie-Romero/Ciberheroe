@@ -279,8 +279,6 @@ def knowbe4_etl(db_client):
         context.active_window,
     )
 
-    return
-
     # Rellenamos la base de datos
     knowbe4_db.fill_db_user_info(
         context, metrics, user_scores, user_score_history
